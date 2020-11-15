@@ -66,6 +66,10 @@
 
 /*--------Page Footer----------*/
 
+#copyright, 
+#social-links {
+    text-align: center;
+}
 
 /*--------Information Page-----*/
 
