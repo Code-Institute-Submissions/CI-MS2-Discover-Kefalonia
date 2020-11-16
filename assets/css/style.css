@@ -1,3 +1,7 @@
+/* {
+    border: 1px solid red;
+}*/
+
 /*--------Coulor Schemes-------*/
 
 /*--------Navbar Transparency (https://bootstrapious.com/p/transparent-navbar)--*/
@@ -78,5 +82,26 @@
 
 /*--------Gallery Page---------*/
 
+#gallery {
+    background-color: #1e79d8
+;
+}
+
+.gallery-header {
+    margin-top: 50px;
+}
+
+#photos {
+  clear: both;
+  line-height: 0;
+  column-count: 3;
+  column-gap: 0px;
+}
+
+#photos img {
+  width: 100%;
+  padding: 5px;
+  border-radius: 20px;
+}
 
 /*--------Contact/Booking Page-*/
