@@ -79,12 +79,15 @@
 
 /*--------Map Page-------------*/
 
+#map {
+    min-height: 800px;
+    width: 100%;
+}
 
 /*--------Gallery Page---------*/
 
 #gallery {
-    background-color: #1e79d8
-;
+    background-color: #1e79d8;
 }
 
 .gallery-header {
