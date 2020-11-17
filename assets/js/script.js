@@ -1,14 +1,8 @@
-//---Navbar Transparency (https://bootstrapious.com/p/transparent-navbar)----//
+//---Page Transition----//
+document.getElementById("explore").onclick = function() {
+    location.href="map.html";
+};
 
-$(function () {
-    $(window).on('scroll', function () {
-        if ( $(window).scrollTop() > 10 ) {
-            $('.navbar').addClass('active');
-        } else {
-            $('.navbar').removeClass('active');
-        }
-    });
-});
 
 //--------------- Weather Data Script ----------//
 
@@ -37,7 +31,7 @@ let map;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 38.28109, lng: 20.48903 },
+        center: { lat: 38.28109, lng: 20.48000 },
         zoom: 11,        
     });   
 }

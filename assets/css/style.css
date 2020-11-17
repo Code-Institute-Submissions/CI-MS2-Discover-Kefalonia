@@ -2,109 +2,42 @@
     border: 1px solid red;
 }*/
 
-/*--------Coulor Schemes-------*/
-
-/*--------Navbar Transparency (https://bootstrapious.com/p/transparent-navbar)--*/
-
-.navbar {
-    transition: all 0.4s;
-}
-
-.navbar .nav-link {
-    color: #fff;
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-    color: #fff;
-    text-decoration: none;
-}
-
-.navbar .navbar-brand {
-    color: #fff;
-}
-
-
-/* Change navbar styling on scroll */
-.navbar.active {
-    background: #fff;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar.active .nav-link {
-    color: #555;
-}
-
-.navbar.active .nav-link:hover,
-.navbar.active .nav-link:focus {
-    color: #555;
-    text-decoration: none;
-}
-
-.navbar.active .navbar-brand {
-    color: #555;
-}
-
-
-/* Change navbar styling on small viewports */
-@media (max-width: 991.98px) {
-    .navbar {
-        background: #fff;
-    }
-
-    .navbar .navbar-brand, .navbar .nav-link {
-        color: #555;
-    }
-}
-
 /*--------Landing Page---------*/
 
-.carousel-item{
-    max-width: 100%;
-    height: auto;
+#bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
-.carousel-caption {
-    top: 50px;
-}
-
-/*--------Page Footer----------*/
-
-#copyright, 
-#social-links {
+h1 {
+    position: Relative;
+    top: 30vh;
+    z-index: 2;
     text-align: center;
 }
 
-/*--------Information Page-----*/
+#explore {
+    position: relative;
+    top: 50vh;
+    
+}
 
-/*--------Map Page-------------*/
+/*--------Google Map-------*/
+
+.map-links {
+    background-color: #aadaff;
+}
 
 #map {
-    min-height: 800px;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-}
-
-/*--------Gallery Page---------*/
-
-#gallery {
-    background-color: #1e79d8;
-}
-
-.gallery-header {
-    margin-top: 50px;
-}
-
-#photos {
-  clear: both;
-  line-height: 0;
-  column-count: 3;
-  column-gap: 0px;
-}
-
-#photos img {
-  width: 100%;
-  padding: 5px;
-  border-radius: 20px;
+    height: 1000px;
 }
 
 /*--------Contact/Booking Page-*/
