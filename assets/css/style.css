@@ -40,4 +40,8 @@ h1 {
     height: 1000px;
 }
 
+#beach {
+    position: relative;
+    bottom: 100;
+}
 /*--------Contact/Booking Page-*/
