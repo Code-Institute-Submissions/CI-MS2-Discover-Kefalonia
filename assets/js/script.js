@@ -15,59 +15,70 @@ var beaches = [
     [38.154322,20.480938],
     [38.260612,20.673927],
     [38.075906,20.800971],
-    [38.452562,20.576679],
+    [38.452562,20.576679]
+];
+
+var towns =  [
+    [38.1732,20.4900],
+    [38.1640,20.4826],
+    [38.4582,20.5770],
+    [38.3782,20.5401],
+    [38.2514,20.6472],
+    [38.2022,20.4370],
+    [38.3031,20.5978],
+    [38.1540,20.7713],
+    [38.0741,20.7968],
+    [38.1162,20.6341]
 ];
 
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         center: new google.maps.LatLng(38.28109,20.48000),
         zoom: 11,
-        mapID: "ceb61baad4160370",        
+        MapTypeID: 'satellite'        
     });
 
-    var infowindow = new google.maps.InfoWindow;
+     $('#beaches').click(function() {
+        
+        var infowindow = new google.maps.InfoWindow;
 
-    for (let i = 0; i < beaches.length; i++) {  
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(beaches[i][0], beaches[i][1]),
-            icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
-            map: map
-        });
+        for (let i = 0; i < beaches.length; i++) {  
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(beaches[i][0], beaches[i][1]),
+                animation: google.maps.Animation.FADE,
+                icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+                map: map
+            });
 
-        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            return function() {
-                infowindow.setContent(beaches[i][0]);
-                infowindow.open(map, marker);
-            }
-        })(marker, i));
-    }
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    infowindow.setContent(beaches[i][0]);
+                    infowindow.open(map, marker);
+                }
+            })(marker, i));
+        }
+    });
+
+    $('#towns').click(function() {
+        
+        var infowindow = new google.maps.InfoWindow;
+
+        for (let i = 0; i < towns.length; i++) {             
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(towns[i][0], towns[i][1]),
+                animation: google.maps.Animation.FADE,
+                //icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+                map: map
+            });
+            
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    infowindow.setContent(towns[i][0]);
+                    infowindow.open(map, marker);
+                }
+            })(marker, i));
+        }
+    });    
 }
-    
 
-/*for (let i = 0; i < beaches.length; i++) {
-  addMarker(beaches);
-  console.table(beaches);
-}*/
 
-/*const marker = new google.maps.Marker({
-        position: {lat: 38.342578, lng: 20.535872},    
-        animation: google.maps.Animation.DROP,
-        map: map,            
-        icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
-    });
-}*/
-
-/*var beaches = [
-    {lat: 38.322903, lng: 20.453183},
-    {"lat": 38.260949, "lng": 20.376721,},
-    {"lat": 38.471623, "lng": 20.562531,},
-    {"lat": 38.466161, "lng": 20.573059,},
-    {"lat": 38.064207, "lng": 20.779002,},
-    {"lat": 38.342578, "lng": 20.535872,},
-    {"lat": 38.154322, "lng": 20.480938,},
-    {"lat": 38.260612, "lng": 20.673927,},
-    {"lat": 38.075906, "lng": 20.800971,},
-    {"lat": 38.452562, "lng": 20.576679,},
-];
-    
-   var myMark = {"lat": 38.342578, "lng": 20.535872,};*/
