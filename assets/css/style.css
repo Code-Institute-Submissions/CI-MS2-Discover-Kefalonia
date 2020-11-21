@@ -28,6 +28,13 @@ h1 {
 
 /*--------Google Map-------*/
 
+#location-detail {
+    background-color: #fff;
+    margin: 10%;
+}
+
+/*--------Google Map-------*/
+
 .map-links {
     background-color: #aadaff;
 }

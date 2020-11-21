@@ -14,16 +14,16 @@ var beaches = [
 ];
 
 var towns =  [
-    [38.1732,20.4900],
-    [38.1640,20.4826],
-    [38.4582,20.5770],
-    [38.3782,20.5401],
-    [38.2514,20.6472],
-    [38.2022,20.4370],
-    [38.3031,20.5978],
-    [38.1540,20.7713],
-    [38.0741,20.7968],
-    [38.1162,20.6341]
+    [38.1732,20.4900,"Argostolion","Test"],
+    [38.1640,20.4826,"Lassi","Test"],
+    [38.4582,20.5770,"Fiskardo","Test"],
+    [38.3782,20.5401,"Assos","Test"],
+    [38.2514,20.6472,"Sami","Test"],
+    [38.2022,20.4370,"Lixouri","Test"],
+    [38.3031,20.5978,"Agia Effimia","Test"],
+    [38.1540,20.7713,"Poros","Test"],
+    [38.0741,20.7968,"Skala","Test"],
+    [38.1162,20.6341,"Loudas","Test"]
 ];
 
 //--------- Google Maps --------//
@@ -85,7 +85,7 @@ function initMap() {
 //--------Places Beach Markers--------//
     $('#beaches').click(function() {
 
-        var info = new google.maps.InfoWindow();
+        var beachInfo = new google.maps.InfoWindow();
 
         for (let i = 0; i < beaches.length; i++) {  
             var marker = new google.maps.Marker({
@@ -97,8 +97,8 @@ function initMap() {
             });
             google.maps.event.addListener(marker, "click", (function(marker, i) {
                 return function() {
-                    info.setContent(beaches[i][3]);
-                    info.open(map, marker);
+                    $(".info-heading").text(beaches[i][2]);
+                    $(".info-text").text(beaches[i][3]);
                 }
             })(marker, i));                    
         }    
@@ -106,16 +106,48 @@ function initMap() {
 
 //-----------Place Town Markers----------//
     $('#towns').click(function() {
+
+        var townInfo = new google.maps.InfoWindow();
       
         for (let i = 0; i < towns.length; i++) {             
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(towns[i][0], towns[i][1]),
                 animation: google.maps.Animation.DROP,
                 //icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+                title: towns[i][2],
                 map: map
-            });            
-        }        
+            });
+            google.maps.event.addListener(marker, "click", (function(marker, i) {
+                return function() {
+                    $(".info-heading").text(towns[i][2]);
+                    $(".info-text").text(towns[i][3]);                    
+                }
+            })(marker, i));                    
+        }      
     });
+}
+    /*
+    google.maps.event.addListener(marker, "click", (function(marker, i) {
+                return function() {
+                    townInfo.setContent(towns[i][3]);
+                    townInfo.open(map, marker);
+                }
+            })(marker, i));                    
+        }      
+    
+    
+    
+    
+    
+    
+    
+    marker.addListener(marker, "click", (function(marker, i) {
+        return function() {
+         map.setZoom(13);
+            map.setCenter(marker.getPosition());
+    //})(marker, i));
+    }
+}
 
     /*map.addListener("center_changed", () => {
     // 3 seconds after the center of the map has changed, pan back to the
@@ -124,16 +156,16 @@ function initMap() {
       map.panTo(marker.getPosition());
     }, 3000);
     });
-    marker.addListener("click", () => {
-    map.setZoom(8);
-    map.setCenter(marker.getPosition());
+    marker.addListener(marker, "click", (function(marker, i) {
+        return function() {
+         map.setZoom(13);
+            map.setCenter(marker.getPosition());
     });
 
     /*google.maps.event.addListener(marker, 'click', function () {
             // do something with this marker ...
             this.console.log("CLICK!");
     }); */         
-}
 
       
 /*Google Map Marker Click Function*/
