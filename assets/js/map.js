@@ -99,6 +99,8 @@ function initMap() {
                 return function() {
                     $(".info-heading").text(beaches[i][2]);
                     $(".info-text").text(beaches[i][3]);
+                    map.setZoom(15);
+                    map.setCenter(marker.getPosition());
                 }
             })(marker, i));                    
         }    
@@ -120,7 +122,9 @@ function initMap() {
             google.maps.event.addListener(marker, "click", (function(marker, i) {
                 return function() {
                     $(".info-heading").text(towns[i][2]);
-                    $(".info-text").text(towns[i][3]);                    
+                    $(".info-text").text(towns[i][3]);
+                    map.setZoom(15);
+                    map.setCenter(marker.getPosition());                    
                 }
             })(marker, i));                    
         }      
