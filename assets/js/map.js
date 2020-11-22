@@ -98,10 +98,6 @@ function initMap() {
 //--------Place Markers for the locations of the towns--------//
     $('#towns').click(function() {    
         
-        function clearMarkers() {
-        setMapOnAll(null);
-}
-
         for (let i = 0; i < towns.length; i++) {             
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(towns[i][0], towns[i][1]),
@@ -115,9 +111,9 @@ function initMap() {
                     $(".info-heading").text(towns[i][2]);
                     $(".info-text").text(towns[i][3]);
                     map.setZoom(15);
-                    map.setCenter(marker.getPosition());                    
+                    map.setCenter(marker.getPosition());                                 
                 }
-            })(marker, i));                    
+            })(marker, i)); 
         }      
     });
 //-----------Zooms out and recenters the map when the Zoom Out button is clicked----------------//
