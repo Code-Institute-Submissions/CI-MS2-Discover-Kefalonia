@@ -50,42 +50,31 @@ var customMapStyles = [
     },
 ]
 
-//-------Map bounds------//
 
-var map;
-const kefalonia_bounds = {
-  north: 38.495,
-  south: 38.045,
-  west: 20.320,
-  east: 20.830,
-};
 
 //-------Map Initialisation--------//
 function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-        center: new google.maps.LatLng(38.270,20.575),
-        restriction: {
-            latLngBounds: kefalonia_bounds,
-            strictBounds: false,
-        },
+
+    var center = new google.maps.LatLng(38.270,20.575);
+
+    const map = new google.maps.Map(document.getElementById("map"), {
+        center: center,
         zoom: 11,
         disableDefaultUI: true,
         MapTypeID: "terrain",
         Styles: customMapStyles       
     });
-
-    /*var responsiveZoom = (window.innerWidth < 768) ? 6.75 : 7.75;
+//--------Change the map zoom dependant on the device window size----------//
+    var responsiveZoom = (window.innerWidth < 768) ? 7 : 11;
 
     window.addEventListener("resize", function() {
-        if (window.innerWidth < 768) responsiveZoom = 6.75
-        else if (window.innerWidth > 768) responsiveZoom = 7.75
+        if (window.innerWidth < 768) responsiveZoom = 7
+        else if (window.innerWidth > 768) responsiveZoom = 11
             map.setZoom(responsiveZoom);
-    });*/
+    });
 
-//--------Places Beach Markers--------//
-    $('#beaches').click(function() {
-
-        var beachInfo = new google.maps.InfoWindow();
+//--------Place Markers for the locations of the beaches--------//
+    $('#beaches').click(function() {        
 
         for (let i = 0; i < beaches.length; i++) {  
             var marker = new google.maps.Marker({
@@ -106,11 +95,13 @@ function initMap() {
         }    
     });
 
-//-----------Place Town Markers----------//
-    $('#towns').click(function() {
+//--------Place Markers for the locations of the towns--------//
+    $('#towns').click(function() {    
+        
+        function clearMarkers() {
+        setMapOnAll(null);
+}
 
-        var townInfo = new google.maps.InfoWindow();
-      
         for (let i = 0; i < towns.length; i++) {             
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(towns[i][0], towns[i][1]),
@@ -129,73 +120,14 @@ function initMap() {
             })(marker, i));                    
         }      
     });
-}
-    /*
-    google.maps.event.addListener(marker, "click", (function(marker, i) {
-                return function() {
-                    townInfo.setContent(towns[i][3]);
-                    townInfo.open(map, marker);
-                }
-            })(marker, i));                    
-        }      
-    
-    
-    
-    
-    
-    
-    
-    marker.addListener(marker, "click", (function(marker, i) {
-        return function() {
-         map.setZoom(13);
-            map.setCenter(marker.getPosition());
-    //})(marker, i));
-    }
-}
-
-    /*map.addListener("center_changed", () => {
-    // 3 seconds after the center of the map has changed, pan back to the
-    // marker.
-    window.setTimeout(() => {
-      map.panTo(marker.getPosition());
-    }, 3000);
+//-----------Zooms out and recenters the map when the Zoom Out button is clicked----------------//
+    $('#zoom-out').click(function() {
+        map.setZoom(11);
+        map.setCenter(center);
     });
-    marker.addListener(marker, "click", (function(marker, i) {
-        return function() {
-         map.setZoom(13);
-            map.setCenter(marker.getPosition());
-    });
+}  
 
-    /*google.maps.event.addListener(marker, 'click', function () {
-            // do something with this marker ...
-            this.console.log("CLICK!");
-    }); */         
-
-      
-/*Google Map Marker Click Function*/
-/*google.maps.event.addListener(this.marker, 'click', (function(marker) {
     
-    return function() {
-    /*Bootstrap Modal Pop Up Open Code*/
-        /*$(".modal-title").text("This is google map..");
-        $(".modal-body").text("Modal Body");
-        $("#my-modal").modal('show');
-    }
-    })(marker));*/
-
-
-    /*$( "#opener" ).on( "click", function() {
-      $( "#dialog" ).dialog( "open" );
-    });
-  } );*/
-
-
-/*marker.addListener("click", () => {
-                map.setZoom(13);
-                map.setCenter(marker.getPosition());
-            console.log("CLICK!"); 
-            });*/
-
-//--------GSAP Commands--------//
+//--------GSAP Animations--------//
 
 gsap.from(".map-control", {duration: 2, opacity: 0, transform: "translateY(15vh)", stagger: 0.3}); 
