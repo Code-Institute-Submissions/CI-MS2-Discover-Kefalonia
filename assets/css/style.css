@@ -20,18 +20,22 @@
     text-align: center;
 }
 
-#top {
+#map-top,
+#contact-top {
     top: 10vh;
     background-color: #0756a7;
 }
 
-#bottom {
+#map-bottom,
+#contact-bottom {
     top: 15vh;
     background-color: #e27d53;
 }
 
-#top i,
-#bottom i {
+#map-top i,
+#contact-top i,
+#map-bottom i,
+#contact-bottom i {
     padding-left: 20px;
 }
 
@@ -43,6 +47,38 @@
 .bottom-active {
     transform: translateX(90px);
     color: red;
+}
+
+/*--------Social Media & Copyright---------*/
+
+#social-media {
+    position: absolute;
+    bottom: -40px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 5px 5px 5px 30px;
+    height: 80px; 
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    z-index: 4;
+    text-align: center;
+}
+
+.sm-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
 /*--------Landing Page---------*/
@@ -131,6 +167,11 @@ h1 {
     color: #fff;
     font-family: "Caesar Dressing", sans-serif;
     letter-spacing: 3px;
-    text-align: center;
-    top: 15vh;
+    /*text-align: center;*/
+    margin-top: 15vh;
+}
+
+input {
+    margin-top: 5vh;
+    width: 50%;    
 }
