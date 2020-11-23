@@ -1,3 +1,17 @@
+//---------------- Navigation Menu ----------------//
+
+$(document).ready(function() {
+    $("#home").hover(function() {
+        $("#home").toggleClass("home-active");    
+    });
+});
+
+$(document).ready(function() {
+    $("#contact").hover(function() {
+        $("#contact").toggleClass("contact-active");    
+    });
+});
+
 //---------------- Location Arrays ---------------//
 
 var beaches = [

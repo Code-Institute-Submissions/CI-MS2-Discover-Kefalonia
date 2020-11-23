@@ -4,6 +4,51 @@
     border: 1px solid red;
 }*/
 
+/*--------Navigation---------*/
+
+#side-menu a {
+    position: absolute;
+    left: -110px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 5px 5px 5px 30px;
+    width: 170px; 
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    z-index: 4;
+    text-align: center;
+}
+
+#home {
+    top: 10vh;
+    background-color: #0756a7;
+}
+
+#contact {
+    top: 15vh;
+    background-color: #e27d53;
+}
+
+#home i,
+#contact i {
+    padding-left: 20px;
+}
+
+.home-active {
+    transform: translateX(90px);
+    color: red;
+}
+
+.contact-active {
+    transform: translateX(90px);
+    color: red;
+}
+
+
+
+
+
 /*--------Landing Page---------*/
 
 #bg-img {
