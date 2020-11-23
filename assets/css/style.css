@@ -20,34 +20,30 @@
     text-align: center;
 }
 
-#home {
+#top {
     top: 10vh;
     background-color: #0756a7;
 }
 
-#contact {
+#bottom {
     top: 15vh;
     background-color: #e27d53;
 }
 
-#home i,
-#contact i {
+#top i,
+#bottom i {
     padding-left: 20px;
 }
 
-.home-active {
+.top-active {
     transform: translateX(90px);
     color: red;
 }
 
-.contact-active {
+.bottom-active {
     transform: translateX(90px);
     color: red;
 }
-
-
-
-
 
 /*--------Landing Page---------*/
 
@@ -121,5 +117,20 @@ h1 {
 }
 /*--------Contact/Booking Page-*/
 
-#contact-form {
-    background: url("assets/img/ithaca-fiskardo.jpg")
+#contact-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
+    /*background: url(assets/img/ithaca-fiskardo.jpg);*/
+}
+
+#contact-heading {
+    color: #fff;
+    font-family: "Caesar Dressing", sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    top: 15vh;
+}

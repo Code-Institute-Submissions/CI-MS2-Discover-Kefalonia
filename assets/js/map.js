@@ -1,14 +1,14 @@
 //---------------- Navigation Menu ----------------//
 
 $(document).ready(function() {
-    $("#home").hover(function() {
-        $("#home").toggleClass("home-active");    
+    $("#top").hover(function() {
+        $("#top").toggleClass("top-active");    
     });
 });
 
 $(document).ready(function() {
-    $("#contact").hover(function() {
-        $("#contact").toggleClass("contact-active");    
+    $("#bottom").hover(function() {
+        $("#bottom").toggleClass("bottom-active");    
     });
 });
 
