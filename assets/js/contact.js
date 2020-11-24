@@ -14,14 +14,9 @@ $(document).ready(function() {
 
 //-------------- Footer Items -------------------//
 
-/*$(document).ready(function() {
-    $("#top").hover(function() {
-        $("#top").toggleClass("top-active");    
-    });
-});
-
 $(document).ready(function() {
-    $("#bottom").hover(function() {
-        $("#bottom").toggleClass("bottom-active");    
+    $("#social-tab").click(function() {
+        $("#social-container").toggleClass("social-active");
+        console.log("hover");
     });
 });

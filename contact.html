@@ -24,30 +24,51 @@
     <!--Contact Form-->
     <section class="container-fluid">
         <img src="assets/img/assos.jpg" id="contact-bg" alt="">
-        <div id="contact" class="row div-wrapper d-flex justify-content-center align-items-center">            
+        <div id="contact" class="row">            
             <div id="contact-heading" class="col">
                 <h2>Contact Us</h2>
             </div>
         </div>    
-        <div class="row div-wrapper d-flex justify-content-center align-items-center">               
+        <div class="row">               
             <div id="contact-form" class="col">                
                 <form>
-                    <label for="first-name">First Name:</label><br>
-                    <input id="first-name" type="text" name="first-name" placeholder="John"><br>
-                    <label for="first-name">Last Name:</label><br>
-                    <input id="last-name" type="text" name="last-name" placeholder="Smith"><br>
-                    <label for="email-address">Email Adress:</label><br>
-                    <input id="email-address" type="email" name="first-name" placeholder="john.smith@something.com"><br> 
-                    <label for="message">Type your message:</label><br>
-                    <input id="message" type="text" name="message" placeholder="Tell us what you would like to know about Kefalonia"><br>
-                    <input type="submit" value="Submit" method="post">                
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="first-name">First Name:</label>
+                            <input id="first-name" class="form-control" type="text" name="first-name" placeholder="John" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="first-name">Last Name:</label>
+                            <input id="last-name" class="form-control" type="text" name="last-name" placeholder="Smith" required>
+                        </div>
+                    </div>    
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="email-address">Email Adress:</label>
+                            <input id="email-address" class="form-control" type="email" name="first-name" placeholder="john.smith@something.com" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="mobile">Mobile #:</label>
+                            <input id="mobile" class="form-control" type="text" name="mobile" placeholder="00 44 1234 456789" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Type your message:</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell us what you would like to know about Kefalonia" required></textarea>
+                    </div>
+                    <div class="button">
+                        <input class="contact-btn" type="submit" value="Submit" method="post">
+                    </div>                
                 </form>                                
             </div>
         </div>
     </section>
-    <footer>
-        <div id="social-media">            
+    <!--Footer Section with Social Media Links & Copyright-->
+        <div id="social-container">
+            <div id="social-tab">
                 <h5 class="uppercase">Social Media</h5>
+            </div>
+            <div id="social-media">
                 <ul class="list-inline sm-links">
                     <li class="list-inline-item">
                         <a href="#" target="_blank">
@@ -67,7 +88,7 @@
                             <span class="sr-only">LinkedIn link.</span>
                         </a>
                     </li>
-                     <li class="list-inline-item">
+                    <li class="list-inline-item">
                         <a href="#" target="_blank">
                             <i class="fab fa-pinterest" aria-hidden="true"></i>
                             <span class="sr-only">Pinterest link.</span>
@@ -85,12 +106,13 @@
                             <span class="sr-only">Youtube link.</span>
                         </a>
                     </li>
-                </ul>            
-            <div id="copyright" class="col-12">
-                <h5>Copyright 2020 Gareth John</h5>
+                </ul>
+            </div>         
+            <div id="copyright">
+                <h5>Copyright <i class="far fa-copyright"></i> 2020 Gareth John</h5>
             </div>
         </div>
-    </footer>
+    
     <!--GSAP CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>   
     <!--Javascript plugins-->

@@ -4,6 +4,36 @@
     border: 1px solid red;
 }*/
 
+/*--------Colour Palette---------*/
+
+.dark-blue {
+    background-color: #0756a7;
+}
+
+.medium-blue {
+    background-color: #60c1e7;
+}
+
+.light-blue {
+    background-color: #c3dfe6;
+}
+
+.sandy-yellow {
+    background-color: #ffc756;
+}
+
+.limestone {
+    background-color: #f1e9c1;
+}
+
+.light-pink {
+    background-color: #fee9e4;
+}
+
+.terracota {
+    background-color: #e27d53;
+}
+
 /*--------Navigation---------*/
 
 #side-menu a {
@@ -49,23 +79,43 @@
     color: red;
 }
 
-/*--------Social Media & Copyright---------*/
+/*--------FOOTER | Social Media & Copyright---------*/
 
-#social-media {
-    position: absolute;
-    bottom: -40px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 5px 5px 5px 30px;
-    height: 80px; 
+#social-container {
+    position: fixed;
+    bottom: -5rem;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: 0.3s;
+}
+
+#social-tab {
+    
+    /*bottom: -2rem;*/
+    width: 20%;
+    margin-left: auto;
+    Margin-right: auto;
+    padding: 10px;
+    height: 4rem; 
     text-decoration: none;
     font-size: 20px;
     color: white;
-    border-radius: 0 5px 5px 0;
+    background-color: #60c1e7;
+    border-radius: 5px 5px 0 0;
     z-index: 4;
     text-align: center;
 }
 
-.sm-links li a i {
+.social-media {
+    /*position: relative;*/ 
+    background-color: #0756a7;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+/*.sm-links li a i {
     width: 32px;
     height: 32px;
     padding: 12px 0;
@@ -79,6 +129,11 @@
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+}*/
+
+.social-active {
+    transform: translateY(48px);
+    color: red;
 }
 
 /*--------Landing Page---------*/
@@ -151,7 +206,7 @@ h1 {
     position: relative;
     bottom: 100;
 }
-/*--------Contact/Booking Page-*/
+/*-------- Contact Page ---*/
 
 #contact-bg {
     position: fixed;
@@ -160,18 +215,45 @@ h1 {
     min-width: 100vw;
     min-height: 100vh;
     z-index: -1;
-    /*background: url(assets/img/ithaca-fiskardo.jpg);*/
 }
 
 #contact-heading {
     color: #fff;
     font-family: "Caesar Dressing", sans-serif;
     letter-spacing: 3px;
-    /*text-align: center;*/
-    margin-top: 15vh;
+    text-align: center;
+    max-width: 70%;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(195 , 223, 230, 0.8);
+    border-radius: 0.75rem;
 }
 
-input {
-    margin-top: 5vh;
-    width: 50%;    
+#contact-form {
+    position: relative;
+    max-width: 70%;
+    margin-top: 4rem;
+    margin-left: auto;
+    Margin-right: auto;
+    margin-bottom: 20rem;    
+    background-color: rgba(195 , 223, 230, 0.8);
+    border-radius: 1rem;    
 }
+
+form {
+    padding: 1rem;
+    
+}
+
+.button {
+    text-align: center;
+}
+
+.contact-btn {
+    width: 4rem;
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+
