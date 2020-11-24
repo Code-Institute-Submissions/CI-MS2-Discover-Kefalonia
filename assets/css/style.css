@@ -83,44 +83,45 @@
 
 #social-container {
     position: fixed;
-    bottom: -5rem;
+    bottom: -4.5rem;
     width: 50vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25vw;
+    margin-right: 25vw;
     text-align: center;
     transition: 0.3s;
 }
 
-#social-tab {
-    
-    /*bottom: -2rem;*/
-    width: 20%;
+#social-tab {    
+    width: 15rem;
     margin-left: auto;
     Margin-right: auto;
     padding: 10px;
-    height: 4rem; 
+    height: 3rem; 
     text-decoration: none;
     font-size: 20px;
     color: white;
-    background-color: #60c1e7;
-    border-radius: 5px 5px 0 0;
+    background-color: #c3dfe6;
+    border-radius: 10px 10px 0 0;
     z-index: 4;
     text-align: center;
 }
 
-.social-media {
-    /*position: relative;*/ 
-    background-color: #0756a7;
-    color: #fff;
-    border-radius: 5px 5px 0 0;
+.social-active {
+    transform: translateY(-4.5rem);
+    color: red;
 }
 
-/*.sm-links li a i {
+#social-media {
+    background-color: #60c1e7;
+    color: #fff;       
+}
+
+#social-media li a i {
     width: 32px;
     height: 32px;
     padding: 12px 0;
     border-radius: 50%;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 7px;
     text-align: center;
     color: #fafafa;
@@ -129,11 +130,17 @@
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-}*/
+}
 
-.social-active {
-    transform: translateY(48px);
-    color: red;
+#copyright {    
+    background-color: #0756a7;
+}
+
+#social-media ul,
+#copyright P {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
 }
 
 /*--------Landing Page---------*/
@@ -256,4 +263,6 @@ form {
     border-radius: 15px;
 }
 
+/*---------- MEDIA QUERIES ---------*/
 
+@media
