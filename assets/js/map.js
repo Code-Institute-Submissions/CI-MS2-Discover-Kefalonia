@@ -86,7 +86,8 @@ $("#beaches").click(function() {
             return function() {                
                 $(".info-heading").text(beaches[i][2]);
                 $(".info-text").text(beaches[i][3]);
-                //map.setZoon(15);
+                map.setZoom(15);
+                map.setCenter(marker.getPosition());
             }
         })(marker, i));
     }
@@ -117,7 +118,8 @@ $("#towns").click(function() {
             return function() {                
                 $(".info-heading").text(towns[i][2]);
                 $(".info-text").text(towns[i][3]);
-                //map.setZoon(15);
+                map.setZoom(15);
+                map.setCenter(marker.getPosition());
             }
         })(marker, i));
     }
@@ -129,7 +131,7 @@ function clearMarkers() {
   }
   markers = [];
 }
-//-----------Place Activity Markers-----------------//
+//-----------Place Activity Markers and clear out old markers-----------------//
 
 $("#activities").click(function() {
     clearMarkers();
@@ -142,13 +144,14 @@ $("#activities").click(function() {
         });
 
         markers.push(marker);
-
+//------------ Renders title and text into the html window and zooms into the marker position-------------//
         google.maps.event.addListener(marker,"click", (function(marker, i) {
             return function() {                
                 $(".info-heading").text(active[i][2]);
                 $(".info-text").text(active[i][3]);
-                //map.setZoon(15);
-            }
+                map.setZoom(15);
+                map.setCenter(marker.getPosition());
+            }            
         })(marker, i));
     }
 })
@@ -159,7 +162,15 @@ function clearMarkers() {
   }
   markers = [];
 }
-  
+
+//-------Zoom out & Recenter when clicking the Zoomout button----------//
+
+$("#zoom-out").click(function() {
+    console.log("click");
+    map.setZoom(11);
+    map.setCenter({lat: 38.270, lng: 20.575});
+})
+
 //--------Change the map zoom dependant on the device window size----------//
     var responsiveZoom = (window.innerWidth < 768) ? 7 : 11;
 
@@ -169,6 +180,6 @@ function clearMarkers() {
             map.setZoom(responsiveZoom);
     });  
 
-
-//--------Weather Data----------//
 }
+//--------Weather Data----------//
+
