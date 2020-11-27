@@ -104,6 +104,11 @@
     text-align: center;
 }
 
+#social-trigger {
+    text-decoration: none;
+    color: #fff;
+}
+
 .social-active {
     transform: translateY(-4.5rem);
     color: red;
@@ -183,6 +188,7 @@ h1 {
 
 #info-detail p {
     font-family: "Raleway", sans-serif;
+    font-size: 1.25rem;
 }
 
 /*--------Google Map Window-------*/
@@ -223,7 +229,7 @@ h1 {
     z-index: -1;
 }
 
-#contact-heading {
+.page-header {
     position: relative;
     top: 5%;
     font-family: "Caesar Dressing", sans-serif;

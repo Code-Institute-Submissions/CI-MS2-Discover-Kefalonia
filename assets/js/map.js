@@ -1,4 +1,4 @@
-//---------------- Navigation Menu ----------------//
+//---------------- Navigation Menu Items ----------------//
 
 $(document).ready(function() {
     $("#map-top").hover(function() {
@@ -9,6 +9,15 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#map-bottom").hover(function() {
         $("#map-bottom").toggleClass("bottom-active");    
+    });
+});
+
+//--------------- Information Button--------------//
+
+$(document).ready(function() {
+    $("#about").click(function() {
+        console.log("BOOM!");
+        $("#info-text").fadeIn.addClass(3000);
     });
 });
 
