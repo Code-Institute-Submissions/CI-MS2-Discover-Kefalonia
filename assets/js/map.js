@@ -12,15 +12,6 @@ $(document).ready(function() {
     });
 });
 
-//--------------- Information Button--------------//
-
-$(document).ready(function() {
-    $("#about").click(function() {
-        console.log("BOOM!");
-        $("#info-text").fadeIn.addClass(3000);
-    });
-});
-
 //---------------- Location Arrays ---------------//
 
 var beaches = [
