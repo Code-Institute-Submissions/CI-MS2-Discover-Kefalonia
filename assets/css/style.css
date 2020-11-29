@@ -228,11 +228,18 @@ h1 {
     height: 62rem;
 }
 
+#location-window {
+    background-color: #aadaff;
+}
+
 #img-box img {
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 #beach {

@@ -28,24 +28,24 @@ var beaches = [
 ];
 
 var towns = [
-    [38.1732, 20.4900, "Argostolion", "The modern cosmopolitan capital city (more like a large town) is a lively place with good nightlife that combines tourism and local life with plenty to offer culture vultures. Visitors can enjoy a walk alkong the palm lined waterfront promenade, and enjoy a meal in one of the many bars and tavernas. Don't miss the Loggerhead turtles which feed in Koutavos lagoon."],
-    [38.1640, 20.4826, "Lassi", "Located just 6km from the airport and 3km from the capital city of Argostoli (aka Argostolion) this bustling South coast resort village is popular with first time visitors to the island. It has numerous hotels and self-catering apartments to choose from plus a mile long stretch of tavernas, cafes, bars, souvenir shops, mini markets, and car rental and excursion offices."],
-    [38.4582, 20.5770, "Fiskardo", "This former fishing village on the North end of Kefalonia has become an upmarket holiday resort and is a true gem of a place. Its backstreets contain old pastel-painted Venetian buildings. A selection of modern cafes, bars, and boutique shops can be found in the new section, and the harbour is packed full of yachts as well as traditional fishing boats."],
-    [38.3782, 20.5401, "Assos", "This tiny secluded village with its colourful houses nestled on the craggy hillside of a picturesque peninsula is surrounded by pine and cypress trees and is ideal for couples who seek downtime to rest, relax, and recuperate on a romantic getaway, purposefully seeking a place without any nightlife."],
-    [38.2514, 20.6472, "Sami", "This large and lively modern coastal town is what you might call a ‘real Greek town’ enabling tourists to have a pleasant stay and locals to go about daily life. Modern as well as traditional cafes, bars, and tavernas can be found on the harbour where the fishermen still unload their catch of the day."],
-    [38.2022, 20.4370, "Lixouri", "Kefalonia’s second largest city feels a bit more upmarket than Argostoli and is very picturesque with its tree-lined streets and small bridges that allow the stream that splits the city in two to be crossed.Lixouri provides a little something for everyone whether staying in a hotel, a small studio apartment, or larger holiday villa."],
-    [38.3031, 20.5978, "Agia Effimia", "Agia Efimia is a picturesque coastal village 31.5 km northeast of Argostoli. It lies around the natural bay and it is home to a small and lovely port where fishing and excursion boats moor. Those with access to a boat should definitely explore its pristine isolated beaches and stunning coves."],
-    [38.1540, 20.7713, "Poros", "Located on the south east of the island, it is surrounded by green forests and nestled between Mount Atros and Mount Pahni. Picturesque Poros is a working port divided into 3 bays with an old harbour and new harbour. Poros is good for independent travellers whether backpackers on a budget or older couples who enjoy nature and walking."],
-    [38.0741, 20.7968, "Skala", "The most popular holiday resort on the island, the lively yet lovely South coast village of Skala provides couples and families with a typical beach resort holiday whilst still retaining some of its original Greek charm. A well-organized beach is backed by a pine forest and is covered in sandy shingle with lots of rock formations."],
-    [38.1157, 20.5223, "Svoronata", "This traditional village in the South West has managed to combine its old world charm with tourism. Despite being close to the airport, it has not become an overly developed resort and allows visitors to enjoy a peaceful holiday in picturesque surroundings."]
+    [38.1732, 20.4900, "Argostolion", "The modern cosmopolitan capital city (more like a large town) is a lively place with good nightlife that combines tourism and local life with plenty to offer culture vultures. Visitors can enjoy a walk alkong the palm lined waterfront promenade, and enjoy a meal in one of the many bars and tavernas. Don't miss the Loggerhead turtles which feed in Koutavos lagoon.", "<img src='assets/img/towns/town-argo.jpg' alt='Argostolion'>"],
+    [38.1640, 20.4826, "Lassi", "Located just 6km from the airport and 3km from the capital city of Argostoli (aka Argostolion) this bustling South coast resort village is popular with first time visitors to the island. It has numerous hotels and self-catering apartments to choose from plus a mile long stretch of tavernas, cafes, bars, souvenir shops, mini markets, and car rental and excursion offices.", "<img src='assets/img/towns/town-lassi.jpg' alt='Lassi'>"],
+    [38.4582, 20.5770, "Fiskardo", "This former fishing village on the North end of Kefalonia has become an upmarket holiday resort and is a true gem of a place. Its backstreets contain old pastel-painted Venetian buildings. A selection of modern cafes, bars, and boutique shops can be found in the new section, and the harbour is packed full of yachts as well as traditional fishing boats.", "<img src='assets/img/towns/town-fisk.jpg' alt='Fiskardo'>"],
+    [38.3782, 20.5401, "Assos", "This tiny secluded village with its colourful houses nestled on the craggy hillside of a picturesque peninsula is surrounded by pine and cypress trees and is ideal for couples who seek downtime to rest, relax, and recuperate on a romantic getaway, purposefully seeking a place without any nightlife.", "<img src='assets/img/towns/town-assos.jpg' alt='Assos'>"],
+    [38.2514, 20.6472, "Sami", "This large and lively modern coastal town is what you might call a ‘real Greek town’ enabling tourists to have a pleasant stay and locals to go about daily life. Modern as well as traditional cafes, bars, and tavernas can be found on the harbour where the fishermen still unload their catch of the day.", "<img src='assets/img/towns/town-sami.jpg' alt='Sami'>"],
+    [38.2022, 20.4370, "Lixouri", "Kefalonia’s second largest city feels a bit more upmarket than Argostoli and is very picturesque with its tree-lined streets and small bridges that allow the stream that splits the city in two to be crossed.Lixouri provides a little something for everyone whether staying in a hotel, a small studio apartment, or larger holiday villa.", "<img src='assets/img/towns/town-lixo.jpg' alt='Lixouri'>"],
+    [38.3031, 20.5978, "Agia Effimia", "Agia Efimia is a picturesque coastal village 31.5 km northeast of Argostoli. It lies around the natural bay and it is home to a small and lovely port where fishing and excursion boats moor. Those with access to a boat should definitely explore its pristine isolated beaches and stunning coves.", "<img src='assets/img/towns/town-agia.jpg' alt='Agia Efimia'>"],
+    [38.1540, 20.7713, "Poros", "Located on the south east of the island, it is surrounded by green forests and nestled between Mount Atros and Mount Pahni. Picturesque Poros is a working port divided into 3 bays with an old harbour and new harbour. Poros is good for independent travellers whether backpackers on a budget or older couples who enjoy nature and walking.", "<img src='assets/img/towns/town-poros.jpg' alt='Poros'>"],
+    [38.0741, 20.7968, "Skala", "The most popular holiday resort on the island, the lively yet lovely South coast village of Skala provides couples and families with a typical beach resort holiday whilst still retaining some of its original Greek charm. A well-organized beach is backed by a pine forest and is covered in sandy shingle with lots of rock formations.", "<img src='assets/img/towns/town-skala.jpg' alt='Skala'>"],
+    
 ];
 
 var active = [
-    [38.12273, 20.61336, "Sea Kayaking Kefalonia", "Run by Yvonne and Pavlos, Sea Kayaking Kefalonia is a sea kayaking outfitter who organize day and multi-day kayak trips as well as sea kayak courses in the crystal clear and warm mediterranean waters of the Ionian."],
-    [38.16252, 20.59040, "Robola Winery", "In the heart of the Robola Viticulture Zone, dozens of viticulturists from Omala and the surrounding areas (Troiannata, Vlachata, Mousata, Faraklata, Dilinata) created in 1982 the Agricultural Wine Cooperative of Producers of Robola Kefallinia but to try to protect Kefalonian vineyard."],
-    [38.10546, 20.53011, "Wild Nature Expeditions", "Outdoor activities for all tastes skills and ages. Caving | Rock Climbing | Hiking | Canyoning | Stargazing | Mountain biking | Paragliding | Jeep Safari's"],
-    [38.25702, 20.62353, "Melissani Cave","Situated just outside of Sami, this natural wonder has been open to visitors since 1963, and gives you a unique view of a limestone cave holding a sunlit lake"],
-    [38.21405, 20.64759, "Bavarian Horse Riding","Enjoy the mountains, canyons, valleys, olive groves and the virgin nature of Kefalonia on horseback. We'll show you all these places on our sturdy, sure-footed and well trained Haflingers and Bavarian warm blood horses"]
+    [38.12273, 20.61336, "Sea Kayaking Kefalonia", "Run by Yvonne and Pavlos, Sea Kayaking Kefalonia is a sea kayaking outfitter who organize day and multi-day kayak trips as well as sea kayak courses in the crystal clear and warm mediterranean waters of the Ionian.", "<img src='assets/img/active/active-kayak.jpg' alt='Sea kayaking'>"],
+    [38.16252, 20.59040, "Robola Winery", "In the heart of the Robola Viticulture Zone, dozens of viticulturists from Omala and the surrounding areas (Troiannata, Vlachata, Mousata, Faraklata, Dilinata) created in 1982 the Agricultural Wine Cooperative of Producers of Robola Kefallinia but to try to protect Kefalonian vineyard.", "<iframe src='https://www.youtube.com/watch?v=c5gietl8naA' alt='Robola Co-operative'>"],
+    [38.10546, 20.53011, "Wild Nature Expeditions", "Outdoor activities for all tastes skills and ages. Caving | Rock Climbing | Hiking | Canyoning | Stargazing | Mountain biking | Paragliding | Jeep Safari's", "<img src='assets/img/active/active-para.jpg' alt='Paragliding'>"],
+    [38.25702, 20.62353, "Melissani Cave","Situated just outside of Sami, this natural wonder has been open to visitors since 1963, and gives you a unique view of a limestone cave holding a sunlit lake", "<img src='assets/img/active/melis-cave.jpg' alt='Melissani Cave'>"],
+    [38.21405, 20.64759, "Bavarian Horse Riding","Enjoy the mountains, canyons, valleys, olive groves and the virgin nature of Kefalonia on horseback. We'll show you all these places on our sturdy, sure-footed and well trained Haflingers and Bavarian warm blood horses", "<img src='assets/img/active/active-horse.jpg' alt='Bavarian horse riding'>"]
 ];
 
 //var marker, i;
@@ -86,7 +86,7 @@ $("#beaches").click(function() {
             return function() {                
                 $(".info-heading").text(beaches[i][2]);
                 $(".info-text").text(beaches[i][3]);
-                $("#img-box").html(beaches[i][4]).style.objectFit = "contain";
+                $("#img-box").html(beaches[i][4]);
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
             }
@@ -120,6 +120,7 @@ $("#towns").click(function() {
             return function() {                
                 $(".info-heading").text(towns[i][2]);
                 $(".info-text").text(towns[i][3]);
+                $("#img-box").html(towns[i][4]);
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
             }
@@ -152,6 +153,7 @@ $("#activities").click(function() {
             return function() {                
                 $(".info-heading").text(active[i][2]);
                 $(".info-text").text(active[i][3]);
+                $("#img-box").html(active[i][4]);
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
             }            
