@@ -86,7 +86,7 @@ $("#beaches").click(function() {
             return function() {                
                 $(".info-heading").text(beaches[i][2]);
                 $(".info-text").text(beaches[i][3]);
-                $("#img-box").html(beaches[i][4]);
+                $("#img-box").html(beaches[i][4]).style.objectFit = "contain";
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
             }
