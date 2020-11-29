@@ -22,7 +22,7 @@ $(document).ready(function() {
 });
 
 
-//------------ JS Deliver Email API ---------------//
+//------------ EmailJS Email API ---------------//
 
 function sendMail(contactForm) {
     emailjs.send("gmail", "gareth", {
