@@ -186,5 +186,24 @@ $("#zoom-out").click(function() {
     });  
 
 }
-//--------Weather Data----------//
+//--------Weather Data adapted from Rapidapi.com----------//
 
+fetch("https://climate-data.p.rapidapi.com/api/getclimatedata?LANG=en&LAT=38.181&LON=20.49", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "51badd8547msh2019515628aaf86p1290f5jsn22972d92b09f",
+		"x-rapidapi-host": "climate-data.p.rapidapi.com"
+	}
+})
+    .then(response => response.json())
+    .then(data => console.log(data));
+
+/*.catch(err => {
+	console.error(err);
+});*/
+
+//var data = JSON.parse(this.response)
+
+const app = document.getElementById("img-box");
+const chart = document.createElement("canvas");
+chart.setAttribute("id", "my-chart")
