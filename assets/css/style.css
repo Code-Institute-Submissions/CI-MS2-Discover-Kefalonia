@@ -212,12 +212,14 @@ h1 {
     text-align: center;
 }
 
-.map-control {
+.map-button {
     height: 4rem;
     width: 4rem;
     text-align: center;
+    margin: 3%;
     font-size: 2rem;
-    border-radius: 50%;
+    border-radius: 1rem;
+    box-shadow: inset 0 1px 0 #3298d9, 0 10px 0 #0756a7;
 }
 
 #map {
@@ -246,6 +248,13 @@ h1 {
     position: relative;
     bottom: 100;
 }
+
+#temp-chart {
+    height: 75%;
+    width: 80%;
+    margin: 0 auto;
+}
+
 /*-------- Contact Page ---*/
 
 #contact-bg {

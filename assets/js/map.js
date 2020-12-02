@@ -48,11 +48,11 @@ var active = [
     [38.21405, 20.64759, "Bavarian Horse Riding","Enjoy the mountains, canyons, valleys, olive groves and the virgin nature of Kefalonia on horseback. We'll show you all these places on our sturdy, sure-footed and well trained Haflingers and Bavarian warm blood horses", "<img src='assets/img/active/active-horse.jpg' alt='Bavarian horse riding'>"]
 ];
 
-//var marker, i;
 var markers = [];
 var map;   
 
 //-------Map Initialisation--------//
+
 function initMap() {
 
     map = new google.maps.Map(document.getElementById("map"), {
@@ -134,6 +134,7 @@ function clearMarkers() {
   }
   markers = [];
 }
+
 //-----------Place Activity Markers and clear out old markers-----------------//
 
 $("#activities").click(function() {
@@ -148,7 +149,9 @@ $("#activities").click(function() {
         });
 
         markers.push(marker);
+
 //------------ Renders title and text into the html window and zooms into the marker position-------------//
+
         google.maps.event.addListener(marker,"click", (function(marker, i) {
             return function() {                
                 $(".info-heading").text(active[i][2]);
@@ -177,6 +180,7 @@ $("#zoom-out").click(function() {
 })
 
 //--------Change the map zoom dependant on the device window size----------//
+
     var responsiveZoom = (window.innerWidth < 768) ? 7 : 11;
 
     window.addEventListener("resize", function() {
@@ -186,24 +190,73 @@ $("#zoom-out").click(function() {
     });  
 
 }
-//--------Weather Data adapted from Rapidapi.com----------//
+//-------- Retrieve Weather Data adapted from using Rapidapi.com ----------//
 
-fetch("https://climate-data.p.rapidapi.com/api/getclimatedata?LANG=en&LAT=38.181&LON=20.49", {
-	"method": "GET",
-	"headers": {
+const fetchParams = {
+    method: "GET",
+    mode: "cors",
+    cache: "default",
+	headers: {
 		"x-rapidapi-key": "51badd8547msh2019515628aaf86p1290f5jsn22972d92b09f",
-		"x-rapidapi-host": "climate-data.p.rapidapi.com"
-	}
-})
-    .then(response => response.json())
-    .then(data => console.log(data));
+        "x-rapidapi-host": "climate-data.p.rapidapi.com"
+    }
+};
 
-/*.catch(err => {
-	console.error(err);
-});*/
 
-//var data = JSON.parse(this.response)
+const url = "https://climate-data.p.rapidapi.com/api/getclimatedata?LANG=en&LAT=38.181&LON=20.49";
 
-const app = document.getElementById("img-box");
-const chart = document.createElement("canvas");
-chart.setAttribute("id", "my-chart")
+
+fetch(url, fetchParams)
+    .then (response => {
+        if (!response.ok) {
+            throw Error("There was an ERROR");
+        }
+        return response.json();
+    })
+    .then (data => {
+        const climate = data.ClimateDataMonth;        
+        console.log(climate);
+        let climateData = [];
+        climate.forEach(function(month) {
+            climateData.push([month.TIME, parseInt(month.temp)])            
+        });
+        var chartOneData = {
+            type: "bar",
+            title: {
+                text: "Average Monthly Tepreature c/o WeatherOnline API",
+                adjustLayout: true
+            },
+            tooltip: {
+                text: 'Month: %kt<br>Temp: %vv°C'
+            },
+            scaleX: {
+                label: {
+                    text: "Month"
+                },   
+                item: {
+                    angle: "-45"
+                }
+            },
+            scaleY: {
+                label: {
+                    text: "Temp °C"
+                }
+                },
+            series: [{
+                    values: climateData
+                }],
+            plotarea: {
+                margin: "dynamic"
+            }
+        };
+        zingchart.render({
+            id: "chart-one",
+            data: chartOneData,
+            height: "100%",
+            width: "100%"
+        });
+        })            
+    .catch(error => {
+        console.log("There was an ERROR retrieving data from WeatherOnline API", error);
+    });
+     
