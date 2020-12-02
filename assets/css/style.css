@@ -230,9 +230,9 @@ h1 {
     height: 62rem;
 }
 
-#location-window {
+/*#location-window {
     background-color: #aadaff;
-}
+}*/
 
 #img-box img {
     width: auto;
@@ -249,10 +249,11 @@ h1 {
     bottom: 100;
 }
 
-#temp-chart {
-    height: 75%;
-    width: 80%;
+#chart-one {
+    height: 400px;
+    width: 400pz;
     margin: 0 auto;
+    z-index: 1000;
 }
 
 /*-------- Contact Page ---*/

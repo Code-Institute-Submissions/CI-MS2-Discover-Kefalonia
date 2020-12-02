@@ -214,49 +214,48 @@ fetch(url, fetchParams)
         return response.json();
     })
     .then (data => {
-        const climate = data.ClimateDataMonth;        
-        console.log(climate);
-        let climateData = [];
-        climate.forEach(function(month) {
-            climateData.push([month.TIME, parseInt(month.temp)])            
+        const climateData = data.ClimateDataMonth;        
+        console.log(climateData);        
+        const monthData = [];
+            climateData.forEach(function(item) {
+            monthData.push(item.TIME)
+            console.log(item.TIME);            
         });
-        var chartOneData = {
-            type: "bar",
-            title: {
-                text: "Average Monthly Tepreature c/o WeatherOnline API",
-                adjustLayout: true
-            },
-            tooltip: {
-                text: 'Month: %kt<br>Temp: %vv°C'
-            },
-            scaleX: {
-                label: {
-                    text: "Month"
-                },   
-                item: {
-                    angle: "-45"
-                }
-            },
-            scaleY: {
-                label: {
-                    text: "Temp °C"
-                }
+        const tempData = [];
+            climateData.forEach(function(items) {
+            tempData.push(parseInt(items.temp))
+            console.log(items.temp);
+        });
+        makeChart();       
+        function makeChart() {
+            var ctx = document.getElementById('chart-one');
+            const myChart = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: monthData,
+                    datasets: [{
+                        label: "Avg Monthly Temp (°C)",
+                        data: tempData,
+                        backgroundColor: "#e27d53",
+                        borderColor: "#000",
+                        borderWidth: 1,
+                    }]
                 },
-            series: [{
-                    values: climateData
-                }],
-            plotarea: {
-                margin: "dynamic"
-            }
-        };
-        zingchart.render({
-            id: "chart-one",
-            data: chartOneData,
-            height: "100%",
-            width: "100%"
-        });
-        })            
+                options: {
+                    scales: {
+                        yaxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        }         
+    console.log(tempData);
+    console.log(monthData);    
+    })
     .catch(error => {
         console.log("There was an ERROR retrieving data from WeatherOnline API", error);
-    });
-     
+});
+
