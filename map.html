@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--ZingChart CDN-->
-<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
 <!--Chart.js CDN-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
 <!--JQuery script-->
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <!--Bootstrap CDN-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!--FontAwsome CDN-->
@@ -35,15 +34,27 @@
             </div>
             <div class="col-lg-5 container map-links">
                 <div class="row">
-                    <div class="col-12">
-                        <button id="beaches" class="map-button"><i class="fas fa-umbrella-beach"></i></button>
-                        <button id="towns" class="map-button"><i class="fas fa-city"></i></button>                        
-                        <button id="activities" class="map-button"><i class="fas fa-hiking"></i></button>
+                    <div class="col-2 button-box">
                         <button id="weather" class="map-button"><i class="fas fa-cloud-sun"></i></button>
-                        <button id="zoom-out" class="map-button"><i class="fas fa-search-minus"></i></button>                        
                     </div>
+                    <div class="col-2 button-box">
+                        <button id="beaches" class="map-button"><i class="fas fa-umbrella-beach"></i></button>
+                    </div>
+                    <div class="col-2 button-box">
+                        <button id="towns" class="map-button"><i class="fas fa-city"></i></button>
+                    </div>
+                    <div class="col-2 button-box">
+                        <button id="activities" class="map-button"><i class="fas fa-hiking"></i></button>
+                    </div>
+                    
+                    <div class="col-2 button-box">
+                        <button id="zoom-out" class="map-button"><i class="fas fa-search-minus"></i></button>
+                    </div>                        
+                </div>
+                <div class="row">
                     <div class="col-12">
-                        <div id="location-window">
+                        <div id="info">
+                            <div id="location-window">
                             <div class="info-img"></div>
                             <div id="info-detail">
                                 <h3 class="info-heading">
@@ -51,10 +62,9 @@
                                 </h3>
                                 <div class="row">
                                     <div id="img-box" class="img-fluid">
-                                                                      
+                                        <canvas id="chart-one"></canvas>                               
                                     </div>
-                                    <canvas id="chart-one">                                    
-                                    </canvas>
+                                    
                                 </div>
                                 <p class="info-text">
                                 The exotic island of Kefalonia is the largest and one of the most beautiful Greek islands. Chances are you’ve already seen Kefalonia 
@@ -64,8 +74,8 @@
                                 Kefalonia is one of the best destinations in Greece for nature lovers!     
                                 </p>                                
                             </div>                            
-                        </div>
-                                               
+                            </div>
+                        </div>                
                     </div>
                 </div>
             </div>      

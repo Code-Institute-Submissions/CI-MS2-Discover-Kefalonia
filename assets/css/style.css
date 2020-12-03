@@ -192,7 +192,7 @@ h1 {
 #location-window {
     background-color: #fff;
     height: 50vh;
-    margin: 10%;    
+    margin: 10% 5%;    
 }
 
 #info-detail {
@@ -210,6 +210,10 @@ h1 {
 .map-links {
     background-color: #aadaff;
     text-align: center;
+}
+
+.button-box {
+    margin-left: auto;
 }
 
 .map-button {
@@ -230,9 +234,9 @@ h1 {
     height: 62rem;
 }
 
-/*#location-window {
+#location-window {
     background-color: #aadaff;
-}*/
+}
 
 #img-box img {
     width: auto;
@@ -250,10 +254,11 @@ h1 {
 }
 
 #chart-one {
-    height: 400px;
-    width: 400pz;
-    margin: 0 auto;
-    z-index: 1000;
+    width: 400px;
+    height: 400px;        
+    padding: 1rem;
+    margin-bottom: 1rem;
+    z-index: 1;
 }
 
 /*-------- Contact Page ---*/

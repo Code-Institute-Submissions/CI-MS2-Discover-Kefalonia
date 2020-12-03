@@ -1,4 +1,4 @@
-//---------------- Navigation Menu Items ----------------//
+//================== Navigation Menu Items ================//
 
 $(document).ready(function() {
     $("#map-top").hover(function() {
@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
 });
 
-//---------------- Location Arrays ---------------//
+//================ Location Arrays ==================//
 
 var beaches = [
     [38.322903, 20.453183, "Fteri", "Fteri beach is heaven! Turquoise waters, amazing dramatic coastline, unique scenery, all combined create a magical environment that you should not miss.This is one of the most beautiful and hidden beaches of Kefalonia, near Lixouri city. Equip yourself with umbrella & bottles of water because the beach is completely devoid of services.", "<img src='assets/img/beaches/beach-fteri.jpg' alt='Fteri beach'>"],
@@ -51,7 +51,7 @@ var active = [
 var markers = [];
 var map;   
 
-//-------Map Initialisation--------//
+//============= Map Initialisation ==============//
 
 function initMap() {
 
@@ -66,7 +66,7 @@ var infowindow = new google.maps.InfoWindow();
 var marker, i;
 var markers = [];
 
-//--------Place Markers for the locations of the beaches and clear out previous markers--------//
+//========== Place Markers for the locations of the beaches and clear out previous markers =======//
 
 $("#beaches").click(function() {
     clearMarkers();
@@ -170,17 +170,19 @@ function clearMarkers() {
   }
   markers = [];
 }
-
+}
 //-------Zoom out & Recenter when clicking the Zoomout button----------//
 
-$("#zoom-out").click(function() {
-    console.log("click");
-    map.setZoom(11);
-    map.setCenter({lat: 38.270, lng: 20.575});
+$("document").ready(function() {
+    $("#zoom-out").click(function() {    
+        map.setZoom(11);
+        map.setCenter({lat: 38.270, lng: 20.575});
+    });
 })
 
 //--------Change the map zoom dependant on the device window size----------//
 
+$("document").ready(function() {
     var responsiveZoom = (window.innerWidth < 768) ? 7 : 11;
 
     window.addEventListener("resize", function() {
@@ -188,9 +190,9 @@ $("#zoom-out").click(function() {
         else if (window.innerWidth > 768) responsiveZoom = 11
             map.setZoom(responsiveZoom);
     });  
+})
 
-}
-//-------- Retrieve Weather Data adapted from using Rapidapi.com ----------//
+//======== Retrieve Weather Data adapted from using Rapidapi.com ==========//
 
 const fetchParams = {
     method: "GET",
@@ -202,9 +204,7 @@ const fetchParams = {
     }
 };
 
-
 const url = "https://climate-data.p.rapidapi.com/api/getclimatedata?LANG=en&LAT=38.181&LON=20.49";
-
 
 fetch(url, fetchParams)
     .then (response => {
@@ -226,8 +226,11 @@ fetch(url, fetchParams)
             tempData.push(parseInt(items.temp))
             console.log(items.temp);
         });
-        makeChart();       
-        function makeChart() {
+//============ Charts the Temperature Data from WeatherOnline.co.uk using Chart.JS ============//        
+        
+        $("#weather").click(function() {
+            $(".info-heading").text("Typical Weather");
+            $(".info-text").text("Kefalonia is the largest Greek island and enjoys a warm Mediterranean climate with sizzling temperatures and plenty of sunshine throughout the year. Many consider the Ionian climate of Kefalonia to be near perfection and the main tourist season begins as early as May, when temperatures climb to around 25°C / 77°F; and ends in October. The busiest months are July and August which cn see temperatures rise above 30°C / 86°F.");
             var ctx = document.getElementById('chart-one');
             const myChart = new Chart(ctx, {
                 type: "bar",
@@ -236,7 +239,7 @@ fetch(url, fetchParams)
                     datasets: [{
                         label: "Avg Monthly Temp (°C)",
                         data: tempData,
-                        backgroundColor: "#e27d53",
+                        backgroundColor: "rgba(226, 125, 83, 0.2)",
                         borderColor: "#000",
                         borderWidth: 1,
                     }]
@@ -245,15 +248,15 @@ fetch(url, fetchParams)
                     scales: {
                         yaxes: [{
                             ticks: {
+                                suggestedMin: 0,
+                                suggestedMax: 30,
                                 beginAtZero: true
                             }
                         }]
                     }
                 }
-            });
-        }         
-    console.log(tempData);
-    console.log(monthData);    
+            });            
+        });
     })
     .catch(error => {
         console.log("There was an ERROR retrieving data from WeatherOnline API", error);
