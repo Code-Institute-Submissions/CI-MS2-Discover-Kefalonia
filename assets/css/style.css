@@ -253,12 +253,20 @@ h1 {
     bottom: 100;
 }
 
-#chart-one {
-    width: auto;
-    height: auto;        
-    padding: 1rem;
-    margin-bottom: 1rem;
-    z-index: 1;
+.chart-container {
+    position: relative;
+    height: 30vh;
+    width: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+div.mousescroll {
+    overflow: hidden;
+}
+div.mousescroll:hover {
+    overflow-y: scroll;
 }
 
 /*-------- Contact Page ---*/

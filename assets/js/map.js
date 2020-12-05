@@ -51,7 +51,7 @@ var active = [
     [38.12273, 20.61336, "Sea Kayaking Kefalonia", "Run by Yvonne and Pavlos, Sea Kayaking Kefalonia is a sea kayaking outfitter who organize day and multi-day kayak trips as well as sea kayak courses in the crystal clear and warm mediterranean waters of the Ionian.", "<img src='assets/img/active/active-kayak.jpg' alt='Sea kayaking'>"],
     [38.16252, 20.59040, "Robola Winery", "In the heart of the Robola Viticulture Zone, dozens of viticulturists from Omala and the surrounding areas (Troiannata, Vlachata, Mousata, Faraklata, Dilinata) created in 1982 the Agricultural Wine Cooperative of Producers of Robola Kefallinia but to try to protect Kefalonian vineyard.", "<img src='assets/img/active/robola.jpg' alt='Robola Wine'>"],
     [38.10546, 20.53011, "Wild Nature Expeditions", "Outdoor activities for all tastes skills and ages. Caving | Rock Climbing | Hiking | Canyoning | Stargazing | Mountain biking | Paragliding | Jeep Safari's", "<img src='assets/img/active/active-para.jpg' alt='Paragliding'>"],
-    [38.25702, 20.62353, "Melissani Cave","Situated just outside of Sami, this natural wonder has been open to visitors since 1963, and gives you a unique view of a limestone cave holding a sunlit lake", "<img src='assets/img/active/melis-cave.jpg' alt='Melissani Cave'>"],
+    [38.25702, 20.62353, "Melissani Cave","Situated just outside of Sami, this natural wonder has been open to visitors since 1963, and gives you a unique view of a limestone cave holding a breathtaking sunlit lake. the waters which feed this natural wonder travel through the rocks all of the way from Argostoli", "<img src='assets/img/active/melis-cave.jpg' alt='Melissani Cave'>"],
     [38.21405, 20.64759, "Bavarian Horse Riding","Enjoy the mountains, canyons, valleys, olive groves and the virgin nature of Kefalonia on horseback. We'll show you all these places on our sturdy, sure-footed and well trained Haflingers and Bavarian warm blood horses", "<img src='assets/img/active/active-horse.jpg' alt='Bavarian horse riding'>"]
 ];
 
@@ -67,8 +67,6 @@ function initMap() {
         zoom: 11,        
         MapTypeID: "satellite"               
     });    
-
-var infowindow = new google.maps.InfoWindow();
 
 var marker, i;
 var markers = [];
@@ -178,7 +176,7 @@ function clearMarkers() {
   markers = [];
 }
 }
-//-------Zoom out & Recenter when clicking the Zoomout button----------//
+//=========== Zoom out & Recenter when clicking the Zoomout button ==========//
 
 $("document").ready(function() {
     $("#zoom-out").click(function() {    
@@ -187,7 +185,7 @@ $("document").ready(function() {
     });
 })
 
-//--------Change the map zoom dependant on the device window size----------//
+//========== Change the map zoom dependant on the device window size ========//
 
 $("document").ready(function() {
     var responsiveZoom = (window.innerWidth < 768) ? 7 : 11;
@@ -239,7 +237,7 @@ fetch(url, fetchParams)
             $(".info-heading").text("Typical Weather");
             $(".info-text").text("Kefalonia is the largest Greek island and enjoys a warm Mediterranean climate with sizzling temperatures and plenty of sunshine throughout the year. Many consider the Ionian climate of Kefalonia to be near perfection and the main tourist season begins as early as May, when temperatures climb to around 25°C / 77°F; and ends in October. The busiest months are July and August which cn see temperatures rise above 30°C / 86°F.");
             $("#img-box").html("<canvas id='chart-one'></canvas>");
-            var ctx = document.getElementById('chart-one');
+            var ctx = document.getElementById("chart-one");
             const myChart = new Chart(ctx, {
                 type: "bar",
                 data: {
@@ -254,7 +252,7 @@ fetch(url, fetchParams)
                 },
                 options: {
                     scales: {
-                        yaxes: [{
+                        yAxes: [{
                             ticks: {
                                 min: 0,
                                 max: 30,
