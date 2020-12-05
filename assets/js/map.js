@@ -237,7 +237,11 @@ fetch(url, fetchParams)
             $(".info-heading").text("Typical Weather");
             $(".info-text").text("Kefalonia is the largest Greek island and enjoys a warm Mediterranean climate with sizzling temperatures and plenty of sunshine throughout the year. Many consider the Ionian climate of Kefalonia to be near perfection and the main tourist season begins as early as May, when temperatures climb to around 25°C / 77°F; and ends in October. The busiest months are July and August which cn see temperatures rise above 30°C / 86°F.");
             $("#img-box").html("<canvas id='chart-one'></canvas>");
+<<<<<<< HEAD
             var ctx = document.getElementById("chart-one");
+=======
+            var ctx = document.getElementById('chart-one');
+>>>>>>> 43b05bcfaa7ad98743d4fee52d6f82d27e908d56
             const myChart = new Chart(ctx, {
                 type: "bar",
                 data: {
