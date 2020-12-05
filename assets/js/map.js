@@ -11,7 +11,14 @@ $(document).ready(function() {
         $("#map-bottom").toggleClass("bottom-active");    
     });
 });
+//================ About Data =======================//
 
+$("").ready(function() {
+    $(".info-heading").text("A Brief Guide to Kefalonia");
+    $(".info-text").text("The exotic island of Kefalonia is the largest and one of the most beautiful Greek islands. Chances are you’ve already seen Kefalonia on pictures and postcards, but, trust me, the reality is far better than any picture. Located in the heart of the Ionian sea, Kefalonia has inspired many with its beauty and was the filming location of the famous movie “Captain Corelli’s Mandolin”. Indeed, wherever you set your eyes on, you’ll see nature at its best!Boasting a breathtaking natural landscape with exotic beaches, picturesque fishing villages and magical underground caves, Kefalonia is one of the best destinations in Greece for nature lovers!");
+    $("#img-box").html("<img src='assets/img/ith-fisk.jpg' alt='The island of Ithaka from Fiskardo'>");
+})
+    
 //================ Location Arrays ==================//
 
 var beaches = [
@@ -42,7 +49,7 @@ var towns = [
 
 var active = [
     [38.12273, 20.61336, "Sea Kayaking Kefalonia", "Run by Yvonne and Pavlos, Sea Kayaking Kefalonia is a sea kayaking outfitter who organize day and multi-day kayak trips as well as sea kayak courses in the crystal clear and warm mediterranean waters of the Ionian.", "<img src='assets/img/active/active-kayak.jpg' alt='Sea kayaking'>"],
-    [38.16252, 20.59040, "Robola Winery", "In the heart of the Robola Viticulture Zone, dozens of viticulturists from Omala and the surrounding areas (Troiannata, Vlachata, Mousata, Faraklata, Dilinata) created in 1982 the Agricultural Wine Cooperative of Producers of Robola Kefallinia but to try to protect Kefalonian vineyard.", "<iframe src='https://www.youtube.com/watch?v=c5gietl8naA' alt='Robola Co-operative'>"],
+    [38.16252, 20.59040, "Robola Winery", "In the heart of the Robola Viticulture Zone, dozens of viticulturists from Omala and the surrounding areas (Troiannata, Vlachata, Mousata, Faraklata, Dilinata) created in 1982 the Agricultural Wine Cooperative of Producers of Robola Kefallinia but to try to protect Kefalonian vineyard.", "<img src='assets/img/active/robola.jpg' alt='Robola Wine'>"],
     [38.10546, 20.53011, "Wild Nature Expeditions", "Outdoor activities for all tastes skills and ages. Caving | Rock Climbing | Hiking | Canyoning | Stargazing | Mountain biking | Paragliding | Jeep Safari's", "<img src='assets/img/active/active-para.jpg' alt='Paragliding'>"],
     [38.25702, 20.62353, "Melissani Cave","Situated just outside of Sami, this natural wonder has been open to visitors since 1963, and gives you a unique view of a limestone cave holding a sunlit lake", "<img src='assets/img/active/melis-cave.jpg' alt='Melissani Cave'>"],
     [38.21405, 20.64759, "Bavarian Horse Riding","Enjoy the mountains, canyons, valleys, olive groves and the virgin nature of Kefalonia on horseback. We'll show you all these places on our sturdy, sure-footed and well trained Haflingers and Bavarian warm blood horses", "<img src='assets/img/active/active-horse.jpg' alt='Bavarian horse riding'>"]
@@ -231,6 +238,7 @@ fetch(url, fetchParams)
         $("#weather").click(function() {
             $(".info-heading").text("Typical Weather");
             $(".info-text").text("Kefalonia is the largest Greek island and enjoys a warm Mediterranean climate with sizzling temperatures and plenty of sunshine throughout the year. Many consider the Ionian climate of Kefalonia to be near perfection and the main tourist season begins as early as May, when temperatures climb to around 25°C / 77°F; and ends in October. The busiest months are July and August which cn see temperatures rise above 30°C / 86°F.");
+            $("#img-box").html("<canvas id='chart-one'></canvas>");
             var ctx = document.getElementById('chart-one');
             const myChart = new Chart(ctx, {
                 type: "bar",
@@ -248,8 +256,8 @@ fetch(url, fetchParams)
                     scales: {
                         yaxes: [{
                             ticks: {
-                                suggestedMin: 0,
-                                suggestedMax: 30,
+                                min: 0,
+                                max: 30,
                                 beginAtZero: true
                             }
                         }]

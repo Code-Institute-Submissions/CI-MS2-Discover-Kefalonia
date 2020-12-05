@@ -254,8 +254,8 @@ h1 {
 }
 
 #chart-one {
-    width: 400px;
-    height: 400px;        
+    width: auto;
+    height: auto;        
     padding: 1rem;
     margin-bottom: 1rem;
     z-index: 1;
