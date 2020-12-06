@@ -262,10 +262,10 @@ h1 {
     margin-bottom: 2rem;
 }
 
-div.mousescroll {
+div.mouse-scroll {
     overflow: hidden;
 }
-div.mousescroll:hover {
+div.mouse-scroll:hover {
     overflow-y: scroll;
 }
 
