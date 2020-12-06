@@ -89,7 +89,6 @@ var active = [
     [38.21405, 20.64759, "Bavarian Horse Riding","Enjoy the mountains, canyons, valleys, olive groves and the virgin nature of Kefalonia on horseback. We'll show you all these places on our sturdy, sure-footed and well trained Haflingers and Bavarian warm blood horses", "<img src='assets/img/active/active-horse.jpg' alt='Bavarian horse riding'>"]
 ];
 
-var markers = [];
 var map;   
 
 //============= Map Initialisation ==============//
@@ -98,8 +97,14 @@ function initMap() {
 
     map = new google.maps.Map(document.getElementById("map"), {
         center: {lat: 38.270, lng: 20.575},
-        zoom: 11,        
-        MapTypeID: "satellite"               
+        zoom: 11,
+        styles: [    
+        {
+            featureType: "poi",
+            elementType: "labels",
+            stylers: [{ visibility: "off" }]
+        }
+    ]               
     });    
 
 var marker, i;
