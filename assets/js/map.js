@@ -13,12 +13,46 @@ $(document).ready(function() {
 });
 //================ About Data =======================//
 
-$("").ready(function() {
+$(document).ready(function() {
     $(".info-heading").text("A Brief Guide to Kefalonia");
     $(".info-text").text("The exotic island of Kefalonia is the largest and one of the most beautiful Greek islands. Chances are you’ve already seen Kefalonia on pictures and postcards, but, trust me, the reality is far better than any picture. Located in the heart of the Ionian sea, Kefalonia has inspired many with its beauty and was the filming location of the famous movie “Captain Corelli’s Mandolin”. Indeed, wherever you set your eyes on, you’ll see nature at its best!Boasting a breathtaking natural landscape with exotic beaches, picturesque fishing villages and magical underground caves, Kefalonia is one of the best destinations in Greece for nature lovers!");
     $("#img-box").html("<img src='assets/img/ith-fisk.jpg' alt='The island of Ithaka from Fiskardo'>");
 })
     
+//================ Map Button ==================//
+
+/*$(document).ready(function() {
+    $("#weather").hover(function() {
+        $("#weather").toggleClass("map-button-hover");
+    });
+    $("#weather").click(function() {
+        $("#weather").addClass("map-button-active");
+    });
+    $("#beaches").hover(function() {
+        $("#beaches").toggleClass("map-button-hover");
+    });
+    $("#beaches").click(function() {
+        $("#beaches").addClass("map-button-active");
+    });
+})*/
+
+$(document).ready(function() {
+
+    var controls = document.getElementsByClassName("button-box");
+    var activeButton = document.getElementsByClassName("button");
+
+    for (let i = 0; i < controls.length; i++) {
+        controls[i].addEventListener("hover", function() {
+            this.classList.toggle("map-button-hover");
+            activeButton.classList.removeClass("map-button-hover");
+        })
+        controls[i].addEventListener("click", function() {
+            this.classList.toggle("map-button-active");
+            activeButton.classList.removeClass("map-button-active");
+        })
+    }
+})
+
 //================ Location Arrays ==================//
 
 var beaches = [
@@ -106,7 +140,7 @@ function clearMarkers() {
   markers = [];
 }
     
-//--------Place Markers for the locations of the towns and clear out previous markers--------//
+//========== Place Markers for the locations of the towns and clear out previous markers ===========//
 
 $("#towns").click(function() {
     clearMarkers();
@@ -140,7 +174,7 @@ function clearMarkers() {
   markers = [];
 }
 
-//-----------Place Activity Markers and clear out old markers-----------------//
+//========== Place Activity Markers and clear out old markers ==========//
 
 $("#activities").click(function() {
     clearMarkers();
@@ -155,7 +189,7 @@ $("#activities").click(function() {
 
         markers.push(marker);
 
-//------------ Renders title and text into the html window and zooms into the marker position-------------//
+//========== Renders title and text into the html window and zooms into the marker position ==========//
 
         google.maps.event.addListener(marker,"click", (function(marker, i) {
             return function() {                
@@ -231,11 +265,16 @@ fetch(url, fetchParams)
             tempData.push(parseInt(items.temp))
             console.log(items.temp);
         });
+        const rainData = [];
+            climateData.forEach(function(items) {
+            rainData.push(parseInt(items.days_with_rain))
+            console.log(items.days_with_rain);
+        });
 //============ Charts the Temperature Data from WeatherOnline.co.uk using Chart.JS ============//        
         
         $("#weather").click(function() {
             $(".info-heading").text("Typical Weather");
-            $(".info-text").text("Kefalonia is the largest Greek island and enjoys a warm Mediterranean climate with sizzling temperatures and plenty of sunshine throughout the year. Many consider the Ionian climate of Kefalonia to be near perfection and the main tourist season begins as early as May, when temperatures climb to around 25°C / 77°F; and ends in October. The busiest months are July and August which cn see temperatures rise above 30°C / 86°F.");
+            $(".info-text").text("Kefalonia is the largest of the Ionian island and enjoys a warm Mediterranean climate with sizzling temperatures and plenty of sunshine throughout the year. Many consider the climate of Kefalonia to be near perfection and the main tourist season begins as early as May, when temperatures climb to around 25°C / 77°F; and ends in October. The busiest months are July and August which cn see temperatures rise above 30°C / 86°F.");
             $("#img-box").html("<canvas id='chart-one'></canvas>");
             var ctx = document.getElementById("chart-one");
             const myChart = new Chart(ctx, {
@@ -248,6 +287,12 @@ fetch(url, fetchParams)
                         backgroundColor: "rgba(226, 125, 83, 0.2)",
                         borderColor: "#000",
                         borderWidth: 1,
+                        order: 1
+                    }, {
+                        label: "Days with rain",
+                        data: rainData,
+                        type: "line",
+                        order: 2
                     }]
                 },
                 options: {
