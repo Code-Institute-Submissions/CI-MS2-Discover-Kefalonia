@@ -37,20 +37,14 @@ $(document).ready(function() {
 })*/
 
 $(document).ready(function() {
-
-    var controls = document.getElementsByClassName("button-box");
-    var activeButton = document.getElementsByClassName("button");
-
-    for (let i = 0; i < controls.length; i++) {
-        controls[i].addEventListener("hover", function() {
-            this.classList.toggle("map-button-hover");
-            activeButton.classList.removeClass("map-button-hover");
-        })
-        controls[i].addEventListener("click", function() {
-            this.classList.toggle("map-button-active");
-            activeButton.classList.removeClass("map-button-active");
-        })
-    }
+    $("button").click(function() {
+        $("button").removeClass("map-button-active")
+        $(this).addClass("map-button-active")
+    })
+    $("button").hover(function() {
+        $(this).toggleClass("map-button-hover");
+        
+    });
 })
 
 //================ Location Arrays ==================//
