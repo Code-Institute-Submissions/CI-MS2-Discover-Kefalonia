@@ -19,22 +19,7 @@ $(document).ready(function() {
     $("#img-box").html("<img src='assets/img/ith-fisk.jpg' alt='The island of Ithaka from Fiskardo'>");
 })
     
-//================ Map Button ==================//
-
-/*$(document).ready(function() {
-    $("#weather").hover(function() {
-        $("#weather").toggleClass("map-button-hover");
-    });
-    $("#weather").click(function() {
-        $("#weather").addClass("map-button-active");
-    });
-    $("#beaches").hover(function() {
-        $("#beaches").toggleClass("map-button-hover");
-    });
-    $("#beaches").click(function() {
-        $("#beaches").addClass("map-button-active");
-    });
-})*/
+//================ Map Buttons for generating the POI's on the Map ==================//
 
 $(document).ready(function() {
     $("button").click(function() {
@@ -108,6 +93,8 @@ var markers = [];
 
 $("#beaches").click(function() {
     clearMarkers();
+    map.setZoom(11);
+    map.setCenter({lat: 38.270, lng: 20.575});
 
     for (let i = 0; i < beaches.length; i++) {
         marker = new google.maps.Marker({
@@ -143,6 +130,8 @@ function clearMarkers() {
 
 $("#towns").click(function() {
     clearMarkers();
+    map.setZoom(11);
+    map.setCenter({lat: 38.270, lng: 20.575});
 
     for (let i = 0; i < towns.length; i++) {
         marker = new google.maps.Marker({
@@ -177,6 +166,8 @@ function clearMarkers() {
 
 $("#activities").click(function() {
     clearMarkers();
+    map.setZoom(11);
+    map.setCenter({lat: 38.270, lng: 20.575});
 
     for (let i = 0; i < active.length; i++) {
         marker = new google.maps.Marker({
