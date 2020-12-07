@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Cinzel+Decorative:wght@400;700&family=Montserrat&display=swap');
 
-/* {
+* {
     border: 1px solid red;
-}*/
+}
+
+/*-------------------------------*/
+
+body,html {
+    margin: 0;
+    padding: 0;
+}
 
 /*--------Colour Palette---------*/
 
@@ -66,13 +73,13 @@ p {
 
 #map-top,
 #contact-top {
-    top: 10vh;
+    top: 15vh;
     background-color: #0756a7;
 }
 
 #map-bottom,
 #contact-bottom {
-    top: 15vh;
+    top: 20vh;
     background-color: #e27d53;
 }
 
@@ -187,29 +194,51 @@ h1 {
     opacity: 0;   
 }
 
-/*--------Location Information Window-------*/
+/*========== MAP & IINFORMATION PAGE - Location Information ==========*/
+
+#map-section {
+    padding 0;
+    height: 100vh;
+}
+
+#map-container {
+    height: 100vh;
+}
+
+#page-header {
+    height: 6vh;
+}
+
+#map {
+    height: 94vh;
+}
 
 #location-window {
     background-color: #fff;
-    height: 50vh;
-    margin: 10% 5%;    
+    height: 50vh;        
 }
 
-#info-detail {
- margin: 5%;
+.info-heading {
+ margin: 2.5%;
  font-family: "Cinzel Decorative", sans-serif;
 }
 
-#info-detail p {
+.info-text {
     font-family: "Raleway", sans-serif;
     font-size: 1.25rem;
 }
 
-/*--------Google Map Window-------*/
+/*========== GOOGLE MAP WINDOW ==========*/
+
+.info-container {
+    height: 87vh;
+    text-align: center;
+}
 
 .map-links {
     background-color: #aadaff;
     text-align: center;
+    height: 5vh;
 }
 
 .button-box {
@@ -246,7 +275,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 62rem;
+      
 }
 
 #location-window {
@@ -255,7 +284,7 @@ h1 {
 
 #img-box img {
     width: auto;
-    height: auto;
+    height: 35vh;
     max-width: 100%;
     max-height: 100%;
     border-radius: 2rem;
@@ -284,7 +313,7 @@ div.mouse-scroll:hover {
     overflow-y: scroll;
 }
 
-/*-------- Contact Page ---*/
+/*========== CONTACT PAGE ==========*/
 
 #contact-bg {
     position: fixed;
@@ -363,19 +392,34 @@ form {
     }
 
     #contact-subhead {    
-    letter-spacing: 1px;    
-    max-width: 90%;
-    margin-top: 10vh;
-    margin-left: auto;
-    margin-right: auto;    
-}
+        letter-spacing: 1px;    
+        max-width: 90%;
+        margin-top: 10vh;
+        margin-left: auto;
+        margin-right: auto;    
+    }
 
-#contact-form {    
-    max-width: 90%;
-    margin-top: 4rem;
-    margin-left: auto;
-    Margin-right: auto;
-       
-}
+    #contact-form {    
+        max-width: 90%;
+        margin-top: 4rem;
+        margin-left: auto;
+        Margin-right: auto;
+        
+    }
+
+    .button-box {
+        margin-left: 0.5rem;
+    }
+
+    .map-button {
+        height: 3rem;
+        width: 3rem;
+        text-align: center;
+        margin: 1.5%;
+        font-size: 1.5rem;    
+        border-radius: 0.5rem;
+        box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #0756a7;
+        cursor: pointer;
+    }
 
 }
