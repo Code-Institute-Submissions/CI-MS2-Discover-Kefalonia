@@ -16,7 +16,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(".info-heading").text("A Brief Guide to Kefalonia");
     $(".info-text").text("The exotic island of Kefalonia is the largest and one of the most beautiful Greek islands. Chances are you’ve already seen Kefalonia on pictures and postcards, but, trust me, the reality is far better than any picture. Located in the heart of the Ionian sea, Kefalonia has inspired many with its beauty and was the filming location of the famous movie “Captain Corelli’s Mandolin”. Indeed, wherever you set your eyes on, you’ll see nature at its best!Boasting a breathtaking natural landscape with exotic beaches, picturesque fishing villages and magical underground caves, Kefalonia is one of the best destinations in Greece for nature lovers!");
-    $("#img-box").html("<img src='assets/img/ith-fisk.jpg' alt='The island of Ithaka from Fiskardo'>");
+    $("#img-box").html("<img class='img-responsive' src='assets/img/ith-fisk.jpg' alt='The island of Ithaka from Fiskardo'>");
 })
     
 //================ Map Buttons for generating the POI's on the Map ==================//
@@ -35,7 +35,7 @@ $(document).ready(function() {
 //================ Location Arrays ==================//
 
 var beaches = [
-    [38.322903, 20.453183, "Fteri", "Fteri beach is heaven! Turquoise waters, amazing dramatic coastline, unique scenery, all combined create a magical environment that you should not miss.This is one of the most beautiful and hidden beaches of Kefalonia, near Lixouri city. Equip yourself with umbrella & bottles of water because the beach is completely devoid of services.", "<img src='assets/img/beaches/beach-fteri.jpg' alt='Fteri beach'>"],
+    [38.322903, 20.453183, "Fteri", "Fteri beach is heaven! Turquoise waters, amazing dramatic coastline, unique scenery, all combined create a magical environment that you should not miss.This is one of the most beautiful and hidden beaches of Kefalonia, near Lixouri city. Equip yourself with umbrella & bottles of water because the beach is completely devoid of services.", "<img class='img-responsive' src='assets/img/beaches/beach-fteri.jpg' alt='Fteri beach'>"],
     [38.260949, 20.376721, "Petani", "Stretching for about 850 meters and having a Blue Flag status, this is one of the most impressive Kefalonia beaches! This beach is perched in Paliki peninsula, 20km west of Argostoli, and has crystal clear waters, white sand, pebbles and a heavenly verdant backdrop.", "<img src='assets/img/beaches/beach-petani.jpg' alt='Petani beach'>"],
     [38.47161, 20.54846, "Dafnoudi", "Hidden at the very northern tip of Kefalonia, Dafnoudi beach is a secluded gem. Accessible only on foot, the walk down the valley is beautiful and dramatis as you emerge from the trees onto the pebbly beach. Just be aware that because of its seclusion the beach is popular with naturists!", "<img src='assets/img/beaches/beach-dafn.jpg' alt='Dafnoudi beach'>"],
     [38.466161, 20.573059, "Emplisi", "Emplisi lies in a very beautiful bay with crystal clear blue-green water a few kilometres from Fiskardo. The beach consists of white pebbles. If you like to snorkel, you can do it among the rocks. The water that surrounds Emplisi are among the clearest on the whole island", "<img src='assets/img/beaches/beach-emplisi.jpg' alt='Emplisi beach'>"],    
@@ -77,6 +77,14 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: {lat: 38.270, lng: 20.575},
         zoom: 11,
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+        position: google.maps.ControlPosition.TOP_CENTER,
+        },
+        zoomControl: false,                
+        streetViewControl: false,        
+        fullscreenControl: false,
         styles: [    
         {
             featureType: "poi",

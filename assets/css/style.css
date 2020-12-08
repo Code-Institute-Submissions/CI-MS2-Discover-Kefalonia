@@ -209,6 +209,50 @@ h1 {
     text-align: center;
 }
 
+#location-window {    
+    height: 50vh;        
+}
+
+.info-heading {
+ margin: 2.5%;
+ font-family: "Cinzel Decorative", sans-serif;
+}
+
+.info-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    margin: 0 2rem;
+}
+
+.poi-info {
+    background-color: #aadaff;
+}
+
+#img-box {
+    margin-bottom: 0.5rem;
+}
+
+#img-box img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.chart-container {
+    position: relative;
+    height: 30vh;
+    width: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+/*-----Map Buttons-----*/
+
 .map-links {
     background-color: #aadaff;
     text-align: center;
@@ -242,43 +286,6 @@ h1 {
     box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #e27d53;
     transform:translateY(5px);    
     outline: none;
-}
-
-#location-window {    
-    height: 50vh;        
-}
-
-.info-heading {
- margin: 2.5%;
- font-family: "Cinzel Decorative", sans-serif;
-}
-
-.info-text {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.25rem;
-}
-
-.poi-info {
-    background-color: #aadaff;
-}
-
-#img-box img {
-    width: auto;
-    height: 35vh;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 2rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-
-.chart-container {
-    position: relative;
-    height: 30vh;
-    width: 60vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
 }
 
 /*========== GOOGLE MAP WINDOW ==========*/
@@ -372,6 +379,12 @@ form {
     #contact-bottom {
         top: 15vh;        
     }
+
+    .info-text {
+        font-size: 1rem;
+    }
+
+/*----- Contact Page -----*/
 
     #contact-subhead {
         max-width: 60%;
