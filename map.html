@@ -26,12 +26,14 @@
     <!--Map Utilities section-->
     <section id="map-section">
         <div id="map-container" class="container-fluid">
-            <div class="row">
-                <div id="page-header" class="col-12 medium-blue">
+            <!--Page Heading-->
+            <div id="heading-row" class="row">
+                <div class="col-12 medium-blue">
                     <h1 id="map-heading" class="page-header" >Discover Kefalonia</h1>
                 </div>
-            </div>    
-            <div id="map-and-info" class="row">
+            </div>
+            <!--Point of Interest information section-->    
+            <div id="map-poi-row" class="row">
                 <div class="col-lg-6 poi-info">                    
                     <div class="row info-container">
                         <div id="location-window" class="col-12">
@@ -45,30 +47,21 @@
                                 <div class="col-12 mouse-scroll">
                                     <p class="info-text"></p>
                                 </div>
-                            </div>
+                            </div>                            
                         </div>                         
                     </div>
-                    <div class="row map-links">
-                        <div class="col-2 button-box">
-                            <button id="weather" class="map-button"><i class="fas fa-cloud-sun"></i></button>
-                        </div>
-                        <div class="col-2 button-box">
-                            <button id="beaches" class="map-button"><i class="fas fa-umbrella-beach"></i></button>
-                        </div>
-                        <div class="col-2 button-box">
-                            <button id="towns" class="map-button"><i class="fas fa-city"></i></button>
-                        </div>
-                        <div class="col-2 button-box">
-                            <button id="activities" class="map-button"><i class="fas fa-hiking"></i></button>
-                        </div>
-                        
-                        <div class="col-2 button-box">
-                            <button id="zoom-out" class="map-button"><i class="fas fa-search-minus"></i></button>
-                        </div>                        
-                    </div>    
                 </div>
-                <div id="map" class="col-lg-6"></div>
-            </div>
+            <!--Map and Controls-->
+                <div id="map" class="col-lg-6">         
+                </div>
+                <div class="map-links">
+                    <button id="weather" class="map-button"><i class="fas fa-cloud-sun"></i></button>
+                    <button id="beaches" class="map-button"><i class="fas fa-umbrella-beach"></i></button>
+                    <button id="towns" class="map-button"><i class="fas fa-city"></i></button>
+                    <button id="activities" class="map-button"><i class="fas fa-hiking"></i></button>
+                    <button id="zoom-out" class="map-button"><i class="fas fa-search-minus"></i></button>
+                </div>
+            </div>    
         </div>    
     </section>
     

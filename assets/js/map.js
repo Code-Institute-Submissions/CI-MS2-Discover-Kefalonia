@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $(".info-heading").text("A Brief Guide to Kefalonia");
-    $(".info-text").text("The exotic island of Kefalonia is the largest and one of the most beautiful Greek islands. Chances are you’ve already seen Kefalonia on pictures and postcards, but, trust me, the reality is far better than any picture. Located in the heart of the Ionian sea, Kefalonia has inspired many with its beauty and was the filming location of the famous movie “Captain Corelli’s Mandolin”. Indeed, wherever you set your eyes on, you’ll see nature at its best!Boasting a breathtaking natural landscape with exotic beaches, picturesque fishing villages and magical underground caves, Kefalonia is one of the best destinations in Greece for nature lovers!");
+    $(".info-text").text("The exotic island of Kefalonia is the largest and one of the most beautiful Greek islands. Chances are you’ve already seen Kefalonia on pictures and postcards, but, trust me, the reality is far better than any picture. Located in the heart of the Ionian sea, Kefalonia has inspired many with its beauty and was the filming location of the famous movie “Captain Corelli’s Mandolin”. Indeed, wherever you set your eyes on, you’ll see nature at its best! Boasting a breathtaking natural landscape with exotic beaches, picturesque fishing villages and magical underground caves, Kefalonia is one of the best destinations in Greece for nature lovers!");
     $("#img-box").html("<img class='img-responsive' src='assets/img/ith-fisk.jpg' alt='The island of Ithaka from Fiskardo'>");
 })
     
@@ -79,8 +79,8 @@ function initMap() {
         zoom: 11,
         mapTypeControl: true,
         mapTypeControlOptions: {
-        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-        position: google.maps.ControlPosition.TOP_CENTER,
+            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            position: google.maps.ControlPosition.TOP_RIGHT,        
         },
         zoomControl: false,                
         streetViewControl: false,        
@@ -90,10 +90,10 @@ function initMap() {
             featureType: "poi",
             elementType: "labels",
             stylers: [{ visibility: "off" }]
-        }
+        }        
     ]               
-    });    
-
+    });
+    
 var marker, i;
 var markers = [];
 
