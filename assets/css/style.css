@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Cinzel+Decorative:wght@400;700&family=Montserrat&display=swap');
 
-* {
+/* {
     border: 1px solid red;
-}
+}*/
 
 /*-------------------------------*/
 
@@ -58,7 +58,7 @@ p {
 /*--------Navigation---------*/
 
 #side-menu a {
-    position: absolute;
+    position: fixed;
     left: -110px; /* Position them outside of the screen */
     transition: 0.3s; /* Add transition on hover */
     padding: 5px 5px 5px 30px;
@@ -73,13 +73,13 @@ p {
 
 #map-top,
 #contact-top {
-    top: 15vh;
+    top: 8vh;
     background-color: #0756a7;
 }
 
 #map-bottom,
 #contact-bottom {
-    top: 20vh;
+    top: 13vh;
     background-color: #e27d53;
 }
 
@@ -196,11 +196,6 @@ h1 {
 
 /*========== MAP & IINFORMATION PAGE - Location Information ==========*/
 
-#map-section {
-    padding 0;
-    height: 100vh;
-}
-
 #map-container {
     height: 100vh;
 }
@@ -209,36 +204,15 @@ h1 {
     height: 6vh;
 }
 
-#map {
-    height: 94vh;
-}
-
-#location-window {
-    background-color: #fff;
-    height: 50vh;        
-}
-
-.info-heading {
- margin: 2.5%;
- font-family: "Cinzel Decorative", sans-serif;
-}
-
-.info-text {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.25rem;
-}
-
-/*========== GOOGLE MAP WINDOW ==========*/
-
 .info-container {
-    height: 87vh;
+    height: 85vh;
     text-align: center;
 }
 
 .map-links {
     background-color: #aadaff;
     text-align: center;
-    height: 5vh;
+    height: 9vh;
 }
 
 .button-box {
@@ -246,11 +220,11 @@ h1 {
 }
 
 .map-button {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     text-align: center;
     margin: 3%;
-    font-size: 2rem;    
+    font-size: 1.5rem;    
     border-radius: 1rem;
     box-shadow: inset 0 1px 0 #3298d9, 0 10px 0 #0756a7;
     cursor: pointer;
@@ -270,15 +244,21 @@ h1 {
     outline: none;
 }
 
-#map {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-      
+#location-window {    
+    height: 50vh;        
 }
 
-#location-window {
+.info-heading {
+ margin: 2.5%;
+ font-family: "Cinzel Decorative", sans-serif;
+}
+
+.info-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.25rem;
+}
+
+.poi-info {
     background-color: #aadaff;
 }
 
@@ -292,11 +272,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-#beach {
-    position: relative;
-    bottom: 100;
-}
-
 .chart-container {
     position: relative;
     height: 30vh;
@@ -306,11 +281,14 @@ h1 {
     margin-bottom: 2rem;
 }
 
-div.mouse-scroll {
-    overflow: hidden;
-}
-div.mouse-scroll:hover {
-    overflow-y: scroll;
+/*========== GOOGLE MAP WINDOW ==========*/
+
+#map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 94vh;      
 }
 
 /*========== CONTACT PAGE ==========*/
@@ -370,7 +348,7 @@ form {
     border-radius: 15px;
 }
 
-/*---------- MEDIA QUERIES ---------*/
+/*========== MEDIA QUERIES ==========*/
 
 @media screen and (max-width: 767.98px) {
     #social-container {    
@@ -379,6 +357,10 @@ form {
 
     .social-active {
         transform: translateY(-8.5rem);
+    }
+
+    .page-header {
+        font-size: 2rem;
     }
 
     #map-top,
@@ -391,20 +373,24 @@ form {
         top: 15vh;        
     }
 
-    #contact-subhead {    
-        letter-spacing: 1px;    
-        max-width: 90%;
-        margin-top: 10vh;
+    #contact-subhead {
+        max-width: 60%;
         margin-left: auto;
-        margin-right: auto;    
+        margin-right: auto;
+        margin-top: 5vh;
+    }
+
+    #contact-subhead h2 {    
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        margin-bottom: 0.25rem;            
     }
 
     #contact-form {    
         max-width: 90%;
         margin-top: 4rem;
         margin-left: auto;
-        Margin-right: auto;
-        
+        Margin-right: auto;        
     }
 
     .button-box {
@@ -420,6 +406,13 @@ form {
         border-radius: 0.5rem;
         box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #0756a7;
         cursor: pointer;
+    }
+
+    div.mouse-scroll {
+    overflow: hidden;
+    }
+    div.mouse-scroll:hover {
+        overflow-y: scroll;
     }
 
 }
