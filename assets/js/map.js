@@ -114,6 +114,7 @@ $("#beaches").click(function() {
                 $("#img-box").html(beaches[i][4]);
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
+                window.scrollTo(0, document.getElementById('location-window').offsetTop)
             }
         })(marker, i));
     }
@@ -150,6 +151,7 @@ $("#towns").click(function() {
                 $("#img-box").html(towns[i][4]);
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
+                window.scrollTo(0, document.getElementById('location-window').offsetTop)
             }
         })(marker, i));
     }
@@ -188,6 +190,7 @@ $("#activities").click(function() {
                 $("#img-box").html(active[i][4]);
                 map.setZoom(15);
                 map.setCenter(marker.getPosition());
+                window.scrollTo(0, document.getElementById('location-window').offsetTop)
             }            
         })(marker, i));
     }
