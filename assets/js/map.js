@@ -114,7 +114,9 @@ $("#beaches").click(function() {
         });
 
         markers.push(marker);
-        
+
+//---------- Renders title and text into the html window and zooms into the marker position ----------//        
+
         google.maps.event.addListener(marker,"click", (function(marker, i) {
             return function() {                
                 $(".info-heading").text(beaches[i][2]);
@@ -127,6 +129,7 @@ $("#beaches").click(function() {
         })(marker, i));
     }
 })
+//---------- Clear away any existing markers ----------//
 
 function clearMarkers() {
   for (let i = 0; i < markers.length; i++) {
@@ -152,6 +155,8 @@ $("#towns").click(function() {
 
         markers.push(marker);
 
+//---------- Renders title and text into the html window and zooms into the marker position ----------//
+
         google.maps.event.addListener(marker,"click", (function(marker, i) {
             return function() {                
                 $(".info-heading").text(towns[i][2]);
@@ -164,6 +169,7 @@ $("#towns").click(function() {
         })(marker, i));
     }
 })
+//---------- Clear away any existing markers ----------//
 
 function clearMarkers() {
   for (let i = 0; i < markers.length; i++) {
@@ -189,7 +195,7 @@ $("#activities").click(function() {
 
         markers.push(marker);
 
-//========== Renders title and text into the html window and zooms into the marker position ==========//
+//---------- Renders title and text into the html window and zooms into the marker position ----------//
 
         google.maps.event.addListener(marker,"click", (function(marker, i) {
             return function() {                
@@ -203,6 +209,7 @@ $("#activities").click(function() {
         })(marker, i));
     }
 })
+//---------- Clear away any existing markers ----------//
 
 function clearMarkers() {
   for (let i = 0; i < markers.length; i++) {
@@ -211,13 +218,14 @@ function clearMarkers() {
   markers = [];
 }
 }
-//=========== Zoom out & Recenter when clicking the Zoomout button ==========//
+//=========== ZOOM OUT & Recenter when clicking the Zoomout button ==========//
 
 $("document").ready(function() {
     $("#zoom-out").click(function() {    
+        $("#zoom-out").toggleClass("map-button-active")
         map.setZoom(11);
-        map.setCenter({lat: 38.270, lng: 20.575});
-    });
+        map.setCenter({lat: 38.270, lng: 20.575});    
+    });    
 })
 
 //========== Change the map zoom dependant on the device window size ========//
