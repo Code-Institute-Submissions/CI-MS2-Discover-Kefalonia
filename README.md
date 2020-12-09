@@ -1,9 +1,10 @@
-# [**Discover Kefalonia**](https://gazzaj.github.io/)
+# [**Discover Kefalonia**](https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/)
 
-The purpose of this website is to create an online presence for an individual (myself in this case) to highlight skills, experience, work history and to showcase projects to potential employers. This must be achieved in a visually appealing UX, which enables the user to easily navigate and locate the information irrespective of the device they are using (mobile first approach).
-The ultimate aim is to assist the individual in securing future employment opportunities as a software developer, by showcasing acquired skills of the common technologies used and implementation in live websites.
+Kefalonia is the largest of the Greek Ionian islands, and is a popular holiday destination for many Europeans. Despite this it remains unspoilled and far less crowded than it's neighbours Zakynthos and Corfu, and is thus a great options for a summer vacation.
+The aim of this website is to showcase the the island of Kefalonia to people looking for inspiration for their next summer holiday destination; providing useful information about the island like Climate, towns/resorts, beaches and some of the non-beach related activities possible. 
+My objective is to achieved the above in a visually appealing and interactive UX, which provides simple intuitive navigation irrespective of the device, with interactrive elements which enable the user to control the discovery of information.  Ultimately I would like this to appeal to individuals who have previously visited Kefalonia as well as those who have never had the opportunity to visit.
 
-[The live website can be viewed here!](https://gazzaj.github.io/)
+[The live website can be viewed here!](https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/)
 
 ![Am I responsive images](https://github.com/GazzaJ/ "Am I Responsive")
 
@@ -25,57 +26,70 @@ ______
 
 ## **User Experience (UX)** <a name="user-experience"></a>
 
-My aim is to provide a simple yet intuitive user experience, which requires the minimum amount of scrolling to locate information. I see this as particularly important on mobile screens. For this reason, I had elected to 
-- Maintain a fixed menu bar at the top of the screen.
-- Limit the amount of detail in the Work History section 
+My aim is to provide a much simpler yet hopefully intuitive user experience, while combining information, imagery into a single interactive section focussed around a Google Map of the island. Each page fills the viewport on most devices, while obviously splitting the main map screen on mobile devices is unavoidable. I had elected to 
+- Interactive navigation links
+- Interactive social links section
+- Information controls which provide feedback to the user
 
 ### **User Stories** <a name="stories"></a>
 
-1. **_As a_** developer, **_I need to_** provide a usable and visually pleasing site; **_in order to_** achieve a high website traffic.
-  - The deployed website addresses this requirement by creating an initial online presence with access to my skills, experience and project:
-![Website landing page](https://github.com/GazzaJ/ "Website landing page")
+1. **_As a_** developer, **_I need to_** provide a simple and intuitive UX, **_in order to_** allow users to easily interact with the site.
 
-2. **_As a_** developer, **_I need to_** provide quality and useful information; **_in order to_** satisfy the customers curiosity.
-  - The 'Resume' page of the deployed website provides an overview of skills and experience:
-![Website Resume page](https://github.com/GazzaJ/ "Website resume page")
+2. **_As a_** developer, **_I need to_** use attractive imagery and reliable information, **_in order to_** entice the user to  discover more about the island and spend more time interacting with the site.
 
-3. **_As a_** customer, **_I need to_** quickly establish whether Kefalonia is somewhere I might vacation; **_in order to_** proceed to book a holiday.
-  - The 'Resume' page of the deployed website provides a list of previous work history:
-![Website Resume page](https://github.com/GazzaJ/ "Website resume page")
+3. **_As a_** developer, **_I need to_** provide a form , **_in order to_** enable the users to contact the site owner to enable more detailled interactions to occur.
 
-4. **_As a_** customer, **_I need to_** understand what activities are available on the island; **_in order to_** consider it as a destination.
-  - The 'Portfolio' page contains a brief description of projects completed and a hyperlink to the live project.
-![Website Portfolio page](https://github.com/GazzaJ/)
+3. **_As a_** first time visitor, **_I need to_** see enticing imagery, **_in order to_** consider learning more about this destination.
 
-5. **_As a_** customer, **_I need to_** discover the type of facilities (Hotels & Restaurants etc) are available on the island; **_in order to_** consider it as a destination and proceed to book a holiday.
+4. **_As a_** first time visitor, **_I need to_** easily and quickly discover information about the island,  **_in order to_** consider Kefalonia as a potential holiday location.
+
+5. **_As a_** user, **_I need to_** compare the destinations (towns/resorts), **_in order to_** establish where might be suitable for me/my family to stay
+
+6. **_As a_** user, **_I need to_** establish some of the other activities possible on the island, **_in order to_** understand whether there is enough diversity to entartain my whole family.
+
+7. **_As a _** user, **_I need to_** have a means to contact the developer/site owner, **_in order to_** discover more detailled information which may not be covered on the site.
 
 ### **The 5 Planes of UX** <a name="planes"></a>
 The five planes provide a framework for discussing user experience.
 
 #### **Strategy**  
-As previously stated, the aim of this project is 3-fold:
- - To create an online presence
- - To highlight skills, and work experience 
- - To showcase projects  
- ... all with the aim of increasing the individual's employability
+Kefalonia is the largets of the Ionian islands and 6th largest Greek island, yet remains less well known as a holiday destination compared to islands like Crete, Corfo, Mykonos, Santorini. The positive side is that the island is not crowded and over developed. The down side is that unless people get a recommendation they won't get to discover the beatutiful beaches, friendly people and diverse landsacpes which make Kefalonia such a holiday paradise.
 
-My intention is to provide some basic general information on the landing page sufficient to generate some curiosity; then to make the key information easily accessible through an intuitive and repeating UX design. The intention is to provide multiple routes to the skills, experience and work history as well as multiple links to the downloadable CV.
-- Multiple links to Experience section from Landing page.
-- Concise listing of skills
-- Abridged version of work history
-- Multiple links to a downloadable CV
-- Portfolio page with Project summaries and links to the deployed pages
-
-It is also important that potential employers, recruiters or clients can easily make contact with the individual. This is achieved through the use of:
-- Email links - listed on each page
-- Social media links - located in the footer of each page
-- Contact page - with contact info and a form where the user can get in touch with the individual.
- 
+The intention is to provide some basic general information about Kefalonia to hopefully encourage them to learn more and eventually enjoy the island for themselves, such as:
+ - Discover more about the island of Kefalonia
+ - Understand the best time of year to visit 
+ - Compare the towns/resorts
+ - Discover some of the best beaches
+ - Learn about some of the activities possible on the island
 
 #### **Scope**  
-I am aiming for a decent Minimum Viable Product, yet I want to challenge myself to produce something I am proud to put my name on, without overextending myself and causing scope creep. I am conscious that I needed to keep the content within the scope of my current knowledge; this is critical for managing issues during the build and the potential need to troubleshoot on the fly.
-In the planning for the website I created preferred and alternate design options; preferred being the more achievable option.
-- I had originally planned to use an image carousel on the home page, and although I was able to get this to function on large screens it would become much less effective on mobile. Thus, I opted for the current, simpler stacked configuration.
+The primary requirements for this are to provide:
+ - Interactive elements which enable the user to initiate and control actions
+
+As I have chosen a fairly simple structure for the site it will have:
+ - Stripped down navigation.
+ - One main page section with interactive elements
+ - A contact form
+ - Interactive social media links to access relevant content
+
+Thus I aim to use the incorporate a google map with custom markers and additinal c
+ - Google Map with Custom Markers for
+   - Beach Locations
+   - Popular towns/resorts
+   - Activities
+ - Enable the user to interact with the markers, to reveal additional information
+ - Use attractive images to please the users
+ - Select typography and colurs which envoce the desired response
+ 
+
+The functionality will be provided by the Google Maps Javascript API
+I plan to incorporate basic climate data through the use of a RESTful API
+The aim of this firt version is to be a minimal viable product, which could be expanded and further improved in the future as my knowledge and experience improves.
+
+providing some basic information to enable the users to discover more information, with the hope of whetting their appetite to learn more and potentially book a vacation. 
+A key deliverable is achieving this while incorporating interactive elements I want to challenge myself to produce something I am proud to put my name on, without overextending myself and causing scope creep. I am conscious that I needed to keep the content within the scope of my current knowledge; this is critical for managing issues during the build and the potential need to troubleshoot on the fly.
+
+>**_I had originally planned a fairly standard multi-section/page site with interactive elements; but have elected to try to combine and incorporate all of that content one might expect in "About" and "Gallery" pages into the interactive elements of the main "Map" page._**
 
 #### **Structure**  
 I aim to build on user knowledge by providing intuitive UX with a common navbar and footer section throughout the website.  
@@ -86,11 +100,19 @@ I will use the left hand 1/3 to list the shorter strings of data which could be 
  - I believe I have achieved this without directly copying the code. 
 
 #### **Skeleton** 
-The website will comprise four distinct pages navigable through the 'navbar' menu: 
-- Home | Experience | Portfolio | Contact
-The navbar will also incorporate a link to a downloadable version of my CV.
+The website will comprise three main pages: 
+- Landing | Explore | Contact
+>**_This has been reduced from a more conventional multisection/page site._**
 
-A Footer section will provide additional information with links to social media sites and email, and another download link for the CV. I have also included a copyright statement.
+There will be clear navigation links to navigate between pages.
+>**_I elected to NOT use any of the standard Bootstrap navbar templates due to the limited number of pages. I also wanted to provide more interactive navigation elements_**
+
+The landing page has no function other than to look enticing and to direct users to explore further.
+The bulk of the website will be incorporated on the main Explore/Discover page which will house the Google Map
+
+>**_The main change here was to incorporate what could have comprised separate pages (About, Map and Gallery) into a single page._**
+
+A pop-up, interactive footer section will hold links to relevant social media sites and email. I have also included a copyright statement.
 
 #### **Design Concept Wireframes** <a name="wireframes"></a>
 Wireframes for the original design concepts were created using Balsamiq, and can be viewed using the links below:
@@ -165,6 +187,7 @@ Core coding languages
 
 - ![HTML 5](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/html-5-logo.png "HTML5") - HTML5
 - ![CSS3](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/css3-logo.png "CSS3") - CSS3
+- Javascript
 
 Integrations
 
@@ -173,6 +196,10 @@ Integrations
 - ![Google Fonts](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/googlefonts-logo.png "Google Fonts") - Fonts used on the website courtesy of Google Fonts
 - JQuery - The project uses JQuery to simplify DOM manipulation.
 - Hover.css for button hover effects
+- 
+- JQuery
+- RapidAPI
+- Chart.js
 
 Version Control, storage and hosting
 
@@ -187,6 +214,8 @@ ______
 
 ## **Testing** <a name="testing"></a>
 
+### **User Story Testing**
+### **Functional Testing**
 The philosophy I have used throughout this build is to code, review and test each part of the website as I progressed, relying heavily on Google Dev tools throughout, for first pass testing.
 
 - Repeatedly tested the 'navbar' links throughout development to ensure correct navigation.
@@ -356,4 +385,3 @@ I copied and subsequently adapted the accordion feature from the tutorial provid
 ______
 ### **Technical Support** <a name="technical"></a>
 If you encounter any issues with this website, or require any support please email the developer [johnge71@gmail.com](mailto:johnge71@gmail.com)
-
