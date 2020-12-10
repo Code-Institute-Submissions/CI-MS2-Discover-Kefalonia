@@ -8,21 +8,24 @@ $(document).ready(function() {
         $("#map-bottom").toggleClass("bottom-active");    
     });
 
-//================ About Data =======================//
-    $("#about").click(function() {
+//================ About Data (starting information on Map page)=======================//
+    
+    function aboutText() {    
         $(".info-heading").text("A Brief Guide to Kefalonia");
         $(".info-text").text("The exotic island of Kefalonia is the largest and one of the most beautiful Greek islands. Chances are you’ve already seen Kefalonia on pictures and \
         postcards, but, trust me, the reality is far better than any picture. Located in the heart of the Ionian sea, Kefalonia has inspired many with its beauty and was the filming \
         location of the famous movie “Captain Corelli’s Mandolin”. Indeed, wherever you set your eyes on, you’ll see nature at its best! Boasting a breathtaking natural landscape with \
         exotic beaches, picturesque fishing villages and magical underground caves, Kefalonia is one of the best destinations in Greece for nature lovers!");
         $("#img-box").html("<img class='img-responsive' src='assets/img/ith-fisk.jpg' alt='The island of Ithaka from Fiskardo'>");
-    })
+    }
+    aboutText();
+
+//---------- Recalls the About information linked to the About anchor tag ----------//
+
+    $("#about").click(function() {
+        aboutText();        
+        })
 });
-
-//========== SCROLL CONTROLL for POI text ==========//
-
-
-
 
 //==========   ==========//
 
