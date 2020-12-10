@@ -218,11 +218,32 @@ h1 {
  font-family: "Cinzel Decorative", sans-serif;
 }
 
+/*---------- About & Weather Links Hover and Click style ----------*/
+
 #info-links a {
     padding: 0 1rem;
     font-size: 1.25rem;
     text-decoration: none;
+    color: #0756a7;
+    font-family: "Raleway", sans-serif;
 }
+
+.about-hover {
+    background-color: #fee9e4;
+    color: #fff;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.about-active {
+    font-weight: bold;
+    background-color: #ffc756;
+    color: #fff;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+/*----------  ----------*/
 
 .info-text {
     font-family: "Raleway", sans-serif;

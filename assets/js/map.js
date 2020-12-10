@@ -27,11 +27,28 @@ $(document).ready(function() {
         })
 });
 
-//==========   ==========//
+//========== ABOUT & WEATHER anchor link Hover and Click events ==========//
 
+$(document).ready(function() {
+    $(".about-link").click(function() {
+        $(".about-link").removeClass("about-active")
+        $(this).addClass("about-active")
+    })
+    $(".about-link").hover(function() {
+        $(this).toggleClass("about-hover");        
+    });
+})
 
+//========== Tooltips ==========//
 
-//================ Map Buttons for generating the POI's on the Map ==================//
+/*$(function() {
+    $(".map-button").tooltip({
+        position: { my: "left+15 center", at: "right center", collision: "flipfit flip" }
+    });
+
+})*/
+
+//================ Map Buttons - Hover and Click events ==================//
 
 $(document).ready(function() {
     $("button").click(function() {
@@ -39,12 +56,11 @@ $(document).ready(function() {
         $(this).addClass("map-button-active")
     })
     $("button").hover(function() {
-        $(this).toggleClass("map-button-hover");
-        
+        $(this).toggleClass("map-button-hover");        
     });
 })
 
-//================ Location Arrays ==================//
+//========== Location Arrays ==========//
 
 var beaches = [
     [38.322903, 20.453183, "Fteri", "Fteri beach is heaven! Turquoise waters, amazing dramatic coastline, unique scenery, all combined create a magical environment that you should \
