@@ -167,7 +167,7 @@ p {
     margin-bottom: 0;
 }
 
-/*--------Landing Page---------*/
+/*========== LANDING PAGE ==========*/
 
 #bg-img {
     position: fixed;
@@ -335,6 +335,10 @@ h1 {
 }
 
 /*========== CONTACT PAGE ==========*/
+
+#contact-section {
+    height: 100vh;
+}
 
 #contact-bg {
     position: fixed;

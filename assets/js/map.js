@@ -53,6 +53,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("button").click(function() {
         $("button").removeClass("map-button-active")
+        $(".about-link").removeClass("about-active")
         $(this).addClass("map-button-active")
     })
     $("button").hover(function() {
@@ -363,6 +364,7 @@ fetch(url, fetchParams)
                     }, {
                         label: "Days with rain",
                         data: rainData,
+                        borderColor: "rgba(0, 0, 0, 1.0)",
                         type: "line",
                         order: 2
                     }]
