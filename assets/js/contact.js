@@ -24,11 +24,12 @@ $(document).ready(function() {
 
 //------------ EmailJS Email API ---------------//
 
-function sendMail(contactForm) {
-    emailjs.send("gmail", "gareth", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value,
+/*function sendMail(contactForm) {
+    emailjs.send("gmail", "discover_kefalonia", {
+        "from_name": contactForm.first-name.value + contactForm.last-name.value,
+        "reply-to": contactForm.email-address.value,
+        "message": contactForm.message.value,
+        "mobile": contactForm.mobile.value,
     })
     .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
@@ -37,3 +38,17 @@ function sendMail(contactForm) {
     });
     return false;
 }
+*/
+
+
+window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                emailjs.sendForm('gmail', 'discover_kefalonia', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+        
