@@ -1,7 +1,7 @@
 # [**Discover Kefalonia**](https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/)
 
-Kefalonia is the largest of the Greek Ionian islands, and is a popular holiday destination for many Europeans. Despite this it remains unspoilled and far less crowded than it's neighbours Zakynthos and Corfu, and is thus a great options for a summer vacation.
-The aim of this website is to showcase the the island of Kefalonia to people looking for inspiration for their next summer holiday destination; providing useful information about the island like Climate, towns/resorts, beaches and some of the non-beach related activities possible. 
+Kefalonia is the largest of the Greek Ionian islands, and is a popular holiday destination for many Europeans. Despite this it remains unspoilled and far less crowded than it's neighbours Zakynthos and Corfu, and is thus a great option for a summer vacation.
+The aim of this website is to showcase the the island of Kefalonia to people looking for inspiration for their next summer holiday destination; providing useful information about the island, such as climate, towns/resorts, beaches and some of the non-beach related activities possible. 
 My objective is to achieved the above in a visually appealing and interactive UX, which provides simple intuitive navigation irrespective of the device, with interactrive elements which enable the user to control the discovery of information.  Ultimately I would like this to appeal to individuals who have previously visited Kefalonia as well as those who have never had the opportunity to visit.
 
 [The live website can be viewed here!](https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/)
@@ -26,10 +26,10 @@ ______
 
 ## **User Experience (UX)** <a name="user-experience"></a>
 
-My aim is to provide a much simpler yet hopefully intuitive user experience, while combining information, imagery into a single interactive section focussed around a Google Map of the island. Each page fills the viewport on most devices, while obviously splitting the main map screen on mobile devices is unavoidable. I had elected to 
+I am planning to achieve a simple, yet hopefully intuitive user experience with the bulk of the website worked into a couple of key sections/pages. A single page will combine information and imagery into a single interactive section focussed around a Google Map of the island. Each page will fill the viewport to avoid unnecessary scrolling. The layout will obviously require splitting the main map screen on mobile devices. I plan to incorporate non-template: 
 - Interactive navigation links
 - Interactive social links section
-- Information controls which provide feedback to the user
+- Map controls which provide feedback to the user
 
 ### **User Stories** <a name="stories"></a>
 
@@ -39,7 +39,7 @@ My aim is to provide a much simpler yet hopefully intuitive user experience, whi
 
 3. **_As a_** developer, **_I need to_** provide a form , **_in order to_** enable the users to contact the site owner to enable more detailled interactions to occur.
 
-3. **_As a_** first time visitor, **_I need to_** see enticing imagery, **_in order to_** consider learning more about this destination.
+4. **_As a_** first time visitor, **_I need to_** understand the purpose of the site, **_in order to_** consider exploring the site any further.
 
 4. **_As a_** first time visitor, **_I need to_** easily and quickly discover information about the island,  **_in order to_** consider Kefalonia as a potential holiday location.
 
@@ -53,59 +53,74 @@ My aim is to provide a much simpler yet hopefully intuitive user experience, whi
 The five planes provide a framework for discussing user experience.
 
 #### **Strategy**  
-Kefalonia is the largets of the Ionian islands and 6th largest Greek island, yet remains less well known as a holiday destination compared to islands like Crete, Corfo, Mykonos, Santorini. The positive side is that the island is not crowded and over developed. The down side is that unless people get a recommendation they won't get to discover the beatutiful beaches, friendly people and diverse landsacpes which make Kefalonia such a holiday paradise.
+Kefalonia is the 6th largest Greek island, yet remains much less well known as a holiday destination compared to islands like Crete, Corfo, Mykonos, Santorini. The positive side is that the island is not crowded and over developed. The down side is that unless people get a recommendation they won't get to discover the beatutiful beaches, friendly people and diverse landsacpes which make Kefalonia such a holiday paradise.
 
-The intention is to provide some basic general information about Kefalonia to hopefully encourage them to learn more and eventually enjoy the island for themselves, such as:
+The intention of the site is to bridge that gap by providing some basic, general information about Kefalonia to hopefully encourage users to learn more, and eventually enjoy the island for themselves, such as:
  - Discover more about the island of Kefalonia
  - Understand the best time of year to visit 
  - Compare the towns/resorts
  - Discover some of the best beaches
  - Learn about some of the activities possible on the island
 
-#### **Scope**  
-The primary requirements for this are to provide:
- - Interactive elements which enable the user to initiate and control actions
+I plan to use imagery as the hook to initially draw people into the site and want to find out more.
 
-As I have chosen a fairly simple structure for the site it will have:
- - Stripped down navigation.
- - One main page section with interactive elements
- - A contact form
+#### **Scope**  
+The primary requirements for the scope are to provide interactive elements which enable the user to initiate and control actions.
+
+##### Functional Requirements
+The functionality will be provided by
+ - Simple pop-out navigation (only 2 main pages) rather than a more standard bootstrap template.
+ - One key page/section combining all of the information accessible with interactive elements
+   - Google Maps with interactive category markers linking to text and images
+   - I also plan to use a weather API to obtain and chart average weather data for the island.
+ - A contact page with contact form (conected to EmailJS)
  - Interactive social media links to access relevant content
 
-Thus I aim to use the incorporate a google map with custom markers and additinal c
- - Google Map with Custom Markers for
-   - Beach Locations
-   - Popular towns/resorts
-   - Activities
- - Enable the user to interact with the markers, to reveal additional information
- - Use attractive images to please the users
- - Select typography and colurs which envoce the desired response
+##### Content Requirements
+The imagery for the site will be partially drawn from my own image library and partly by using copyright free images from different sources. Much of the text used can be creditted to a collection of greek tourism sites. Typography was once again provided by Google fonts, following an exhaustive seach of their library.
  
+The aim of this firt deployed version is to provide a MVP, which can be expanded and further improved in the future as my knowledge and experience improves.
 
-The functionality will be provided by the Google Maps Javascript API
-I plan to incorporate basic climate data through the use of a RESTful API
-The aim of this firt version is to be a minimal viable product, which could be expanded and further improved in the future as my knowledge and experience improves.
+>**_I had originally planned a fairly standard multi-section/page site with interactive elements; but having discussed this with my mentor, have elected to try to combine and incorporate all of that content one might expect in "About" and "Gallery" pages into the interactive elements of the main "Map" page._**
 
-providing some basic information to enable the users to discover more information, with the hope of whetting their appetite to learn more and potentially book a vacation. 
-A key deliverable is achieving this while incorporating interactive elements I want to challenge myself to produce something I am proud to put my name on, without overextending myself and causing scope creep. I am conscious that I needed to keep the content within the scope of my current knowledge; this is critical for managing issues during the build and the potential need to troubleshoot on the fly.
-
->**_I had originally planned a fairly standard multi-section/page site with interactive elements; but have elected to try to combine and incorporate all of that content one might expect in "About" and "Gallery" pages into the interactive elements of the main "Map" page._**
+>**_I quickly discovered how much a of a black hole the Google Maps API can be once you get started using the code. There are so many configurable options one could very easily lose track of time and scope. Althought it took more time than I would have liked I made a conscious effort to stick to the planned functionality and not extend beyond that for this first version._**
 
 #### **Structure**  
-I aim to build on user knowledge by providing intuitive UX with a common navbar and footer section throughout the website.  
- - In the end, there was a deliberate change to the 'CONTACT'; section of the contact.html page. Given that this page will have all the necessary contact information on it I decided to change the footer section to an 'ABOUT ME' box, where the user is reminded of some of the candidates key skills (as opposed to repeating the contact information).
 
-I liked the idea of splitting the information into two sections with 1/3 and 2/3 widths respectively as we had done in the UCD Resume Walkthrough project. I intend to recreate this basic structure without copying the code from that exercise.
-I will use the left hand 1/3 to list the shorter strings of data which could be bulleted or short paragraphs and reserve the remaining 2/3 portion of the page for the bulk of the information like work history. 
- - I believe I have achieved this without directly copying the code. 
+##### Interaction Design
+
+##### Information Design
+
 
 #### **Skeleton** 
 The website will comprise three main pages: 
 - Landing | Explore | Contact
->**_This has been reduced from a more conventional multisection/page site._**
+>**_This has been intentionally reduced from a more conventional multisection/page site._**
 
-There will be clear navigation links to navigate between pages.
->**_I elected to NOT use any of the standard Bootstrap navbar templates due to the limited number of pages. I also wanted to provide more interactive navigation elements_**
+##### Interface Design
+Presenting eveything in the viewport ensures all key information is available and visible to the user without any requirement to scroll. Buttons are large enough to be obvious yet not intrusive.
+##### Navigation Design
+There will be clear navigation links to navigate between the limited pages. I may not use standard bootstrap templates for this but instead use Javascript to provide the desird functionality. I will use bright colours and iconography to highlight these elements. The navigation links will appear in the same place on each page and will have consistent colours.
+>**_I accept I have taken a risk in electing not to use a standard navigation template provided by Bootstrap a navbar but did so due to the limited number of pages. I also wanted to experiment with Javascript to provide more interactive navigation elements_**
+
+My initial "About" information and "Weather" data will be generated by clicking anchor links at the top of the main information section. Styling highlights indicate which information is displayed.
+The "About" information is displayed by default when the page loads, but can be recalled by clicking the appropriate link if required.
+
+The map page will have buttons to drop the different categories of markers; which will again use iconography and tooltips to indicate their purpose. These will be position on the map, and will highlight when hovered and change colour when selected, so the user is clear which category of marker is displayed.
+
+##### Information Design
+I had considered using the standard Google Maps information windows to display the key content (best beaches, towns/resorts and activities). However, I disliked the look of these and also didn't want this to be exclusively an exercise is using Google Maps and thus plan to display marker information in a separate section outside of Google Maps.
+The information layout will be consistent:
+  - Title
+  - Image/Chart
+  - Body Text
+  - Website link (only where appropriate)
+
+Each piece of information will consistently appear in the same position irrespective of what's being displayed.
+
+##### Wireframes
+
+
 
 The landing page has no function other than to look enticing and to direct users to explore further.
 The bulk of the website will be incorporated on the main Explore/Discover page which will house the Google Map
@@ -368,20 +383,18 @@ I copied and subsequently adapted the accordion feature from the tutorial provid
 - The project cards were also adapted from [Bootstrap 4](https://getbootstrap.com/docs/4.0/components/card/) code.
 
 ### **Acknowledgements** <a name="acknowledgements"></a>
+-As a bit of a Google Map geek, I jumped at the opportunity to incorporate this into a project, while knowing little about how deep I would eventually get into the API, yet still scratching the surface. This is a very powerful tool, with some excellent documentation.
 
-- The idea for this project originally came from a basic Resume exercise to illustrate ordered and unorder I had worked on while using the Mimo app&#39; (https://getmimo.com/playgrounds/812454) prior to starting the Full Stack Software Development course at the Code Institute. I subsequently expanded the basic exercise to create an online resume.
+- Thanks again to my mentor Sinead O'Brien for her direct and honest feedback, support and helpful advice in the run up to, and during this project. With your help I aim to become a useful developer.
 
-- I'd like to thank my mentor Sinead O'Brien for her direct and honest feedback, support and helpful advice in the run up to, and during this project. Thanks also for recommending Dillinger as a markdown editor.
+- I'd like to acknowledge the help and encouragement I received during this project from :-
+  - Eamonn Smyth
+  - Haley Schafer
+  - Johann Alberts
+  I was banging my head against the wall trying to achieve my desired Google Map marker functionality and all three contibuted in some way to helping me clear my head and eventually achieve my goal. Thanks again!
 
-- Further inspiration came from the UCD-Resume project in the CI User Centric Frontend module. I particularly identified with the thirds concept for separating the content.
+- Thanks to everyone at the Code Institute for the excellent video tutorials and fantastic introduction to Javascript and RESTful API's.
 
-- I'd like to acknowledge the guidance we received in an MS-1 planning call with :-
-  - Jim Morel
-  - John Traas
-  - Anthony O'Brien
-  ... the information they presented was regarding preparation for MS-1 projects was invaluable and helped calm the nerves somewhat before heading into the milestone project.
-- Thanks to everyone at the Code Institute for helping to make this such an enjoyable and rewarding experience.
-- I would also like to thank Luke Walters-Leatherbarrow at Learning People who provided moral support through the initial few week of my transition into the Coding world.
 ______
 ### **Technical Support** <a name="technical"></a>
 If you encounter any issues with this website, or require any support please email the developer [johnge71@gmail.com](mailto:johnge71@gmail.com)
