@@ -142,31 +142,22 @@ As mentioned in the Scope section I created multiple design concepts to reflect 
  - I have adapted aspects of each page design during the build to suit the purpose, without losing sight of the original goal.
 
 #### **Surface**
-The websites pages were almost built in reverse order from 'Contact', 'Resume' through 'Portfolio' and finally the home page. This was a deliberate choice based on how confident I was in the structure of each page. I had well defined design ideas for the first two pages but struggled to nail down a structure for the homepage.
-That said I am pleased with the overall result
+As previously stated I am trying use use beautifull imagery wherever possible as a conscious attempt to draw people into enjoying this website. The images are combines with fun interactive elemets which hand control to the user to determine what they see and how much of the data they see.
+If there is additional information they require they can utilise the contact form to request more.
 
 ##### **Colour Scheme**
-I had intended to use a darker colour scheme for this website. However as the build progressed it just didn't seem to suit; nor did it match the images I had selected. Of all aspects of this build I will freely admit this was the area I struggled with the most. After some trial and error I sought inspiration from two websites:
-- [10 Gorgeous Color Schemes for Websites](https://www.shutterstock.com/blog/10-gorgeous-color-schemes-for-websites?kw=&gclsrc=aw.ds&gclid=Cj0KCQjw2or8BRCNARIsAC_ppyaGHtDUv5oNSHP0th9gb8N6VBiGFAq-pYu1cFQFW5szceQETvoAnKgaAhwPEALw_wcB)
+I searched up colour schemes reminisent of the Greek islands and found the following group on Pinterest. Websites](https://www.shutterstock.com/blog/10-gorgeous-color-schemes-for-websites?kw=&gclsrc=aw.ds&gclid=Cj0KCQjw2or8BRCNARIsAC_ppyaGHtDUv5oNSHP0th9gb8N6VBiGFAq-pYu1cFQFW5szceQETvoAnKgaAhwPEALw_wcB)
 - [10 Trending 2020Website Color Schemes](https://www.quicksprout.com/trending-website-color-schemes/)
 
-I decided on the "Scholar" colour scheme as it fitted the theme of the website and made some use of a darker blue, which had been my original intention. I added the teal colour to provide another slightly brighter colour for contrast.
-- On reflection I am pleased with the result; it isn't too playful or childish, yet isn't cold and boring. The colours provide a decent amount of contrast.
 
-I wanted the look and functionality of the hyperlinks to be intuitive so read a little about achieving the right aesthetics
-- [WebFX - Designing and styling hyperlinks](https://www.webfx.com/blog/web-design/designing-hyperlinks-tips-and-best-practices/)
 
 ##### **Typography**  
-The only issue with typography is narrowing my choice down to one or two fonts.
-- I selected **_Michroma_** because it has a squarer profile, which appeals to me, is easy to read and looks professional.
-- I complemented Michroma with the **_Cairo_** font after comparing various combinations on the Google Fonts page. The selection was primarily made on the basis of aesthetics and ease of reading. Maybe it's my age but some font's were just a bit cramped and thus difficult to read, if that makes sense?
+I had always planned to use a greek style font for the headings, but needed the font to be easily legible. After an exhaustive search of the Google Fonts library I selected fonts which meet these criteria and still envoke images of the medetaranean and Greek islands. I didn't want to choose anything too formal as this is not a business site and can be a bit more playful in it's design. I thus Chose **_"Ceasar Dressing"_** for my main H1 and H2 Headings; and **_"Cinzel Decorative"_** for smaller headings as this has a classical look to it without being to complicated. The main text uses **_"Raleway"_** which is a nice legible and clear font which pairs reasonably well with Cinzel Decorative.
 
 ##### **Imagery** 
-Given the intended purpose of this site is to convey my skills, experience and work history I have limited the use of images, preferring to focus on these other aspects. However, I want the few images I use to convey my journey from working on oil rigs and now into coding websites; I have thus attempted to pick appropriate images.
-  
-The only section where I break this rule is the 'Portfolio' page. I want to use images of the projects in an attempt to generate interest and hopefully lead to user interaction.
+My intent was always to try and rely heavily on imagery to convey the beauty of Kefalonia as a means of enticing the user to want to discover more. I wanted to showcase the stunning beaches, quaint towns and diverse activities all with the backdrop of the island and it's gorgeous weather.
+I have used a mixture of my own images, and copyright free images sourced from WikiMedia Commons, Flickr and Pixabay.
 
-I have reused the image of the rig for the contact page as it represents teamwork and links well with the heading "_How can we work together?"
 
 ______
 
@@ -174,23 +165,25 @@ ______
 What follows is a list of the main features incorporated into the website, and a short list of upgrades which could be applied once my knowledge of other technologies like JavaScript has increased.
 
 ### **Existing Features**
-- This is a static website comprising four distinct pages, linked by the use of a navbar.
-- Navbar – I have selected a bootstrap responsive navbar to achieve plug and play functionality. 
-  - Despite having a logo I have chosen to retain the 'Home' link to reduce confusion (in case users don't intuitively know to click the logo to return to the Home page).
-  - On smaller screen sizes the navbar collapses into a "burger" icon which is subsequently used to display/hide the menu items.
-  - I elected to fix the navbar at the top of the screen to ensure the user could always achieve quick and easy navigation to any other page.
-- An Experience page with links to individual company websites, which enables the user to discover more about some of the companies I have worked for.
-  - Progress bars and Bullet point quickly convey important skills. 
-  - An 'accordion' dominates the Work History section enabling the user to selectively expand each job role as they see fit to find out a little more about each role. This is critical to limiting the visible text and the height of the page for mobile users.
-- A Portfolio page with Project 'Cards" linking to individual projects. Links have been disabled where appropriate. Placeholder cards are used to illustrate what the page could look like as the number of projects increases. The cards have an image and brief explanation of the project.
-- A Contact page with a functioning google map iframe and a contact form (currently linked to the CI form dump)
-- A footer section with Social Media and email links; as well as a link to a PDF of my CV.
+- This is an interactive website comp[rising three pages linked by simple interactive navigation elements; Landing | Map | Contact.
+   - The landing page exists to simply show an enticing image and to direct the user to "Start Exploring".
+   - The MAP page contains the bulk of the content which is revealed through the interactive button elements.
+     - Information pane which displays images and information about each lovation on the map
+     - Interactive "About" and "Weather" links which display the respective information.
+     - **Weather data is provided by WeatherOnline.co.uk and is accessed via a REST API provided by Rapid API**.
+     - **The weather data is charted using a combined bar and line chart using Chart.js**
+     - The second half of this page houses the custom Google map, which 
+       - retains some of the native interactive features to select the map style.
+       - incorporates interactive buttons to place three categories of marker
+       - enables the user to interact with each marker to discoved more information about each location
+   - The contact page does what is says on the tin; comprising a simple contact form linked to the EmailJS service.
+- I chose to create custom navigation links, which comprise two pop-out elements, linking the user to their respectibe pages.
+ > **I had experimented with a fixed position for my navigation on smaller devices, making the two menu items float over the body content and stay in position when the page is scrolled but chose to fix the navigation elements towards the top of the viewport wherer they are less likely to get in the way of the main body content.**
+- The footer elements are built into a pop-up element at the base of the Map and Contact pages. The Footer contains links to social media sites relevant to Kefalonia and also displays the copyright and a link to contact the developer.
 
 ### **Features Left to Implement**
 
-- I would eventually like to complete the Contact form so it is capable of sending the user submitted data to me via email - I am currently lacking the JavaScript skills to enable this feature.
-- Depending on the number of projects which I reference on this site I may need to consider a different layout for the Portfolio Page.
-- I also intend to replace my image on the landing page with a more professional image in the near future.
+- I 
 
 ______
 
@@ -200,31 +193,32 @@ This static website has been built using the following core technologies:
 
 Core coding languages
 
-- ![HTML 5](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/html-5-logo.png "HTML5") - HTML5
-- ![CSS3](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/css3-logo.png "CSS3") - CSS3
-- Javascript
+- ![HTML 5](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/html-5-logo.png "HTML5") - HTML5
+- ![CSS3](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/css3-logo.png "CSS3") - CSS3
+- ![Javascript]("https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/javascript.png") - Javascript
 
 Integrations
 
-- ![Bootstrap 4](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/bootstrap-logo.png "Bootstrap 4") - Bootstrap 4
-- ![Font Awesome](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/fontawesome-logo.png "Font Awesome") - Font Awesome was the source of all icons.
-- ![Google Fonts](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/googlefonts-logo.png "Google Fonts") - Fonts used on the website courtesy of Google Fonts
+- ![Bootstrap 4](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/bootstrap-logo.png "Bootstrap 4") - Bootstrap 4
+- ![Font Awesome](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/fontawesome-logo.png "Font Awesome") - Font Awesome was the source of all icons.
+- ![Google Fonts](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/googlefonts-logo.png "Google Fonts") - Fonts used on the website courtesy of Google Fonts
 - JQuery - The project uses JQuery to simplify DOM manipulation.
 - Hover.css for button hover effects
 - 
 - JQuery
 - RapidAPI
-- Chart.js
+- ![Chart.js](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/chartjs.png "Chart.js") - Chart.js
+- ![EmailJS]("") - EmailJS
 
 Version Control, storage and hosting
 
-- ![Gitpod](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/gitpod-logo.png "Gitpod logo") - All of the website's code was written in the Gitpod IDE.
-- ![Git](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/git-logo.png "git logo") - used for maintaining version control of the saved files.
-- ![GitHub](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/github-logo.png "Github logo") - used as the primary repository for storying the files and documentation.
+- ![Gitpod](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/gitpod-logo.png "Gitpod logo") - All of the website's code was written in the Gitpod IDE.
+- ![Git](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/git-logo.png "git logo") - used for maintaining version control of the saved files.
+- ![GitHub](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/github-logo.png "Github logo") - used as the primary repository for storying the files and documentation.
 
 Other
 
-- Dillinger was used to edit the markdown required for the README file.
+- Dillinger was once again used to edit the markdown required for the README file.
 ______
 
 ## **Testing** <a name="testing"></a>
@@ -274,28 +268,7 @@ ______
 
 ## **Bugs and Issues** <a name="bugs"></a>
 
-- Initially the collapsed Menu items would not appear and disappear when clicking the 'burger'.
-  - The solution to this was found in the [Slack community](https://code-institute-room.slack.com/archives/C7J2ZAVHB/p1592942356085000?thread_ts=1592936056.080800&cid=C7J2ZAVHB); and was simply a case of relocating one of the bootstrap JS CDN links to the 'head'
-
-
-- While building the navbar toggler, the menu items would only appear on the left.
-  - The solution was provided on [Stack Overflow](https://stackoverflow.com/questions/47518911/boostrap-4-navbar-collapse-menu-right-align/50881393)
-
-
-- My navbar had a small amount of whitespace on the right-hand side.
-  - The solution to remove this was again found on [Stack Overflow](https://stackoverflow.com/questions/48510609/remove-white-space-from-the-sides-and-top-of-my-navbar/48510687)
-
-
-- When I initially created cards for my portfolio projects each one was sized dependent on the content, which was undesirable. I found a solution to ensure all cards were equal height here: [Codeply](https://www.codeply.com/go/jbcgzs2Nzq)  
-
-- I used the code listed on this site to push the card button down to the bottom of the card. [Stack Overflow](https://stackoverflow.com/questions/48406628/bootstrap-align-button-to-the-bottom-of-card)
-
-- Throughout the build I had an issue with there being whitespace down the right-hand side of my pages. The issue wasn't immediately obvious, until I created boxes around every element; which highlighted some divs were wider than the remainder of the page.
- This was a useful method to visualise the interaction of all page elements. [Stack Overflow](https://stackoverflow.com/questions/46630191/white-space-on-right-side-of-page/46630298)
-
-- I initially struggled to achieve fully responsive and fixed height images for my portfolio cards. In fact I'm not sure this is possible to achieve without changing aspect ratios so I resorted to the "img-fluid" class from [Bootstrap - images](https://getbootstrap.com/docs/4.0/content/images/). 
-
-- I had highlighted in the features section that the form on the 'Contact' page is not yet connected, and is incapable of sending me any of the user inputs. This is because I currently lack the skills and knowledge required to achieve connectivity. This will be covered in future modules and will have to wait until the end of the course to be implemented.
+-  The biggest challenge 
 ______
 
 ## **Deployment** <a name="deployment"></a>
@@ -327,20 +300,20 @@ ______
 
 ## **Resources** <a name="resources"></a>
 
-I have attempted to work independently as much as possible while building this website, choosing to solve my own issues, using web resources wherever possible. Thus, my main resource throughout this project was the trusty Google search.
+I have attempted to work independently as much as possible while building this website, choosing to solve my own issues, using web resources wherever possible. Thus, my main resource throughout this project was again the trusty Google search.
  Aside from Google I have made use of the following resources: -
 
 - [Balsamiq](https://balsamiq.com/wireframes/) – Wireframing Tool
-- [Free Logo Maker](https://logomakr.com/) - Simple drawing tool used to create a brand logo
 - Code Institute course material and Walkthrough projects
 - Google DevTools - for trouble shooting and first pass testing
-- [StackOverFlow](https://stackoverflow.com/) – Web based coding 
+- [StackOverFlow](https://stackoverflow.com/) – Web based coding tips
 - [CSS Tricks](https://css-tricks.com/) – Styling tips like https://css-tricks.com/styling-underlines-web/
 - [W3Schools](https://www.w3schools.com/) – General coding resource
+- [MDN]("https://developer.mozilla.org/en-US/docs/Web/JavaScript")
 - [Pexels](https://www.pexels.com/) – Licence free image repository
-- [TinyPNG](https://tinypng.com/) – Application for compressing image files
+- [BeFunky](https://www.befunky.com/create/resize-image/) – Online image resizer
 - [Color Picker](https://htmlcolorcodes.com/color-picker/) – HTML and CSS colour codes
-- [amCharts](https://pixelmap.amcharts.com/) - Pixelated map generator tool
+- [JSHint](https://jshint.com/) - Javascript code analysis tool
 - [Shutterstock: 10 Gorgeous Color Schemes for Websites](https://www.shutterstock.com/blog/10-gorgeous-color-schemes-for-websites?kw=&gclsrc=aw.ds&gclid=Cj0KCQjw2or8BRCNARIsAC_ppyaGHtDUv5oNSHP0th9gb8N6VBiGFAq-pYu1cFQFW5szceQETvoAnKgaAhwPEALw_wcB)
 - [10 Trending 2020 Website Color Schemes](https://www.quicksprout.com/trending-website-color-schemes/)
 - [Am I responsive?](http://ami.responsivedesign.is/) - provides a simple view of a websites responsiveness.
