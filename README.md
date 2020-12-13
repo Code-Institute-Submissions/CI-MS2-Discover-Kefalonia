@@ -191,32 +191,31 @@ ______
 
 This static website has been built using the following core technologies:
 
-Core coding languages
+##### Core Coding languages
 
 - ![HTML 5](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/html-5-logo.png "HTML5") - HTML5
 - ![CSS3](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/css3-logo.png "CSS3") - CSS3
 - ![Javascript]("https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/javascript.png") - Javascript
 
-Integrations
+##### Integrations
 
 - ![Bootstrap 4](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/bootstrap-logo.png "Bootstrap 4") - Bootstrap 4
 - ![Font Awesome](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/fontawesome-logo.png "Font Awesome") - Font Awesome was the source of all icons.
 - ![Google Fonts](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/googlefonts-logo.png "Google Fonts") - Fonts used on the website courtesy of Google Fonts
-- JQuery - The project uses JQuery to simplify DOM manipulation.
+- ![JQuery](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jquery.png) "JQuery" - The project uses JQuery to simplify DOM manipulation.
 - Hover.css for button hover effects
 - 
-- JQuery
-- RapidAPI
+- ![RapidAPI]("https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/rapid-api.jpg" "RapidAPI") - RapidAPI
 - ![Chart.js](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/chartjs.png "Chart.js") - Chart.js
-- ![EmailJS]("") - EmailJS
+- ![EmailJS]("https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs.png" "EmailJS") - EmailJS
 
-Version Control, storage and hosting
+##### Version Control, storage and hosting
 
 - ![Gitpod](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/gitpod-logo.png "Gitpod logo") - All of the website's code was written in the Gitpod IDE.
 - ![Git](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/git-logo.png "git logo") - used for maintaining version control of the saved files.
 - ![GitHub](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/github-logo.png "Github logo") - used as the primary repository for storying the files and documentation.
 
-Other
+##### Other
 
 - Dillinger was once again used to edit the markdown required for the README file.
 ______
@@ -268,7 +267,10 @@ ______
 
 ## **Bugs and Issues** <a name="bugs"></a>
 
--  The biggest challenge 
+-  The biggest challenge I had while building the website was in achieving the desired functionality with google markers. There was quite a bit of documentation covering the basics of using markers, including an excellent _How To_ guide produced by Eamonn Smyth.
+-  clearing existing markers when new ones added
+-  Charting the Weather data
+-  EMail JS Autoreply template not displaying any text
 ______
 
 ## **Deployment** <a name="deployment"></a>
@@ -328,17 +330,28 @@ All of the text in this website is entirely original and has largely been adapte
 
 ### **Media**
 
-The photos used in this site were obtained from:
+The photos used in this site were obtained from the folloing sources:
+|Image |Source|Credit|
+|-------------|------------------|-------|
+|Petani Beach |Wikimedia Commons|By Matt Sims - originally posted to Flickr as Petanί Beach, Kefalloniá, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=6599113|
+|Xi Beach|Wikimedia Commons|By Splendid entry - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=5395934|
+|Skala Beach|Wikimedia Commons|By Matti - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=16480114|
+|Emplisi Beach|Wikimedia Commons|By Fæ, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=21096992|
+|Dafnoudi Beach|Wikimedia Commons|By Fæ, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=21050072|
+|Skala Town|Wikimedia Commons|By Matti - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=16479612
+|Argostolion Town|Flickr|Alan Wainwright https://www.flickr.com/photos/alanwainwright/3613628592/in/album-72157619533403498/
+|Lixouri Town|Flickr|Saxon Sky - https://www.flickr.com/photos/7368063@N06/21684399156/in/album-72157636944666226/|
+|Lassi Town|Flickr|Alan Wainwright - https://www.flickr.com/photos/alanwainwright/3613795342/in/album-72157619456351483/|
+|Assos Town|Pixabay|Free to download  - no attribution required|
+|Poros Town|Flickr|Alan Wainwright - https://www.flickr.com/photos/alanwainwright/3610823949/in/album-72157619500077238/|
+|Sami Town|Flickr|Kokomo-65 on Flickr - https://www.flickr.com/photos/54995036@N08/5089279047/|
+|Robola Winery|Flikr|cegefoto https://www.flickr.com/photos/67865224@N06/27032175804/in/album-72157654235244675/|
+|Wild Expeditions|Pixabay|Free to download  - no attribution required|
+|Bavarian Horse Riding|Flickr|Kalypso Studios & Apts -  https://www.flickr.com/photos/kalypso-apts/12100332456/in/album-72157640073047804/|
 
-- The portrait on the landing page is a 'selfie' taken by myself - clearly nobody else would want that in their album.
-- Image of the Rig – Was one of several taken by me on a visit to West Texas in 2018
-- The pixelated map used on the landing page was created from scratch __by myself__ using a pixel map generator in [amCharts](https://pixelmap.amcharts.com/)
-- The drill bit image used on the 'Portfolio' page was copied from [Wikimedia](https://commons.wikimedia.org/w/index.php?search=Natural+Gas+Drill+Bit&title=Special:Search&profile=advanced&fulltext=1&advancedSearch-current=%7B%7D&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:USGS.Natural_Gas_Well_Drill_Bit.Fayeteville_Shale_28099191.jpg)
-- The remaining images were downloaded from the following sites:
-  - The image cointaining blurred code was copied from [Pexels](https://www.pexels.com/photo/office-working-app-computer-97077/)
-  - The Laptop image used in the portfolio page was copied from [Pexels](https://www.pexels.com/photo/gray-laptop-computer-showing-html-codes-in-shallow-focus-photography-160107/)
-  - Under Construction from [Pixabay](https://pixabay.com/illustrations/under-construction-construction-sign-2408062/)
-  - The portfolio project images were screenshots taken after completion of the respective walkthrough projects.
+
+
+- All other images came from my own personal image library
 
 ### **Code Snippets**
 
