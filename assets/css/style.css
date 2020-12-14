@@ -406,27 +406,21 @@ form {
 /*========== MEDIA QUERIES ==========*/
 
 @media screen and (max-width: 1365.98px) {
-    h1 {
-
-    }
-    h2 {
-
-    }
-    
+        
     #map-top,
     #contact-top {
-        top: 9vh;        
+        top: 10vh;        
     }
 
     #map-bottom,
     #contact-bottom {
-        top: 18vh;        
+        top: 20vh;        
     }
 
     .info-text {
     overflow: auto;
-    height: 45vh;
-    font-size: 1.1rem;
+    height: 40vh;
+    font-size: 1rem;
     }
 }
 
