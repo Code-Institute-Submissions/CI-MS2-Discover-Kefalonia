@@ -211,7 +211,7 @@ This static website has been built using the following core technologies:
 
 - ![HTML 5](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/html-5-logo.png "HTML5") - HTML5
 - ![CSS3](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/css3-logo.png "CSS3") - CSS3
-- ![Javascript]("https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/javascript.png") - Javascript
+- ![Javascript](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/javascript.png "Javascript") - Javascript
 
 ##### Integrations
 
@@ -221,9 +221,9 @@ This static website has been built using the following core technologies:
 - ![JQuery](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jquery.png "JQuery") - The project uses JQuery to simplify DOM manipulation.
 - Hover.css for button hover effects
 - 
-- ![RapidAPI]("https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/rapid-api.jpg" "RapidAPI") - RapidAPI
+- ![RapidAPI](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/rapid-api.jpg "RapidAPI") - RapidAPI
 - ![Chart.js](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/chartjs.png "Chart.js") - Chart.js
-- ![EmailJS]("https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs.png" "EmailJS") - EmailJS
+- ![EmailJS](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs.png "EmailJS") - EmailJS
 
 ##### Version Control, storage and hosting
 
