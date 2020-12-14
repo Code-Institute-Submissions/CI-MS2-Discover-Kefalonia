@@ -417,9 +417,12 @@ form {
         top: 20vh;        
     }
 
+    #poi-text {
+        max-height: 30vh;
+    }
+
     .info-text {
-    overflow: auto;
-    height: 40vh;
+    overflow: auto;    
     font-size: 1rem;
     }
 }
