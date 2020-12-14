@@ -223,7 +223,30 @@ ______
 ## **Testing** <a name="testing"></a>
 
 ### **User Story Testing**
-### **Functional Testing**
+The following testing has been carried out to validate how the website adresses each of the user stories:
+
+### **Functional Testing** <a name="Functionality Testing"></a>
+The following table captures the functional testing performed on the website to ensure it works as desired.
+|   Test       |Purpose          | Desired Result | Actual Result | Chrome | Firefox | Safari | Comments |
+|--------------|-----------------|----------------|---------------|--------|---------|--------|----------|
+|   001        | Test Navigation |Navigate to MAP Page using "Explore" button| Correctly navigates to the MAP Page| **PASS** |  |  ||
+|   002        | Test Navigation |Navigate from MAP to Landing Page using "Home" nav item| Navigate to the correct page |**PASS**||||
+|   003        | Test Navigation |Navigate from the MAP to the CONTACT Page using the "Contact" nav item| Navigate to the correct page |**PASS**||||
+|   004        | Test Navigation |Navigate from Contact to the Landing page using the "Home" nav item| Navigate to the correct page |**PASS**|||
+|   005        | Test Navigation |Navigate from the Contact to the Map using the "Explore"| Navigate to the correct page |**PASS**|||
+|   006        | Map Button functionality |The "Beaches" button displays beach markers| Markers for the beaches drop correctly |**PASS**|||
+|   007        | Map Button Functionality |The "Towns/Resorts" button displays town markers| Markers for the towns/resorts drop correctly |**PASS**|||
+|   008        | Map Button Functionality |The "Activitiess" button displays activity markers| Markers for the activities drop correctly |**PASS**|||
+|   009        | Map Button Functionality |Any previous markers clear when a new set of markers is selected and dropped.| Markers clear correctly |**PASS**|||
+|   010        | Map Button Functionality |The "Zoom Out" button recenters the map and resets the zoom to display the whole island.| Zoom works as desired |**PASS**|||
+|   011        | Weather API Data |"Weather" anchor link displays the wether data and associated text| Chart renders and text displays below |**PASS**|||
+|   012        | Console Error handling  |Are there any Errors - Is there an appropriate message?| No Errors displayed |**PASS**|||
+|   013        | Map Button Functionality |"About" anchor link re-displays the general information and image| Information renders correctly |**PASS**||||
+|   014        | Map Button styles |Button Hover styles render correctly| Markers clear correctly |**PASS**|||
+|   015        | Map Button styles |Button styles toggle correctly when selected/clicked | Button styles display correctly |**PASS**|||
+|   016        | Map Button styles |Button styles toggle when another button is selected | Button styles toggle as desired |**PASS**|||
+|   017        | Test Navigation |Social media links on Contact pageshould all open in a new tab and navigate to the correct page| Navigate to the correct page |**PASS**|||
+
 The philosophy I have used throughout this build is to code, review and test each part of the website as I progressed, relying heavily on Google Dev tools throughout, for first pass testing.
 
 - Repeatedly tested the 'navbar' links throughout development to ensure correct navigation.
