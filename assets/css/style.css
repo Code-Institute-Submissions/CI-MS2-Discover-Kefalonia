@@ -183,8 +183,7 @@ h1 {
     position: Relative;
     top: 30vh;
     z-index: 2;
-    text-align: center;
-    font-family: 'Caesar Dressing', sans-serif;
+    text-align: center;    
     letter-spacing: 3px;
     color: #fff;
 }
@@ -406,16 +405,14 @@ form {
 
 /*========== MEDIA QUERIES ==========*/
 
-@media screen and (max-width: 1365.98 px) {
+@media screen and (max-width: 1365.98px) {
     h1 {
 
     }
     h2 {
 
     }
-    .info-text {
-        font-size: 0.9rem;
-    }
+    
     #map-top,
     #contact-top {
         top: 9vh;        
@@ -424,6 +421,12 @@ form {
     #map-bottom,
     #contact-bottom {
         top: 18vh;        
+    }
+
+    .info-text {
+    overflow: auto;
+    height: 45vh;
+    font-size: 1.1rem;
     }
 }
 
@@ -454,17 +457,12 @@ form {
         font-size: 1.25rem;
         width: 60vw;
         margin-left: auto;
-        margin-right: auto;
-    
+        margin-right: auto;    
     }
 
-    .info-text {
-        font-size: 1rem;
-    }
-
-    #poi-text {
-    overflow: scroll;
-    height: 45vh;
+    #info-text {
+    overflow: auto;
+    font-size: 1rem;    
     }
 
 /*----- Contact Page -----*/
