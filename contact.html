@@ -17,8 +17,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 <script type="text/javascript">
     (function(){
-        emailjs.init("user_fQK9zmzmbpQSu4Oqfn96p");
-        
+        emailjs.init("user_fQK9zmzmbpQSu4Oqfn96p");        
     })();
 </script>
 <title>Discover Kefalonia | Contact</title>
@@ -70,26 +69,30 @@
                         <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell us what you would like to know about Kefalonia" required></textarea>
                     </div>
                     <div class="form-row">
-                        <p>What are you interested in?:</p>
+                        <div class="col-12">
+                            <p>What are you interested in?:</p>
+                        </div>                    
+                        <div class="col-lg-3 form-check d-flex justify-content-center form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="activities" value="activities">
+                            <label class="form-check-label" for="inlineCheckbox1">Activities</label>
+                        </div>
+                        <div class="col-lg-3 form-check d-flex justify-content-center form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="restaurants" value="restaurants">
+                            <label class="form-check-label" for="inlineCheckbox2">Restaurants</label>
+                        </div>
+                        <div class="col-lg-3 form-check d-flex justify-content-center form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="hotels" value="hotels">
+                            <label class="form-check-label" for="inlineCheckbox2">Where to stay?</label>
+                        </div>
+                        <div class="col-lg-3 form-check d-flex justify-content-center form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" name="beaches" value="beaches">
+                            <label class="form-check-label" for="inlineCheckbox4">Beaches</label>
+                        </div>
                     </div>
-                    <div class="col-lg-3 form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="activities" value="activities">
-                        <label class="form-check-label" for="inlineCheckbox1">Activities</label>
-                    </div>
-                    <div class="col-lg-3 form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="restaurants" value="restaurants">
-                        <label class="form-check-label" for="inlineCheckbox2">Restaurants</label>
-                    </div>
-                    <div class="col-lg-3 form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="hotels" value="hotels">
-                        <label class="form-check-label" for="inlineCheckbox2">Where to stay?</label>
-                    </div>
-                    <div class="col-3 form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" name="beaches" value="beaches">
-                        <label class="form-check-label" for="inlineCheckbox4">Beaches</label>
-                    </div>
-                    <div class="button">
-                        <input class="contact-btn" type="submit" value="Send" method="post">
+                    <div class=" form-row button">
+                        <div class="col-12">
+                            <input class="contact-btn" type="submit" value="Send" method="post">
+                        </div>
                     </div>                
                 </form>                                
             </div>
@@ -116,7 +119,7 @@
                             </a>
                         </li>                        
                         <li class="list-inline-item">
-                            <a href="#" target="_blank">
+                            <a href="https://www.pinterest.co.uk/search/pins/?q=%23kefalonia&rs=typed&term_meta[]=%23kefalonia%7Ctyped" target="_blank">
                                 <i class="fab fa-pinterest" aria-hidden="true"></i>
                                 <span class="sr-only">Pinterest link.</span>
                             </a>

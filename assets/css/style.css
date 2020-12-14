@@ -11,7 +11,22 @@ body,html {
     padding: 0;
 }
 
-/*--------Colour Palette---------*/
+/*========== FONT STYLES =========*/
+
+h1, h2 {
+    font-family: "Caesar Dressing", sans-serif;
+}
+
+p {
+    font-family: "Raleway",sans-serif;
+}
+
+a {
+    font-family: "Raleway",sans-serif;
+    font-size: 1.25rem;
+}
+
+/*========== COLOUR PALETTE ==========*/
 
 .dark-blue {
     background-color: #0756a7;
@@ -41,26 +56,12 @@ body,html {
     background-color: #e27d53;
 }
 
-/*--------Headings and Paragraphs---------*/
-
-h1, h2 {
-    font-family: "Caesar Dressing", sans-serif;
-}
-
- {
-
-}
-
-p {
-    font-family: "Raleway", sans-serif;
-}
-
-/*--------Navigation---------*/
+/*========== NAVIGATION ==========*/
 
 #side-menu a {
     position: absolute;
-    left: -110px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
+    left: -110px; 
+    transition: 0.3s; 
     padding: 5px 5px 5px 30px;
     width: 170px; 
     text-decoration: none;
@@ -100,7 +101,7 @@ p {
     color: red;
 }
 
-/*--------FOOTER | Social Media & Copyright---------*/
+/*========== FOOTER | Social Media & Copyright ==========*/
 
 #social-container {
     position: fixed;
@@ -243,7 +244,7 @@ h1 {
     border-radius: 4px;
 }
 
-/*----------  ----------*/
+/*---------- POINTS OF INTEREST ----------*/
 
 .info-text {
     font-family: "Raleway", sans-serif;
@@ -276,6 +277,11 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
+}
+
+#active-link {
+    padding-top: 1rem;
+    font-weight: bold;
 }
 
 /*========== GOOGLE MAP WINDOW ==========*/
@@ -371,7 +377,7 @@ h1 {
 
 #contact-form {
     position: relative;
-    max-width: 70%;
+    max-width: 70vw;
     margin-top: 4rem;
     margin-left: auto;
     Margin-right: auto;
@@ -382,6 +388,10 @@ h1 {
 
 form {
     padding: 1rem;    
+}
+
+.form-check {
+    margin-right: 0;
 }
 
 .button {
@@ -395,6 +405,27 @@ form {
 }
 
 /*========== MEDIA QUERIES ==========*/
+
+@media screen and (max-width: 1365.98 px) {
+    h1 {
+
+    }
+    h2 {
+
+    }
+    .info-text {
+        font-size: 0.9rem;
+    }
+    #map-top,
+    #contact-top {
+        top: 9vh;        
+    }
+
+    #map-bottom,
+    #contact-bottom {
+        top: 18vh;        
+    }
+}
 
 @media screen and (max-width: 767.98px) {
     #social-container {    
