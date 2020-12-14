@@ -86,11 +86,28 @@ The aim of this firt deployed version is to provide a MVP, which can be expanded
 >**_I quickly discovered how much a of a black hole the Google Maps API can be once you get started using the code. There are so many configurable options one could very easily lose track of time and scope. Althought it took more time than I would have liked I made a conscious effort to stick to the planned functionality and not extend beyond that for this first version._**
 
 #### **Structure**  
+The website is deliberately organised across two main pages (the landing page exists to create a pleasing first impression). I opted to use pages rather than sections to avoid scrolling. This results in each page existing as single entity filling the entire viewport.
+Clear navigation elements exist on the top right hand side, enabling users to navigate between pages. These are consistently located on the two main pages.
+Rather than display social links in a visible footer, I decided to hide them in an interactive pop-up section which displays when a user clicks on the "Social" tab at the botton of the page.
+I opted to use minimal text to keep the display uncluterred.
 
 ##### Interaction Design
+The website has been designed to be as interactive as possible, enabling the user to control what they see and when.
+User interaction is controlled through:
+  - Buttons with clear iconography will change their appears when the cursor hovers over them and also when clicked to indicate which is active. 
+  - Anchor links will change their appears when the cursor hovers over them and also when clicked to indicate which is active.
+  - Navigation elements with clear and intuitive iconography will popout when hovered over.
+  - Social Media links will be housed in a pop-up element.
 
 ##### Information Design
+The key information will be located on the Map/Explore page and will be confined to the left had side of the display, meaning they will display first on smaller viewports. Irrespective of what is  displayed the layout will remain consistent:
+  - Heading
+  - Image
+  - Text
+  - Anchor Link (where appropriate)
 
+For mobile devices the information section displays above the map.
+>**I had considered different layouts and concluded that this layout was better for devices with smaller viewports as the user would see some basic information about the destination before scrolling down to the map. The design wouldn't be as intuitive if the map displayed before the information.**
 
 #### **Skeleton** 
 The website will comprise three main pages: 
@@ -99,6 +116,7 @@ The website will comprise three main pages:
 
 ##### Interface Design
 Presenting eveything in the viewport ensures all key information is available and visible to the user without any requirement to scroll. Buttons are large enough to be obvious yet not intrusive.
+
 ##### Navigation Design
 There will be clear navigation links to navigate between the limited pages. I may not use standard bootstrap templates for this but instead use Javascript to provide the desird functionality. I will use bright colours and iconography to highlight these elements. The navigation links will appear in the same place on each page and will have consistent colours.
 >**_I accept I have taken a risk in electing not to use a standard navigation template provided by Bootstrap a navbar but did so due to the limited number of pages. I also wanted to experiment with Javascript to provide more interactive navigation elements_**
@@ -146,17 +164,15 @@ As previously stated I am trying use use beautifull imagery wherever possible as
 If there is additional information they require they can utilise the contact form to request more.
 
 ##### **Colour Scheme**
-I searched up colour schemes reminisent of the Greek islands and found the following group on Pinterest. Websites](https://www.shutterstock.com/blog/10-gorgeous-color-schemes-for-websites?kw=&gclsrc=aw.ds&gclid=Cj0KCQjw2or8BRCNARIsAC_ppyaGHtDUv5oNSHP0th9gb8N6VBiGFAq-pYu1cFQFW5szceQETvoAnKgaAhwPEALw_wcB)
-- [10 Trending 2020Website Color Schemes](https://www.quicksprout.com/trending-website-color-schemes/)
-
-
+I searched up colour schemes reminisent of the Greek islands and found this fantastic resource on Pinterest.
+https://digitalsynopsis.com/design/colors-of-countries/
 
 ##### **Typography**  
 I had always planned to use a greek style font for the headings, but needed the font to be easily legible. After an exhaustive search of the Google Fonts library I selected fonts which meet these criteria and still envoke images of the medetaranean and Greek islands. I didn't want to choose anything too formal as this is not a business site and can be a bit more playful in it's design. I thus Chose **_"Ceasar Dressing"_** for my main H1 and H2 Headings; and **_"Cinzel Decorative"_** for smaller headings as this has a classical look to it without being to complicated. The main text uses **_"Raleway"_** which is a nice legible and clear font which pairs reasonably well with Cinzel Decorative.
 
 ##### **Imagery** 
 My intent was always to try and rely heavily on imagery to convey the beauty of Kefalonia as a means of enticing the user to want to discover more. I wanted to showcase the stunning beaches, quaint towns and diverse activities all with the backdrop of the island and it's gorgeous weather.
-I have used a mixture of my own images, and copyright free images sourced from WikiMedia Commons, Flickr and Pixabay.
+I have used a mixture of my own images, and copyright free images sourced from WikiMedia Commons, Flickr and Pixabay. A full list of images can be found in the <a name="media"></a> section
 
 
 ______
@@ -202,7 +218,7 @@ This static website has been built using the following core technologies:
 - ![Bootstrap 4](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/bootstrap-logo.png "Bootstrap 4") - Bootstrap 4
 - ![Font Awesome](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/fontawesome-logo.png "Font Awesome") - Font Awesome was the source of all icons.
 - ![Google Fonts](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/googlefonts-logo.png "Google Fonts") - Fonts used on the website courtesy of Google Fonts
-- ![JQuery](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jquery.png) "JQuery" - The project uses JQuery to simplify DOM manipulation.
+- ![JQuery](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jquery.png "JQuery") - The project uses JQuery to simplify DOM manipulation.
 - Hover.css for button hover effects
 - 
 - ![RapidAPI]("https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/rapid-api.jpg" "RapidAPI") - RapidAPI
@@ -289,7 +305,7 @@ The philosophy I have used throughout this build is to code, review and test eac
 ______
 
 ## **Bugs and Issues** <a name="bugs"></a>
-
+-As a bit of a Google Map geek, I jumped at the opportunity to incorporate this into a project, while knowing little about how deep I would eventually get into the API, yet still scratching the surface. This is a very powerful tool, with some excellent documentation.
 -  The biggest challenge I had while building the website was in achieving the desired functionality with google markers. There was quite a bit of documentation covering the basics of using markers, including an excellent _How To_ guide produced by Eamonn Smyth.
 -  clearing existing markers when new ones added
 -  Charting the Weather data
@@ -392,8 +408,6 @@ I copied and subsequently adapted the accordion feature from the tutorial provid
 - The project cards were also adapted from [Bootstrap 4](https://getbootstrap.com/docs/4.0/components/card/) code.
 
 ### **Acknowledgements** <a name="acknowledgements"></a>
--As a bit of a Google Map geek, I jumped at the opportunity to incorporate this into a project, while knowing little about how deep I would eventually get into the API, yet still scratching the surface. This is a very powerful tool, with some excellent documentation.
-
 - Thanks again to my mentor Sinead O'Brien for her direct and honest feedback, support and helpful advice in the run up to, and during this project. With your help I aim to become a useful developer.
 
 - I'd like to acknowledge the help and encouragement I received during this project from :-
