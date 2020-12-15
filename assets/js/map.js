@@ -17,7 +17,7 @@ $(document).ready(function() {
         location of the famous movie “Captain Corelli’s Mandolin”. Indeed, wherever you set your eyes on, you’ll see nature at its best! Boasting a breathtaking natural landscape with \
         exotic beaches, picturesque fishing villages and magical underground caves, Kefalonia is one of the best destinations in Greece for nature lovers!");
         $("#img-box").html("<img class='img-responsive' src='assets/img/ith-fisk.jpg' alt='The island of Ithaka from Fiskardo'>");
-        $("#active-link").html("");
+        $("#active-link").html(" ");
     }
     aboutText();
 
@@ -65,30 +65,30 @@ $(document).ready(function() {
 //========== Location Arrays ==========//
 
 var beaches = [
-    [38.322903, 20.453183, "Fteri", "Fteri beach is heaven! Turquoise waters, amazing dramatic coastline, unique scenery, all combined create a magical environment that you should \
+    [38.322903, 20.453183, "Fteri Beach", "Fteri beach is heaven! Turquoise waters, amazing dramatic coastline, unique scenery, all combined create a magical environment that you should \
     not miss.This is one of the most beautiful and hidden beaches of Kefalonia, near Lixouri city. Equip yourself with umbrella & bottles of water because the beach is completely \
     devoid of services.", "<img class='img-responsive' src='assets/img/beaches/beach-fteri.jpg' alt='Fteri beach'>", " "],
-    [38.260949, 20.376721, "Petani", "Stretching for about 850 meters and having a Blue Flag status, this is one of the most impressive Kefalonia beaches! This beach is perched in \
+    [38.260949, 20.376721, "Petani Beach", "Stretching for about 850 meters and having a Blue Flag status, this is one of the most impressive Kefalonia beaches! This beach is perched in \
     Paliki peninsula, 20km west of Argostoli, and has crystal clear waters, white sand, pebbles and a heavenly verdant backdrop.", "<img src='assets/img/beaches/beach-petani.jpg' alt='Petani beach'>", " "],
-    [38.47161, 20.54846, "Dafnoudi", "Hidden at the very northern tip of Kefalonia, Dafnoudi beach is a secluded gem. Accessible only on foot, the walk down the valley is beautiful \
+    [38.47161, 20.54846, "Dafnoudi Beach", "Hidden at the very northern tip of Kefalonia, Dafnoudi beach is a secluded gem. Accessible only on foot, the walk down the valley is beautiful \
     and dramatis as you emerge from the trees onto the pebbly beach. Just be aware that because of its seclusion the beach is popular with naturists!", "<img src='assets/img/beaches/beach-dafn.jpg' alt='Dafnoudi beach'>", " "],
-    [38.466161, 20.573059, "Emplisi", "Emplisi lies in a very beautiful bay with crystal clear blue-green water a few kilometres from Fiskardo. The beach consists of white pebbles. \
+    [38.466161, 20.573059, "Emplisi Beach", "Emplisi lies in a very beautiful bay with crystal clear blue-green water a few kilometres from Fiskardo. The beach consists of white pebbles. \
     If you like to snorkel, you can do it among the rocks. The water that surrounds Emplisi are among the clearest on the whole island", "<img src='assets/img/beaches/beach-emplisi.jpg' alt='Emplisi beach'>", " "],    
-    [38.342578, 20.535872, "Myrtos", "Myrtos has been described as one of the 30 most beautiful beaches in the world. Not only is this place a very important symbol of Kefalonia but \
+    [38.342578, 20.535872, "Myrtos Beach", "Myrtos has been described as one of the 30 most beautiful beaches in the world. Not only is this place a very important symbol of Kefalonia but \
     it is also one of the strips of coast that have made Greece an ideal destination for beach holidays. Located in the Pylaros region, on the north east coast, Myrtos is a \
     breathtaking bay, enhanced by a myriad of white pebbles and sand.", "<img src='assets/img/beaches/beach-myrtos.jpg' alt='Myrtos beach'>", " "],
-    [38.154322, 20.480938, "Makris Gialos", "Just 3 kilometres from Argostoli (the capital) you come across the mesmerising beach of Makris Gialos, in the Lassi area. To be more \
+    [38.154322, 20.480938, "Makris Gialos Beach", "Just 3 kilometres from Argostoli (the capital) you come across the mesmerising beach of Makris Gialos, in the Lassi area. To be more \
     specific, there are actually two adjacent beaches here; Platis and Makris Gialos. Golden sands, blue sea that merges into the sky along the horizon and a thick, lush vegetation \
     that separates the coastline from the rest of the island.", "<img src='assets/img/beaches/beach-makris.jpg' alt='Makris Gialos beach'>", " "],
-    [38.260612, 20.673927, "Antisamos", "Awarded the blue flag for its clean water, Antisamos is located a few kilometres from the town of Sami and combines a spectacular sea with \
+    [38.260612, 20.673927, "Antisamos Beach", "Awarded the blue flag for its clean water, Antisamos is located a few kilometres from the town of Sami and combines a spectacular sea with \
     lush headlands which jealously guard its treasures. Well-organised, easy to reach and spangled with pure white pebbles, Antisamos was also the location for John Madden’s film \
     “Captain Corelli's Mandolin”.", "<img src='assets/img/beaches/beach-anti.jpg' alt='Antisamos beach'>", " "],
-    [38.075906, 20.800971, "Skala", "Skala beach is located about 40 kilometres from Argostoli and 10 from Poros, where you have a bonafide Blue Flag beauty. Big enough to cater for \
+    [38.075906, 20.800971, "Skala Beach", "Skala beach is located about 40 kilometres from Argostoli and 10 from Poros, where you have a bonafide Blue Flag beauty. Big enough to cater for \
     moments of sandy solitude as well as action-packed activities, holiday makers can go from cave explorations to buzzing hotspots in a matter of strides.", "<img src='assets/img/beaches/beach-skala.jpg' alt='Skala beach'>", " "],
-    [38.452562, 20.576679, "Foki", "Foki beach is a beautiful inlet just south of Fiskardo. This is a small beach with white pebbles surrounded by olive trees, which  offer some \
+    [38.452562, 20.576679, "Foki Beach", "Foki beach is a beautiful inlet just south of Fiskardo. This is a small beach with white pebbles surrounded by olive trees, which  offer some \
     natural shade and there are some interesting caves and coves on the right side of the beach to explore. It’s definitely one of the more picturesque beaches in Kefalonia so \
     remember to bring your camera with you.", "<img src='assets/img/beaches/beach-foki.jpg' alt='Foki beach'>", " "],
-    [38.16058, 20.41527, "Xi", "This 3km Blue Flag beauty is accessorised with striking red sands and white clay cliffs. Xi's answer to a free spa treatment, the natural clays offer \
+    [38.16058, 20.41527, "Xi Beach", "This 3km Blue Flag beauty is accessorised with striking red sands and white clay cliffs. Xi's answer to a free spa treatment, the natural clays offer \
     an all-over body mask while you sunbathe. A fantastic, family-friendly option for a day spent on the sand, the warm shallows invite little water babies to splash around \
     safely.", "<img src='assets/img/beaches/beach-xi.jpg' alt='Xi beach'>", " "]
 ];
@@ -351,10 +351,11 @@ fetch(url, fetchParams)
         
         $("#weather").click(function() {
             $(".info-heading").text("Typical Weather");
-            $(".info-text").text("Kefalonia is the largest of the Ionian island and enjoys a warm Mediterranean climate with sizzling temperatures and plenty of sunshine throughout \
-            the year. Many consider the climate of Kefalonia to be near perfection and the main tourist season begins as early as May, when temperatures climb to around 25°C / 77°F; \
-            and ends in October. The busiest months are July and August which cn see temperatures rise above 30°C / 86°F. Data provided by WeatherOnline.co.uk via RapidAPI");
+            $(".info-text").text("Kefalonia enjoys a warm Mediterranean climate with sizzling temperatures and plenty of sunshine throughout \
+            the year. Many consider the climate of Kefalonia to be close to perfection. The main tourist season begins as early as May, when temperatures climb to around 25°C / 77°F; \
+            and ends in October. The busiest months are July and August which cn see temperatures rise above 30°C / 86°F.");
             $("#img-box").html("<canvas id='chart-one'></canvas>");
+            $("#active-link").html("<a href='https://rapidapi.com/weatheronline/api/climate-data' target='_blank'>Climate data provided by Weather Online via Rapid API</a>")
             var ctx = document.getElementById("chart-one");
             const myChart = new Chart(ctx, {
                 type: "bar",
