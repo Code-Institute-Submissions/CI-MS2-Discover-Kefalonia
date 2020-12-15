@@ -23,7 +23,6 @@ p {
 
 a {
     font-family: "Raleway",sans-serif;
-    font-size: 1.25rem;
 }
 
 /*========== COLOUR PALETTE ==========*/
@@ -65,7 +64,7 @@ a {
     padding: 5px 5px 5px 30px;
     width: 170px; 
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.4rem;
     color: white;
     border-radius: 0 5px 5px 0;
     z-index: 4;
@@ -80,7 +79,7 @@ a {
 
 #map-bottom,
 #contact-bottom {
-    top: 13vh;
+    top: 14vh;
     background-color: #e27d53;
 }
 
@@ -144,7 +143,7 @@ a {
 #social-media li a i {
     width: 32px;
     height: 32px;
-    padding: 12px 0;
+    padding: 12px;
     border-radius: 50%;
     font-size: 16px;
     line-height: 7px;
@@ -204,7 +203,7 @@ h1 {
     height: 6vh;
 }
 
-.info-container {
+.poi-info {
     height: 94vh;
     text-align: center;
 }
@@ -276,6 +275,18 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
+}
+
+#poi-text {
+    overflow: auto;
+    max-height: 75%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-text {
+    font-size: 1.25rem;
 }
 
 #active-link {
@@ -414,16 +425,16 @@ form {
 
     #map-bottom,
     #contact-bottom {
-        top: 20vh;        
+        top: 16vh;        
     }
 
     #poi-text {
-        max-height: 30vh;
+        max-height: 35vh;
+        overflow: auto;
     }
 
-    .info-text {
-    overflow: auto;    
-    font-size: 1rem;
+    .info-text {      
+    font-size: 16px;
     }
 }
 
