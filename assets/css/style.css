@@ -75,6 +75,7 @@ a {
 #contact-top {
     top: 8vh;
     background-color: #0756a7;
+    letter-spacing: 1px;
 }
 
 #map-bottom,
@@ -84,10 +85,13 @@ a {
 }
 
 #map-top i,
-#contact-top i,
+#contact-top i{
+    padding-left: 32px;
+}
+
 #map-bottom i,
 #contact-bottom i {
-    padding-left: 20px;
+    padding-left: 22px;
 }
 
 .top-active {
@@ -270,10 +274,11 @@ h1 {
 
 .chart-container {
     position: relative;
-    height: 30vh;
+    height: 35vh;
     width: 60vh;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
