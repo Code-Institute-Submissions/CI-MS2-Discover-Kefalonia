@@ -442,6 +442,16 @@ form label {
     background-color: #0756a7;
 }
 
+.submit-hover {
+    background-color: #ed9875;
+    color: #fff;
+}
+
+.submit-click {
+    background-color: #807832;
+    color: #fff;
+}
+
 /*========== MEDIA QUERIES ==========*/
 
 @media screen and (max-width: 1365.98px) {
