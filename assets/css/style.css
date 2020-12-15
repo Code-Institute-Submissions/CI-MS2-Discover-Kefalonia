@@ -108,7 +108,7 @@ a {
 
 #social-container {
     position: fixed;
-    bottom: -4.5rem;
+    bottom: -4.8rem;
     width: 100vw;    
     text-align: center;
     transition: 0.3s;
@@ -135,8 +135,11 @@ a {
 }
 
 .social-active {
-    transform: translateY(-4.5rem);
-    color: red;
+    transform: translateY(-4.8rem);    
+}
+
+#social-header {
+    font-weight: bold;
 }
 
 #social-media {
@@ -145,11 +148,11 @@ a {
 }
 
 #social-media li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px;
+    width: 36px;
+    height: 36px;
+    padding: 15px 0;
     border-radius: 50%;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 7px;
     text-align: center;
     color: #fafafa;
@@ -160,8 +163,13 @@ a {
     -o-transition: all 0.35s ease-in-out;
 }
 
+#social-media li a i:hover {
+    background: #e84610;
+}
+
 #copyright {    
     background-color: #0756a7;
+    font-size: 1.1rem;
 }
 
 #social-media ul,
@@ -350,7 +358,7 @@ h1 {
 .map-button-active {
     color: #fff;
     background-color: #ed9875;
-    box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #e27d53;
+    box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #75706e;
     transform:translateY(5px);    
     outline: none;
 }

@@ -42,5 +42,5 @@ $(document).ready(function() {
 $(document).ready(function() {    
     $("#social-tab").click(function() {
         $("#social-container").toggleClass("social-active");        
-    });
+    });   
 });
