@@ -353,7 +353,7 @@ fetch(url, fetchParams)
             $(".info-heading").text("Typical Weather");
             $(".info-text").text("Kefalonia enjoys a warm Mediterranean climate with sizzling temperatures and plenty of sunshine throughout \
             the year. Many consider the climate of Kefalonia to be close to perfection. The main tourist season begins as early as May, when temperatures climb to around 25°C / 77°F; \
-            and ends in October. The busiest months are July and August which cn see temperatures rise above 30°C / 86°F.");
+            and ends in October. The busiest months are July and August which can see temperatures rise above 30°C / 86°F.");
             $("#img-box").html("<canvas id='chart-one'></canvas>");
             $("#active-link").html("<a href='https://rapidapi.com/weatheronline/api/climate-data' target='_blank'>Climate data provided by Weather Online via Rapid API</a>")
             var ctx = document.getElementById("chart-one");
