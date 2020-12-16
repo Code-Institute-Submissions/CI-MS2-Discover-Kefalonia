@@ -467,11 +467,11 @@ form input{
 }
 
 /*========== MEDIA QUERIES ==========*/
-/*---------- Large Desktops ----------*/
+/*---------- DESKTOPS ----------*/
 
 @media (min-width: 1900px) { 
 
-/*----------Map Page----------*/
+/*----- Map Page -----*/
 
     #heading-row {
         height: 6vh;
@@ -500,8 +500,7 @@ form input{
     font-size: 3rem;
     }
 
-    #poi-text {
-        max-height: 35vh;
+    #poi-text {       
         overflow: auto;
     }
 
@@ -509,7 +508,7 @@ form input{
     font-size: 1.4rem;
     }
 
-/*---------- Contact Page ----------*/
+/*----- Contact Page -----*/
 
     #contact-subhead {
         margin-top: 10vh;
@@ -538,18 +537,59 @@ form input{
     }    
 }
 
-@media (max-width: 767.98px) {
-    #social-container {    
-        bottom: -8.5rem;    
+/*---------- TABLETS ----------*/
+
+/*@media (max-width: 1112px) {
+    
+    #map-top,
+    #contact-top {
+        top: 7vh;        
     }
 
-    .social-active {
-        transform: translateY(-8.5rem);
+    #map-bottom,
+    #contact-bottom {
+        top: 12vh;        
+    }
+    
+    #heading-row {
+        height: 5vh;
+    }
+    
+    .poi-info {
+        height: 55vh;
+    }
+
+    #map {
+        height: 40vh;
+    }    
+}
+
+/*----------MOBILE PHONES----------*/
+
+@media (max-width: 688px) {
+    
+    #heading-row {
+        height: 6vh;
     }
 
     .page-header {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
+
+    .info-heading {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60vw;
+    }
+
+    #side-menu a {    
+    left: -94px;    
+    padding: 5px 5px 5px 20px;
+    width: 125px;    
+    font-size: 0.9rem;    
+}
 
     #map-top,
     #contact-top {
@@ -558,19 +598,26 @@ form input{
 
     #map-bottom,
     #contact-bottom {
-        top: 15vh;        
+        top: 13vh;        
+    }
+    
+    .poi-info {
+        height: 94vh;
     }
 
-    .info-heading {
-        font-size: 1.25rem;
-        width: 60vw;
-        margin-left: auto;
-        margin-right: auto;    
+    #map {
+        height: 100vh;
+    } 
+
+    #img-box {
+        height: 40vh;
+        width: 100%;
+        font-size: 0.6rem;
     }
 
-    .info-text {
-    overflow: auto;
-    font-size: 1rem;    
+        #poi-text {        
+        overflow: auto;
+        font-size: 0.8rem;    
     }
 
 /*----- Contact Page -----*/
@@ -613,5 +660,14 @@ form input{
         box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #0756a7;
         cursor: pointer;
         margin-bottom: 0.75rem;
-    } 
+    }
+    
+    #social-container {    
+        bottom: -8.9rem;    
+    }
+
+    .social-active {
+        transform: translateY(-8.9rem);
+    }
+    
 }

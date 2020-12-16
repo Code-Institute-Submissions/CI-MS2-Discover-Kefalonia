@@ -294,17 +294,7 @@ $("document").ready(function() {
         $("#zoom-out").toggleClass("map-button-active")
         map.setZoom(10);
         map.setCenter({lat: 38.270, lng: 20.575});    
-    });
-
-//========== Change the map zoom dependant on the device window size copied from ========//
-
-    /*var responsiveZoom = (window.innerWidth < 768) ? 7 : 11;
-
-    window.addEventListener("resize", function() {
-        if (window.innerWidth < 768) responsiveZoom = 10
-        else if (window.innerWidth > 1900) responsiveZoom = 11
-            map.setZoom(responsiveZoom);
-    });*/  
+    });  
 })
 
 //======== Retrieve Weather Data from Weather Online adapted from using Rapidapi.com ==========//
@@ -380,6 +370,8 @@ fetch(url, fetchParams)
                     }]
                 },
                 options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
                     scales: {
                         yAxes: [{
                             ticks: {
