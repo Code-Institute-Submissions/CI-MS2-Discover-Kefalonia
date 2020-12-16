@@ -86,7 +86,7 @@ a {
 
 #map-top i,
 #contact-top i{
-    padding-left: 32px;
+    padding-left: 28px;
 }
 
 #map-bottom i,
@@ -108,7 +108,7 @@ a {
 
 #social-container {
     position: fixed;
-    bottom: -4.8rem;
+    bottom: -5.0rem;
     width: 100vw;    
     text-align: center;
     transition: 0.3s;
@@ -135,7 +135,7 @@ a {
 }
 
 .social-active {
-    transform: translateY(-4.8rem);    
+    transform: translateY(-5.0rem);    
 }
 
 #social-header {
@@ -170,6 +170,7 @@ a {
 #copyright {    
     background-color: #0756a7;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 #social-media ul,
@@ -430,7 +431,7 @@ form label {
 }
 
 #checkbox-question {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
