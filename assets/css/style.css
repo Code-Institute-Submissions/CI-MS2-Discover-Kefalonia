@@ -69,12 +69,12 @@ a {
 
 #side-menu a {
     position: absolute;
-    left: -111px; 
+    left: -114px; 
     transition: 0.3s; 
     padding: 5px 5px 5px 30px;
     width: 170px; 
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     border-radius: 0 5px 5px 0;
     z-index: 4;
@@ -90,7 +90,7 @@ a {
 
 #map-bottom,
 #contact-bottom {
-    top: 13vh;
+    top: 16vh;
     background-color: #e27d53;
 }
 
@@ -105,7 +105,7 @@ a {
 }
 
 .top-active {
-    transform: translateX(90px);
+    transform: translateX(94px);
     color: red;
 }
 
@@ -129,27 +129,25 @@ a {
     margin-left: auto;
     Margin-right: auto;
     padding: 10px;
-    height: 3rem; 
-    text-decoration: none;
-    font-size: 1.3rem;    
+    height: 2.5rem; 
+    text-decoration: none;        
     background-color: #ffc756;
     border-radius: 10px 10px 0 0;
     z-index: 4;
     text-align: center;
 }
 
+#social-header {
+    font-size: 1.1rem;
+}
+
 #social-trigger {
     text-decoration: none;
-    color: #0756a7;
-    font-weight: bold;
+    color: #0756a7;    
 }
 
 .social-active {
     transform: translateY(-5.0rem);    
-}
-
-#social-header {
-    font-weight: bold;
 }
 
 #social-media {
@@ -160,7 +158,7 @@ a {
 #social-media li a i {
     width: 38px;
     height: 38px;
-    padding: 16px 0;
+    padding: 15px 0;
     border-radius: 50%;
     font-size: 19px;
     line-height: 7px;
@@ -174,12 +172,12 @@ a {
 }
 
 #social-media li a i:hover {
-    background: #e84610;
+    background: #e27d53;
 }
 
 #copyright {    
     background-color: #0756a7;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -206,7 +204,7 @@ a {
     top: 30vh;
     z-index: 2;
     text-align: center;
-    font-size: 5rem;    
+    font-size: 3rem;    
     letter-spacing: 3px;
     text-shadow: 2px 2px #023568;    
     color: #fff;
@@ -216,7 +214,7 @@ a {
     position: relative;
     background-color: #023568;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     border-radius: 16px;
     top: 0;
     opacity: 0;   
@@ -229,7 +227,7 @@ a {
 }
 
 #heading-row {
-    height: 6vh;
+    height: 8vh;
     background-color: #3298d9;
 }
 
@@ -243,6 +241,7 @@ a {
 
 .info-heading {
  margin: 2.5%;
+ font-size: 1.5rem;
  font-family: "Cinzel Decorative", sans-serif;
  font-weight: bold;
 }
@@ -250,8 +249,8 @@ a {
 /*---------- About & Weather Links Hover and Click style ----------*/
 
 #info-links a {
-    padding: 0 1rem;
-    font-size: 1.4rem;
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
     text-decoration: none;
     color: #0756a7;
     font-family: "Raleway", sans-serif;
@@ -276,46 +275,36 @@ a {
 
 .poi-info {
     background-color: #f1f0ea;
-    height: 94vh;
+    height: 92vh;
     text-align: center;
+    overflow: auto;
 }
 
 #img-box {
-    margin-bottom: 0.5rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;       
 }
 
 #img-box img {
     width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    height: 80%;    
     border-radius: 2rem;       
 }
 
 .chart-container {
     position: relative;            
     height: 35vh;
-    width: 60vh;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-#poi-text {
-    overflow: auto;
-    max-height: 75%;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .info-text {
     font-family: "Raleway", sans-serif;
-    font-size: 1.6rem;
-    margin: 0 2rem;
+    font-size: 0.95rem;
+    padding-top: 0.5rem;
+    margin: 0 1rem;
 }
 
 #active-link {
@@ -332,7 +321,7 @@ a {
 
 #map {
     width: 100%;
-    height: 94vh;         
+    height: 92vh;         
 }
 
 /*-----Map Buttons-----*/
@@ -354,21 +343,21 @@ a {
 }
 
 .map-button {
-    height: 3rem;
-    width: 3rem;
+    height: 2.6rem;
+    width: 2.6rem;
     text-align: center;
     margin: 3%;
-    font-size: 1.5rem;    
-    border-radius: 1rem;
-    box-shadow: inset 0 1px 0 #3298d9, 0 10px 0 #0756a7;
+    font-size: 1.3rem;    
+    border-radius: 25%;
+    box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .map-button-hover {
     color: #fff;
     background-color: #3298d9;
-    box-shadow: inset 0 1px 0 #3298d9, 0 10px 0 #0756a7;
+    box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
 }
 
 .map-button-active {
@@ -386,6 +375,10 @@ a {
     height: 100vh;
 }
 
+#contact-box {
+    height: 70vh;
+}
+
 #contact-bg {
     position: fixed;
     top: 0;
@@ -398,11 +391,11 @@ a {
 #contact-subhead {
     color: #fff;
     font-family: "Caesar Dressing", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: 3px;
     text-align: center;
     max-width: 70%;
-    margin-top: 10vh;
+    margin-top: 3vh;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(195 , 223, 230, 0.8);
@@ -416,7 +409,7 @@ a {
 #contact-form {
     position: relative;
     max-width: 70vw;
-    margin-top: 4rem;
+    margin-top: 1.5rem;
     margin-left: auto;
     Margin-right: auto;
     margin-bottom: 20rem;    
@@ -425,25 +418,23 @@ a {
 }
 
 form {
-    padding: 1rem;    
+    padding: 0.7rem 0.7rem 0.3rem 0.7rem;    
 }
 
 form label {
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 form input{
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .form-row {
-    padding-top: 0.5rem;
+    padding-top: 0.3rem;
 }
 
 #checkbox-question {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 0.8rem;
 }
 
 .form-check {
@@ -456,12 +447,12 @@ form input{
 
 .contact-btn {
     width: 6rem;
-    margin: 1rem;
-    padding: 0.5rem;
+    margin: 0.4rem;
+    padding: 0.3rem;
     border-radius: 15px;
     color: #fff;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: #0756a7;
 }
 
@@ -476,20 +467,37 @@ form input{
 }
 
 /*========== MEDIA QUERIES ==========*/
+/*---------- Large Desktops ----------*/
 
-@media only screen and (max-width: 1365.98px) {        
+@media (min-width: 1900px) { 
+
+/*----------Map Page----------*/
+
+    #heading-row {
+        height: 6vh;
+    }
+
+    .poi-info,
+    #map {
+        height: 94vh;
+    }
+
     #side-menu a {
-        font-size: 1.2rem;
+        font-size: 1..5rem;
     }
     
     #map-top,
     #contact-top {
-        top: 8vh;        
+        top: 9vh;        
     }
 
     #map-bottom,
     #contact-bottom {
-        top: 20vh;        
+        top: 14vh;        
+    }
+
+    #map-header {
+    font-size: 3rem;
     }
 
     #poi-text {
@@ -498,15 +506,39 @@ form input{
     }
 
     .info-text {      
-    font-size: 0.5rem;
+    font-size: 1.4rem;
     }
+
+/*---------- Contact Page ----------*/
 
     #contact-subhead {
-        margin-top: 7vh;
+        margin-top: 10vh;
     }
+
+    #contact-form {
+        margin-top: 6vh;
+    }
+
+    form {
+    padding: 1rem;    
+    }
+
+    form label, 
+    #checkbox-question {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    form input{
+        font-size: 1rem;
+    }
+
+    .form-row {
+        padding-top: 0.5rem;
+    }    
 }
 
-@media only screen and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
     #social-container {    
         bottom: -8.5rem;    
     }
@@ -536,7 +568,7 @@ form input{
         margin-right: auto;    
     }
 
-    #info-text {
+    .info-text {
     overflow: auto;
     font-size: 1rem;    
     }
