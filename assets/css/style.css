@@ -25,6 +25,16 @@ a {
     font-family: "Raleway",sans-serif;
 }
 
+.page-header {
+    position: relative;
+    text-shadow: 2px 2px #023568;
+    color: #fff;
+    top: 5%;
+    font-family: "Caesar Dressing", sans-serif;
+    text-align: center;
+    font-size:2.5rem;
+}
+
 /*========== COLOUR PALETTE ==========*/
 
 .dark-blue {
@@ -196,7 +206,7 @@ a {
     top: 30vh;
     z-index: 2;
     text-align: center;
-    font-size: 3rem;    
+    font-size: 5rem;    
     letter-spacing: 3px;
     text-shadow: 2px 2px #023568;    
     color: #fff;
@@ -384,15 +394,6 @@ a {
     min-width: 100vw;
     min-height: 100vh;
     z-index: -1;
-}
-
-.page-header {
-    position: relative;
-    color: #fff;
-    top: 5%;
-    font-family: "Caesar Dressing", sans-serif;
-    text-align: center;
-    font-size:2.5rem;
 }
 
 #contact-subhead {
