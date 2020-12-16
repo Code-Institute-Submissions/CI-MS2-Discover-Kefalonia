@@ -477,7 +477,7 @@ form input{
 
 /*========== MEDIA QUERIES ==========*/
 
-@media screen and (max-width: 1365.98px) {
+@media only screen and (max-width: 1365.98px) {
         
     #side-menu a {
         font-size: 1.2rem;
@@ -490,7 +490,7 @@ form input{
 
     #map-bottom,
     #contact-bottom {
-        top: 18vh;        
+        top: 20vh;        
     }
 
     #poi-text {
@@ -499,7 +499,7 @@ form input{
     }
 
     .info-text {      
-    font-size: 1rem;
+    font-size: 10px;
     }
 
     #contact-subhead {
@@ -507,7 +507,7 @@ form input{
     }
 }
 
-@media screen and (max-width: 767.98px) {
+@media only screen and (max-width: 767.98px) {
     #social-container {    
         bottom: -8.5rem;    
     }
