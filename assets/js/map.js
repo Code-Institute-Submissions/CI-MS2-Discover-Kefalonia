@@ -142,7 +142,7 @@ function initMap() {
 
     map = new google.maps.Map(document.getElementById("map"), {
         center: {lat: 38.270, lng: 20.575},
-        zoom: 10.5,
+        zoom: 10,
         mapTypeControl: true,
         mapTypeControlOptions: {
             style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
@@ -167,7 +167,7 @@ var markers = [];
 
 $("#beaches").click(function() {
     clearMarkers();
-    map.setZoom(10.5);
+    map.setZoom(10);
     map.setCenter({lat: 38.270, lng: 20.575});
 
     for (let i = 0; i < beaches.length; i++) {
@@ -209,7 +209,7 @@ function clearMarkers() {
 
 $("#towns").click(function() {
     clearMarkers();
-    map.setZoom(10.5);
+    map.setZoom(10);
     map.setCenter({lat: 38.270, lng: 20.575});
 
     for (let i = 0; i < towns.length; i++) {
@@ -250,7 +250,7 @@ function clearMarkers() {
 
 $("#activities").click(function() {
     clearMarkers();
-    map.setZoom(10.5);
+    map.setZoom(10);
     map.setCenter({lat: 38.270, lng: 20.575});
 
     for (let i = 0; i < active.length; i++) {
@@ -292,22 +292,22 @@ function clearMarkers() {
 $("document").ready(function() {
     $("#zoom-out").click(function() {    
         $("#zoom-out").toggleClass("map-button-active")
-        map.setZoom(11);
+        map.setZoom(10);
         map.setCenter({lat: 38.270, lng: 20.575});    
     });
 
-//========== Change the map zoom dependant on the device window size ========//
+//========== Change the map zoom dependant on the device window size copied from ========//
 
-    var responsiveZoom = (window.innerWidth < 768) ? 7 : 11;
+    /*var responsiveZoom = (window.innerWidth < 768) ? 7 : 11;
 
     window.addEventListener("resize", function() {
-        if (window.innerWidth < 768) responsiveZoom = 10.5
-        else if (window.innerWidth > 768) responsiveZoom = 10.5
+        if (window.innerWidth < 768) responsiveZoom = 10
+        else if (window.innerWidth > 1900) responsiveZoom = 11
             map.setZoom(responsiveZoom);
-    });  
+    });*/  
 })
 
-//======== Retrieve Weather Data adapted from using Rapidapi.com ==========//
+//======== Retrieve Weather Data from Weather Online adapted from using Rapidapi.com ==========//
 
 const fetchParams = {
     method: "GET",
@@ -347,7 +347,7 @@ fetch(url, fetchParams)
             console.log(items.days_with_rain);
         });
 
-//============ Charts the Temperature Data from WeatherOnline.co.uk using Chart.JS ============//        
+//========== Text input for the Weather Data  ==========//       
         
         $("#weather").click(function() {
             $(".info-heading").text("Typical Weather");
@@ -356,6 +356,9 @@ fetch(url, fetchParams)
             and ends in October. The busiest months are July and August which can see temperatures rise above 30°C / 86°F.");
             $("#img-box").html("<canvas id='chart-one'></canvas>");
             $("#active-link").html("<a href='https://rapidapi.com/weatheronline/api/climate-data' target='_blank'>Climate data provided by Weather Online via Rapid API</a>")
+ 
+//============ Charts the Temperature Data from WeatherOnline.co.uk using Chart.JS ============//             
+
             var ctx = document.getElementById("chart-one");
             const myChart = new Chart(ctx, {
                 type: "bar",
