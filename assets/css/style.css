@@ -228,8 +228,9 @@ a {
     height: 100vh;
 }
 
-#page-header {
-    height: 8vh;
+#heading-row {
+    height: 6vh;
+    background-color: #3298d9;
 }
 
 .poi-info {
@@ -274,11 +275,13 @@ a {
 /*---------- POINTS OF INTEREST ----------*/
 
 .poi-info {
-    background-color: #f8fee7;
+    background-color: #f1f0ea;
 }
 
 #img-box {
     margin-bottom: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 #img-box img {
@@ -286,16 +289,11 @@ a {
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 2rem;
-    border: 1rem solid #3298d9;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    border-radius: 2rem;       
 }
 
 .chart-container {
-    position: relative;
-    background-color: #f8fee7;
-    border: 1rem solid #3298d9;
+    position: relative;            
     height: 35vh;
     width: 60vh;
     margin-left: auto;
@@ -314,7 +312,7 @@ a {
 
 .info-text {
     font-family: "Raleway", sans-serif;
-    font-size: 3rem;
+    font-size: 1.6rem;
     margin: 0 2rem;
 }
 
