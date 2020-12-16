@@ -80,7 +80,7 @@ a {
 
 #map-bottom,
 #contact-bottom {
-    top: 14vh;
+    top: 13vh;
     background-color: #e27d53;
 }
 
@@ -424,6 +424,10 @@ form {
 form label {
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+form input{
+    font-size: 1rem;
 }
 
 .form-row {
