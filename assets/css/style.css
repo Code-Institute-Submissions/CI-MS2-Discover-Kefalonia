@@ -191,20 +191,21 @@ a {
     z-index: -1;
 }
 
-h1 {
+#index-header {
     position: Relative;
     top: 30vh;
     z-index: 2;
     text-align: center;
-    font-size: 1.5rem;    
+    font-size: 2.5rem;    
     letter-spacing: 3px;
+    text-shadow: 2px 2px #000;
     color: #fff;
 }
 
 #explore {
     position: relative;
-    font-size: 1.1rem;
-    border-radius: 25%;
+    font-size: 1.6rem;
+    border-radius: 6px;
     top: 0;
     opacity: 0;   
 }
