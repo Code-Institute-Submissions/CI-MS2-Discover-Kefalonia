@@ -91,7 +91,7 @@ a {
 
 #map-bottom i,
 #contact-bottom i {
-    padding-left: 22px;
+    padding-left: 20px;
 }
 
 .top-active {
@@ -195,13 +195,16 @@ h1 {
     position: Relative;
     top: 30vh;
     z-index: 2;
-    text-align: center;    
+    text-align: center;
+    font-size: 1.5rem;    
     letter-spacing: 3px;
     color: #fff;
 }
 
 #explore {
     position: relative;
+    font-size: 1.1rem;
+    border-radius: 25%;
     top: 0;
     opacity: 0;   
 }
