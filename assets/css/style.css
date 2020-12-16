@@ -69,7 +69,7 @@ a {
 
 #side-menu a {
     position: absolute;
-    left: -110px; 
+    left: -111px; 
     transition: 0.3s; 
     padding: 5px 5px 5px 30px;
     width: 170px; 
@@ -233,9 +233,8 @@ a {
     background-color: #3298d9;
 }
 
-.poi-info {
-    height: 94vh;
-    text-align: center;
+#map-header {
+    font-size: 2rem;
 }
 
 #location-window {    
@@ -245,6 +244,7 @@ a {
 .info-heading {
  margin: 2.5%;
  font-family: "Cinzel Decorative", sans-serif;
+ font-weight: bold;
 }
 
 /*---------- About & Weather Links Hover and Click style ----------*/
@@ -276,6 +276,8 @@ a {
 
 .poi-info {
     background-color: #f1f0ea;
+    height: 94vh;
+    text-align: center;
 }
 
 #img-box {
@@ -477,6 +479,10 @@ form input{
 
 @media screen and (max-width: 1365.98px) {
         
+    #side-menu a {
+        font-size: 1.2rem;
+    }
+    
     #map-top,
     #contact-top {
         top: 8vh;        
@@ -484,7 +490,7 @@ form input{
 
     #map-bottom,
     #contact-bottom {
-        top: 16vh;        
+        top: 18vh;        
     }
 
     #poi-text {
@@ -493,7 +499,11 @@ form input{
     }
 
     .info-text {      
-    font-size: 16px;
+    font-size: 1rem;
+    }
+
+    #contact-subhead {
+        margin-top: 7vh;
     }
 }
 
