@@ -16,6 +16,8 @@ My objective is to achieved the above in a visually appealing and interactive UX
     - [Wireframes](#wireframes)
 3. [Technologies Used](#technologies)
 4. [Testing](#testing)
+   - [User Story Testing](#user-story-testing)
+   - [Functionality Testing](#functionality-testing)
 5. [Bugs & Issues](#bugs)
 6. [Deployment](#deployment)
 7. [Resources](#resources)
@@ -238,13 +240,21 @@ ______
 
 ## **Testing** <a name="testing"></a>
 
-### **User Story Testing**
+### **User Story Testing** <a name="user-story-testing"></a>
 The following testing has been carried out to validate how the website adresses each of the user stories:
-
-### **Functional Testing** <a name="Functionality Testing"></a>
+|User Story|Desctiption|Testing|
+|:--------:|-----------|-------|
+|1|As a developer, I need to provide a simple and intuitive UX, in order to allow users to easily interact with the site.|Testing performed on site to validate simple UX.|
+|2|As a developer, I need to use attractive imagery and reliable information, in order to entice the user to  discover more about the island and spend more time interacting with the site.|Testing performed to check imagery is clear, visible and attractive wherever possible.|
+|3|As a developer, I need to provide a form , in order to enable the users to contact the site owner to enable more detailled interactions to occur.|Contact form provided on contact page and tested to ensure it functions correctly and provides feedback to the user (auto-reply)|
+|4|As a first time visitor, I need to understand the purpose of the site, in order to consider exploring the site any further.|Site Title is self descriptive "_Discover Kefalonia_". Main Map page sub heading also explains the site is "_A brief guide to Kefalonia_"|
+|5|As a user, I need to compare the destinations (towns/resorts), in order to establish where might be suitable for me/my family to stay|Testing performed to validate useful information exists for main resort towns|
+|6|As a user, I need to establish some of the other activities possible on the island, in order to understand whether there is enough diversity to entartain my whole family.|Performed testing to ensure there is information displayed regarding activities and they represent a diverse offering.|
+|7|As a user, I need to have a means to contact the developer/site owner, in order to discover more detailled information which may not be covered on the site.|Testing performed on Contact form to ensure it functions correctly and provides feedback to the user (auto-reply)|
+### **Functionality Testing** <a name="functionality-testing"></a>
 The following table captures the functional testing performed on the website to ensure it works as desired.
 |   Test       |Purpose          | Desired Result | Actual Result | Chrome | Firefox | Safari | Comments |
-|--------------|-----------------|----------------|---------------|--------|---------|--------|----------|
+|:------------:|-----------------|----------------|---------------|--------|---------|--------|----------|
 |   001        | Test Navigation |Navigate to MAP Page using "Explore" button| Correctly navigates to the MAP Page| **PASS** | **PASS** |  ||
 |   002        | Test Navigation |Navigate from MAP to Landing Page using "Home" nav item| Navigate to the correct page |**PASS**| **PASS** |||
 |   003        | Test Navigation |Navigate from the MAP to the CONTACT Page using the "Contact" nav item| Navigate to the correct page |**PASS**| **PASS** |||
