@@ -544,7 +544,7 @@ form input{
 
 /*---------- TABLETS ----------*/
 
-/*@media (max-width: 1112px) {
+@media (max-width: 1112px) {
     
     #map-top,
     #contact-top {
@@ -569,18 +569,25 @@ form input{
     }
     
     #img-box {
-        height: 20vh;
-        max-width: 60%;
-        font-size: 0.6rem;
-    }
+        margin-bottom: 2rem;
+    }   
 
-    #img-box img {
-        height: 100%;
-    }
-
-    #poi-text {
+    #poi-text {        
         overflow: scroll;        
         text-align: justify;
+    }
+    .info-text {
+        font-size: 1.25rem;
+    }
+
+/*----- Contact Page -----*/    
+
+    #contact-subhead {
+        margin-top: 5rem;
+    }
+
+    #contact-form {
+        margin-top: 5rem;
     }
 
 }
