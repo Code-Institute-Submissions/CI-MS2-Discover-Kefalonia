@@ -6,7 +6,7 @@ My objective is to achieved the above in a visually appealing and interactive UX
 
 [The live website can be viewed here!](https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/)
 
-![Am I responsive images](https://github.com/GazzaJ/ "Am I Responsive")
+![Am I responsive images](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/am-i-responsive.png "Am I Responsive")
 
 ## Table of contents
 1. [User Experience](#user-experience)
@@ -139,8 +139,12 @@ The information layout will be consistent:
 Each piece of information will consistently appear in the same position irrespective of what's being displayed.
 
 ##### Wireframes
-
-
+##### Landing Page
+![Landing Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.png "Landing Page Wireframe")
+##### Map Page
+![Map Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-page.png "Map Page Wireframe")
+##### Contact Page
+![Contact Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-page.png "Contact Page Wireframe")
 
 The landing page has no function other than to look enticing and to direct users to explore further.
 The bulk of the website will be incorporated on the main Explore/Discover page which will house the Google Map
@@ -201,7 +205,11 @@ What follows is a list of the main features incorporated into the website, and a
 
 ### **Features Left to Implement**
 
-- I 
+- I would like to improive the functionality of the site, particularly the Map page, on mobile devices.
+
+Potential Roadmap of updates:
+- Version 2 of the site could incorporate more categories of markers such as Hotels and Restaurants.
+- Version 3 could include a flight or holiday booking screen connected to a booking API
 
 ______
 
