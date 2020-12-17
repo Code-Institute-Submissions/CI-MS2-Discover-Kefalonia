@@ -138,29 +138,28 @@ The information layout will be consistent:
 
 Each piece of information will consistently appear in the same position irrespective of what's being displayed.
 
-##### Wireframes
+##### Wireframes <a name="wireframes"></a>
+Wireframes for the original design concepts were created using Balsamiq, and can be viewed using the links below:
 ##### Landing Page
-![Landing Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.png "Landing Page Wireframe")
-##### Map Page
-![Map Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-page.png "Map Page Wireframe")
-##### Contact Page
-![Contact Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-page.png "Contact Page Wireframe")
-
 The landing page has no function other than to look enticing and to direct users to explore further.
 The bulk of the website will be incorporated on the main Explore/Discover page which will house the Google Map
 
 >**_The main change here was to incorporate what could have comprised separate pages (About, Map and Gallery) into a single page._**
+![Landing Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.png "Landing Page Wireframe")
 
-A pop-up, interactive footer section will hold links to relevant social media sites and email. I have also included a copyright statement.
+##### Map Page
+The Map page will become focal point for the website, combining interactive elements with Google map functionality. Clicking category buttons will drop Google Map markers on the Map; when each marker is clicked, information displays on the left-hand pane. This will include specific location image and information.
+![Map Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-page.png "Map Page Wireframe")
 
-#### **Design Concept Wireframes** <a name="wireframes"></a>
-Wireframes for the original design concepts were created using Balsamiq, and can be viewed using the links below:
-- [Home Page](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/original-landing--page.png)
-  - [Alternate Home Page](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/alternate-landing--page.png)
-- [Experience Page](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/preferred-experience-page.png)
-  - [Alternate Experience Page](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/alternate-experience--page.png)
-- [Portfolio Page](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/portfolio-page.png)
-- [Contact Page](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/contact-page.png) 
+##### Contact Page
+The contact page, does what it says on the tin. It will contain a contact form which will be connected to EmailJS so users can complete the form and send an email requesting additional information.A pop-up, interactive footer section will hold links to relevant social media sites and email. I have also included a copyright statement.
+
+![Contact Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-page.png "Contact Page Wireframe")
+
+A more detialed explanation of the planning and design can be found here:
+
+
+
 
 As mentioned in the Scope section I created multiple design concepts to reflect my different design ideas. 
  - I have adapted aspects of each page design during the build to suit the purpose, without losing sight of the original goal.
@@ -193,13 +192,16 @@ What follows is a list of the main features incorporated into the website, and a
      - Information pane which displays images and information about each lovation on the map
      - Interactive "About" and "Weather" links which display the respective information.
      - **Weather data is provided by WeatherOnline.co.uk and is accessed via a REST API provided by Rapid API**.
+     ![Weather Data](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/chart-js.png "Rest API Weather Data")
      - **The weather data is charted using a combined bar and line chart using Chart.js**
      - The second half of this page houses the custom Google map, which 
        - retains some of the native interactive features to select the map style.
        - incorporates interactive buttons to place three categories of marker
+       ![Map Markers](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-markers.png "MAp Markers")
        - enables the user to interact with each marker to discoved more information about each location
    - The contact page does what is says on the tin; comprising a simple contact form linked to the EmailJS service.
 - I chose to create custom navigation links, which comprise two pop-out elements, linking the user to their respectibe pages.
+![Navigation](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/nav-links.png "Navigation Links")
  > **I had experimented with a fixed position for my navigation on smaller devices, making the two menu items float over the body content and stay in position when the page is scrolled but chose to fix the navigation elements towards the top of the viewport wherer they are less likely to get in the way of the main body content.**
 - The footer elements are built into a pop-up element at the base of the Map and Contact pages. The Footer contains links to social media sites relevant to Kefalonia and also displays the copyright and a link to contact the developer.
 
@@ -262,7 +264,7 @@ The following testing has been carried out to validate how the website adresses 
 ### **Functionality Testing** <a name="functionality-testing"></a>
 The following table captures the functional testing performed on the website to ensure it works as desired.
 |   Test       |Purpose          | Desired Result | Actual Result | Chrome | Firefox | Safari | Comments |
-|:------------:|-----------------|----------------|---------------|--------|---------|--------|----------|
+|:------------:|-----------------|----------------|---------------|:------:|:-------:|:------:|----------|
 |   001        | Test Navigation |Navigate to MAP Page using "Explore" button| Correctly navigates to the MAP Page| **PASS** | **PASS** |  ||
 |   002        | Test Navigation |Navigate from MAP to Landing Page using "Home" nav item| Navigate to the correct page |**PASS**| **PASS** |||
 |   003        | Test Navigation |Navigate from the MAP to the CONTACT Page using the "Contact" nav item| Navigate to the correct page |**PASS**| **PASS** |||
