@@ -1,4 +1,4 @@
-//---------------- Navigation Menu ----------------//
+//========== Navigation Menu ==========//
 
 $(document).ready(function() {
     $("#contact-top").hover(function() {
@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
 });
 
-//========== EmailJS EMAIL API ==========//
+//========== EmailJS API ==========//
 
 window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -23,9 +23,9 @@ window.onload = function() {
             });        
     });
     return false;
-} 
+}; 
 
-//========== CONTACT FORM BUTTON ==========//
+//========== Contact Form Button ==========//
 
 $(document).ready(function() {
     $(".contact-btn").hover(function() {
@@ -34,10 +34,10 @@ $(document).ready(function() {
     $(".contact-btn").click(function() {
         $(".contact-btn").removeClass("submit-click");
         $(".contact-btn").addClass("submit-click");
-    })
-})
+    });
+});
 
-//========== FOOTER ITEMS ==========//
+//========== Footer Items ==========//
 
 $(document).ready(function() {    
     $("#social-tab").click(function() {
