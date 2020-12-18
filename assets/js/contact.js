@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
 });
 
-//========== EmailJS API ==========//
+//========== EmailJS API code copied directly from documentation ==========//
 
 window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
