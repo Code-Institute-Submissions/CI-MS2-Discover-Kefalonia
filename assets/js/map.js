@@ -188,39 +188,40 @@ var towns = [
     " great nightlife which manages to combine tourism and local life, wi" +
     "th plenty to offer culture vultures. Both visitors and locals enjoy " +
     "a walk along the palm lined waterfront promenade where they can samp" +
-    "le local cuisinel in one of the many bars and tavernas. You can't vi" +
-    "sit Argostolion without seeing the Loggerhead turtles which feed in " +
-    "lagoon and can frequently be seen swimming right up the promenade.", 
+    "le local cuisine in one of the many bars and tavernas. You can't vis" +
+    "it Argostolion without seeing the Loggerhead turtles which feed in t" +
+    "he lagoon and can frequently be seen swimming right up the promenade.", 
     "<img src='assets/img/towns/town-argo.jpg' alt='Argostolion'>", " "
   ],
-  [38.1640, 20.4826, "Lassi", "This small village located just 6km from t" +
-    "he airport and 3km from the Argostolion becomes a bustling resort vi" +
-    "llage in the summer months. Very popular with first time visitors an" +
-    "d returning vistors alike. It has a huge selection of hotels and sel" +
-    "f-catering apartments to choose from plus a mile long stretch of tav" +
-    "ernas, cafes, bars, souvenir shops mini markets, and car rental and " +
-    "excursion offices; it can be the perfect base for your holiday. Desp" +
-    "ite it's popularity it never feels too busy or overcrowded and loud", 
+  [38.1640, 20.4826, "Lassi", "This small village located just 6 kilometer" +
+    "s from the airport and 3 kilometers from Argostolion becomes a bustli" +
+    "ng resort village in the summer months. Very popular with first time " +
+    "visitors and returning vistors alike. It has a huge selection of hote" +
+    "ls and self-catering apartments to choose from plus a mile long stret" +
+    "ch of tavernas, cafes, bars, souvenir shops mini markets, and car ren" +
+    "tal and excursion offices; it can be the perfect base for your holida" +
+    "y. Despite it's popularity it never feels too busy or overcrowded and" +
+    " loud.", 
     "<img src='assets/img/towns/town-lassi.jpg' alt='Lassi'>", " "
   ],
   [38.4582, 20.5770, "Fiskardo", "This town is a former fishing village o" +
     "n the Northern most tip of Kefalonia which has become an upmarket ho" +
-    "liday resort has a slightly more authentic feeling. Its beautiful ba" +
-    "ckstreets contain old pastel-painted Venetian buildings draped in bo" +
-    "ugainvillea. An eclectic selection of modern cafes, bars, and boutiq" +
-    "ue shops surround the harbour, which is usually is packed full of ya" +
-    "chts moored alongside traditional fishing boats.", "<img src='assets" +
-    "/img/towns/town-fisk.jpg' alt='Fiskardo'>", " "
+    "liday resort with a slightly more authentic feeling. Its beautiful b" +
+    "ackstreets contain old pastel-painted Venetian buildings draped in b" +
+    "ougainvillea. An eclectic selection of modern cafes, bars, and bouti" +
+    "que shops surround the harbour, which is usually is packed full of y" +
+    "achts moored alongside traditional fishing boats.", "<img src='asset" +
+    "s/img/towns/town-fisk.jpg' alt='Fiskardo'>", " "
   ],
-  [38.3782, 20.5401, "Assos", "This tiny secluded village with its colourf" +
-    "ul houses is easy to miss if you don't do your homework, as it's nest" +
-    "led on a small isthmus among the the craggy clifs of the West coat. T" +
-    "his quiet villages surrounded by pine and cypress trees is the ideal " +
-    "destination for those who seeking more solitude to rest and relax on " +
-    "a romantic getaway. There are a few tavernas and bars but is a peacfu" +
-    "l village place without any lively nightlife. Be sure to visit the ol" +
-    "d ruined Venetian castle on the promontory", "<img src='assets/img/to" +
-    "wns/town-assos.jpg' alt='Assos'>", " "
+  [38.3782, 20.5401, "Assos", "This tiny secluded village with its colour" +
+    "ful houses is easy to miss if you don't do your homework, as it's ne" +
+    "stled on a small isthmus among the the craggy cliffs of the West coa" +
+    "st. This quiet village is surrounded by pine and cypress trees and i" +
+    "s the ideal destination for those seeking more solitude, to rest and" +
+    " relax on a romantic getaway. Other than a few tavernas and bars thi" +
+    "s is a peacful village place without any lively nightlife. Be sure t" +
+    "o visit the old ruined Venetian castle on the promontory", 
+    "<img src='assets/img/towns/town-assos.jpg' alt='Assos'>", " "
   ],
   [38.2514, 20.6472, "Sami", "This is a relatively large and lively coasta" +
     "l town and one you might classify as a ‘real Greek town’. It has ever" +
@@ -231,11 +232,11 @@ var towns = [
     "<img src='assets/img/towns/town-sami.jpg' alt='Sami'>", " "
   ],
   [38.2022, 20.4370, "Lixouri", "Kefalonia’s second largest city and forme" +
-    "r capital can sometime feel a bit more upmarket than Argostolion. A v" +
-    "ery picturesque town with tree-lined streets with small bridges cross" +
-    "ing the stream that divides the in two. Lixouri provides a little bit" +
-    " of something for everyone, regardless of whether you're staying in a" +
-    " hotel, a small studio apartment, or larger holiday villa.", 
+    "r capital can sometimes feel a bit more upmarket than Argostolion. A " +
+    "very picturesque town with tree-lined streets with small bridges cros" +
+    "sing the stream that divides the in two. Lixouri provides a little bi" +
+    "t of something for everyone, regardless of whether you're staying in " +
+    "a hotel, a small studio apartment, or larger holiday villa.", 
     "<img src='assets/img/towns/town-lixo.jpg' alt='Lixouri'>", " "
   ],
   [38.3031, 20.5978, "Agia Effimia", "Agia Efimia is a tiny picturesque co" +
@@ -273,9 +274,9 @@ var active = [
     "s run by Yvonne and Pavlos and is a professional sea kayaking outfitt" +
     "er. They organize short, fun single day trips for the novice and also" +
     " multi-day kayak tours for the more experienced adventurer. They prov" +
-    "ide sea kayak traiuning and certification courses in the crystal clea" +
-    "r and warm mediterranean waters of the Ionian.", "<img src='assets/im" +
-    "g/active/active-kayak.jpg' alt='Sea kayaking'>",
+    "ide sea kayak training and certification courses in the crystal clear" +   
+    " and warm mediterranean waters of the Ionian.", "<img src='assets/img" +
+    "/active/active-kayak.jpg' alt='Sea kayaking'>",
     "<a href='http://www.seakayakingkefalonia-greece.com/index.html' targe" +
     "t='_blank'>Visit Sea Kayaking Kefalonia</a>"
   ],
@@ -283,11 +284,11 @@ var active = [
     "he Robola Viticulture Zone, where dozens of local viticulturists from" +
     " Omala and the surrounding areas like Troiannata, Vlachata, Mousata, " +
     "Faraklata and Dilinata created the Robola Producers of Kefallinia Agr" +
-    "icultural Wine Cooperativein bacvk in 1982 to try to protect the uniq" +
-    "ue Kefalonian viticulture. Visitors can now tour this faciulity and e" +
-    "njoy some of this fabulous wine", "<img src='assets/img/active/robola" +
-    ".jpg' alt='Robola Wine'>", "<a href='https://www.orealios.gr/en/' tar" +
-    "get='_blank'>Visit Robola Growers Co-operative</a>"
+    "icultural Wine Cooperativein back in 1982 to try to protect the uniqu" +
+    "e Kefalonian viticulture. Visitors can now tour this facility and enj" +
+    "oy some of this fabulous wine", "<img src='assets/img/active/robola.j" +
+    "pg' alt='Robola Wine'>", "<a href='https://www.orealios.gr/en/' targe" +
+    "t='_blank'>Visit Robola Growers Co-operative</a>"
   ],
   [38.10546, 20.53011, "Wild Nature Expeditions", "Outdoor activities for " +
     "all tastes skills and ages. Caving | Rock Climbing | Hiking | Canyoni" +
@@ -300,19 +301,18 @@ var active = [
     "his natural wonder has been open to visitors since 1963, and gives yo" +
     "u a unique view of a limestone cave holding a breathtaking sunlit lak" +
     "e. The waters which feed this natural wonder travel through the rocks" + 
-    "underground all of the way from Argostolion", "<img src='assets/img/a" +
-    "ctive/melis-cave.jpg' alt='Melissani Cave'>", "<a href='https://www.m" +
-    "elissani-cave.com/' target='_blank'>Visit Melissani Cave</a>"
+    " underground all of the way from Argostolion", "<img src='assets/img/" +
+    "active/melis-cave.jpg' alt='Melissani Cave'>", "<a href='https://www." +
+    "melissani-cave.com/' target='_blank'>Visit Melissani Cave</a>"
   ],
   [38.21405, 20.64759, "Bavarian Horse Riding", "Why not take time away fr" +
-    "om the beach to enjoy aome of the the mountains, canyons, valleys, ol" +
-    "ive groves and the virgin nature of Kefalonia on horseback. The guys " +
-    "from Bavarian Horse Riding Stables show you all these places on their" +
-    " sturdy, sure-footed and very well trained Haflingers and Bavarian wa" +
-    "rm blood horses.",
-    "<img src='assets/img/active/active-horse.jpg' alt='Bavarian horse rid" +
-    "ing'>", "<a href='https://www.kephalonia.com/' target='_blank'>Visit " +
-    "Bavarian Horse Riding Stable</a>"
+    "om the beach to enjoy some of the mountains, canyons, valleys, olive " +
+    "groves and the virgin nature of Kefalonia on horseback. The guys from" +
+    " Bavarian Horse Riding Stables show you all these places on their stu" +
+    "rdy, sure-footed and very well trained Haflingers and Bavarian warm b" +
+    "lood horses.", "<img src='assets/img/active/active-horse.jpg' alt='Ba" +
+    "varian horse riding'>", "<a href='https://www.kephalonia.com/' target" +
+    "='_blank'>Visit Bavarian Horse Riding Stable</a>"
   ]
 ];
 
