@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Cinzel+Decorative:wght@400;700&family=Montserrat&display=swap');
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
-/* {
-    border: 1px solid red;
-}*/
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Cinzel+Decorative:wght@400;700&family=Montserrat&display=swap');
 
 /*-------------------------------*/
 
@@ -11,7 +14,7 @@ body,html {
     padding: 0;
 }
 
-/*========== FONT STYLES =========*/
+/*========== Font Styles =========*/
 
 h1, h2 {
     font-family: "Caesar Dressing", sans-serif;
@@ -35,7 +38,7 @@ a {
     font-size:2.5rem;
 }
 
-/*========== COLOUR PALETTE ==========*/
+/*========== Colour Pallete ==========*/
 
 .dark-blue {
     background-color: #0756a7;
@@ -65,11 +68,13 @@ a {
     background-color: #e27d53;
 }
 
-/*========== NAVIGATION ==========*/
+/*========== Navigation ==========*/
 
 #side-menu a {
     position: absolute;
     left: -114px; 
+    -webkit-transition: 0.3s; 
+    -o-transition: 0.3s; 
     transition: 0.3s; 
     padding: 5px 5px 5px 30px;
     width: 170px; 
@@ -105,22 +110,28 @@ a {
 }
 
 .top-active {
-    transform: translateX(94px);
+    -webkit-transform: translateX(94px);
+        -ms-transform: translateX(94px);
+            transform: translateX(94px);
     color: red;
 }
 
 .bottom-active {
-    transform: translateX(90px);
+    -webkit-transform: translateX(90px);
+        -ms-transform: translateX(90px);
+            transform: translateX(90px);
     color: red;
 }
 
-/*========== FOOTER | Social Media & Copyright ==========*/
+/*========== Footer | Social Media & Copyright ==========*/
 
 #social-container {
     position: fixed;
     bottom: -5.0rem;
     width: 100vw;    
     text-align: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -147,7 +158,9 @@ a {
 }
 
 .social-active {
-    transform: translateY(-5.0rem);    
+    -webkit-transform: translateY(-5.0rem);
+        -ms-transform: translateY(-5.0rem);
+            transform: translateY(-5.0rem);    
 }
 
 #social-media {
@@ -188,7 +201,7 @@ a {
     margin-bottom: 0;
 }
 
-/*========== LANDING PAGE ==========*/
+/*========== Landing Page ==========*/
 
 #bg-img {
     position: fixed;
@@ -220,7 +233,7 @@ a {
     opacity: 0;   
 }
 
-/*========== MAP & IINFORMATION PAGE - Location Information ==========*/
+/*========== Map Info Page - Location Information ==========*/
 
 #map-container {
     height: 100vh;
@@ -246,7 +259,7 @@ a {
  font-weight: bold;
 }
 
-/*---------- About & Weather Links Hover and Click style ----------*/
+/*========== About & Weather Links Hover and Click style ==========*/
 
 #info-links a {
     padding: 0 0.5rem;
@@ -271,7 +284,7 @@ a {
     border-radius: 4px;
 }
 
-/*---------- POINTS OF INTEREST ----------*/
+/*===== Points of Interest =====*/
 
 .poi-info {
     background-color: #f1f0ea;
@@ -317,7 +330,7 @@ a {
     font-weight: bold;
 }
 
-/*========== GOOGLE MAP WINDOW ==========*/
+/*========== Google Map Window ==========*/
 
 #map-wrapper {
     padding-left: 0;
@@ -329,7 +342,7 @@ a {
     height: 92vh;         
 }
 
-/*-----Map Buttons-----*/
+/*===== Map Buttons =====*/
 
 .map-links {    
     position: absolute;
@@ -354,7 +367,8 @@ a {
     margin: 3%;
     font-size: 1.3rem;    
     border-radius: 25%;
-    box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
+    -webkit-box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
+            box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
     cursor: pointer;
     margin-bottom: 0.5rem;
 }
@@ -362,18 +376,22 @@ a {
 .map-button-hover {
     color: #fff;
     background-color: #3298d9;
-    box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
+    -webkit-box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
+            box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
 }
 
 .map-button-active {
     color: #fff;
     background-color: #ed9875;
-    box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #75706e;
-    transform:translateY(5px);    
+    -webkit-box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #75706e;
+            box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #75706e;
+    -webkit-transform:translateY(5px);
+        -ms-transform:translateY(5px);
+            transform:translateY(5px);    
     outline: none;
 }
 
-/*========== CONTACT PAGE ==========*/
+/*========== Contact Page ==========*/
 
 #contact-section {
     position: fixed;
@@ -471,12 +489,9 @@ form input{
     color: #fff;
 }
 
-/*========== MEDIA QUERIES ==========*/
-/*---------- DESKTOPS ----------*/
+/*========== Media Queries ==========*/
 
 @media (min-width: 1900px) { 
-
-/*----- Map Page -----*/
 
     #heading-row {
         height: 6vh;
@@ -488,7 +503,7 @@ form input{
     }
 
     #side-menu a {
-        font-size: 1..5rem;
+        font-size: 1.5rem;
     }
     
     #map-top,
@@ -512,8 +527,6 @@ form input{
     .info-text {      
     font-size: 1.4rem;
     }
-
-/*----- Contact Page -----*/
 
     #contact-subhead {
         margin-top: 10vh;
@@ -541,8 +554,6 @@ form input{
         padding-top: 0.5rem;
     }    
 }
-
-/*---------- TABLETS ----------*/
 
 @media (max-width: 1112px) {
     
@@ -580,8 +591,6 @@ form input{
         font-size: 1.25rem;
     }
 
-/*----- Contact Page -----*/    
-
     #contact-subhead {
         margin-top: 5rem;
     }
@@ -591,8 +600,6 @@ form input{
     }
 
 }
-
-/*----------MOBILE PHONES----------*/
 
 @media (max-width: 688px) {
     
@@ -617,7 +624,7 @@ form input{
     padding: 5px 5px 5px 20px;
     width: 125px;    
     font-size: 0.9rem;    
-}
+    }
 
     #map-top,
     #contact-top {
@@ -656,8 +663,6 @@ form input{
         font-size: 0.8rem;    
     }
 
-/*----- Contact Page -----*/
-
     #contact-subhead {
         max-width: 60%;
         margin-left: auto;
@@ -693,7 +698,8 @@ form input{
         margin: 1.5%;
         font-size: 1.5rem;    
         border-radius: 0.5rem;
-        box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #0756a7;
+        -webkit-box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #0756a7;
+                box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #0756a7;
         cursor: pointer;
         margin-bottom: 0.75rem;
     }
@@ -703,7 +709,8 @@ form input{
     }
 
     .social-active {
-        transform: translateY(-8.9rem);
-    }
-    
+        -webkit-transform: translateY(-8.9rem);
+            -ms-transform: translateY(-8.9rem);
+                transform: translateY(-8.9rem);
+    }    
 }
