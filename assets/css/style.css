@@ -504,12 +504,6 @@ form input{
 
 /*========== 404 Error Page ==========*/
 
-#error-img {
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-}
-
 #error-message {
     position: absolute;    
     top: 30%;
