@@ -20,6 +20,10 @@ h1, h2 {
     font-family: "Caesar Dressing", sans-serif;
 }
 
+h3, h4, h5 {
+    font-family: "Cinzel Decorative", sans-serif;
+}
+
 p {
     font-family: "Raleway",sans-serif;
 }
@@ -125,83 +129,6 @@ a {
             transform: translateX(90px);
 }
 
-/*========== Footer | Social Media & Copyright ==========*/
-
-#social-container {
-    position: fixed;
-    bottom: -5.0rem;
-    width: 100vw;    
-    text-align: center;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-
-#social-tab {    
-    width: 15rem;
-    margin-left: auto;
-    Margin-right: auto;
-    padding: 10px;
-    height: 2.5rem; 
-    text-decoration: none;        
-    background-color: #ffc756;
-    border-radius: 10px 10px 0 0;
-    z-index: 4;
-    text-align: center;
-}
-
-#social-header {
-    font-size: 1.1rem;
-}
-
-#social-trigger {
-    text-decoration: none;
-    color: #0756a7;    
-}
-
-.social-active {
-    -webkit-transform: translateY(-5.0rem);
-        -ms-transform: translateY(-5.0rem);
-            transform: translateY(-5.0rem);    
-}
-
-#social-media {
-    background-color: #60c1e7;
-    color: #fff;       
-}
-
-#social-media li a i {
-    width: 38px;
-    height: 38px;
-    padding: 15px 0;
-    border-radius: 50%;
-    font-size: 19px;
-    line-height: 7px;
-    text-align: center;
-    color: #fafafa;
-    background: #8f8f8f;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-#social-media li a i:hover {
-    background: #164d0f;
-}
-
-#copyright {    
-    background-color: #023568;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-#social-media ul,
-#copyright P {
-    padding: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-}
 
 /*========== Landing Page ==========*/
 
@@ -484,7 +411,7 @@ form input{
     color: #fff;
     font-weight: bold;
     font-size: 1rem;
-    background-color: #0756a7;
+    background-color: #023568;
 }
 
 .submit-hover {
@@ -495,6 +422,129 @@ form input{
 .submit-click {
     background-color: #164d0f;
     color: #fff;
+}
+
+/*========== Footer | Social Media & Copyright ==========*/
+
+#social-container {
+    position: fixed;
+    bottom: -5.0rem;
+    width: 100vw;    
+    text-align: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#social-tab {    
+    width: 15rem;
+    margin-left: auto;
+    Margin-right: auto;
+    padding: 10px;
+    height: 2.5rem; 
+    text-decoration: none;        
+    background-color: #ffc756;
+    border-radius: 10px 10px 0 0;
+    z-index: 4;
+    text-align: center;
+}
+
+#social-header {
+    font-size: 1.1rem;
+}
+
+#social-trigger {
+    text-decoration: none;
+    color: #0756a7;    
+}
+
+.social-active {
+    -webkit-transform: translateY(-5.0rem);
+        -ms-transform: translateY(-5.0rem);
+            transform: translateY(-5.0rem);    
+}
+
+#social-media {
+    background-color: #60c1e7;
+    color: #fff;       
+}
+
+#social-media li a i {
+    width: 38px;
+    height: 38px;
+    padding: 15px 0;
+    border-radius: 50%;
+    font-size: 19px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+#social-media li a i:hover {
+    background: #164d0f;
+}
+
+#copyright {    
+    background-color: #023568;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#social-media ul,
+#copyright P {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/*========== 404 Error Page ==========*/
+
+#error-img {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+#error-message {
+    position: absolute;    
+    top: 30%;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(195 , 223, 230, 0.7);
+    margin: 0 10vw;
+    border-radius: 2rem;
+}
+
+.error-head {
+    font-family: "Caesar Dressing", sans-serif;
+    color: #023568;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px #fff;
+    padding-top: 0.5rem;
+}
+
+.error-sub {
+    font-family: "Caesar Dressing", sans-serif;
+    color: #023568;
+    letter-spacing: 0.2rem;
+    padding-top: 0.5rem;
+}
+
+.error-text {
+    font-family: "Raleway", sans-serif;
+    color: #023568;        
+    padding-top: 1rem;
+}
+
+.error-link {
+    color: #023568;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 /*========== Media Queries ==========*/

@@ -4,16 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon link-->
+    <link rel="icon" href="assets/img/greece-flag.png" type="image/x-icon">
     <title>404 Re-direct</title>
+    <!--CSS Stylesheet link-->
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body onload="redirect()">
-	<h1 style="text-align: center; padding-top: 50px; display: block;">Redirecting...</h1>
+	<div>
+        <img src="assets/img/myrtos2.jpg" id="bg-img" alt="Myrtos Beach">
+    </div>
+    <div id="error-message">
+        <h1 class="error-head">404 - File Not Found </h1>
+        <h2 class="error-sub">Sorry! It looks like the website you are looking for is kicking back on the beach!</h2>
+        <h3 class="error-text">You should be directed back to the "Discover Kefalonia" website soon</h3>
+        <h4 class="error-text">If you are not automatically re-directed, please click the link below</h4>
+        <h5 class="error-link"><a href="https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/">Back to Discover Kefalonia</a></h5>
+    </div>
+    
 	<script>
 	  function redirect() {
 		setTimeout(function(){ 
-				window.location.replace("/");
+				window.location.replace("index.html");
 			}
-			, 100);	
+			, 1000);	
 		}
 	</script>
   </body>
