@@ -514,11 +514,11 @@ fetch(url, fetchParams)
     });
     const tempData = [];
     climateData.forEach(function(items) {
-      tempData.push(parseInt(items.temp))
+      tempData.push(parseInt(items.temp));
     });
     const rainData = [];
     climateData.forEach(function(items) {
-      rainData.push(parseInt(items.days_with_rain))
+      rainData.push(parseInt(items.days_with_rain));
     });
 
     //===================== Text input for the Weather Data ======================//       
@@ -577,4 +577,3 @@ fetch(url, fetchParams)
   .catch(error => {
     console.log("There was an ERROR retrieving data from WeatherOnline API", error);
   });
-
