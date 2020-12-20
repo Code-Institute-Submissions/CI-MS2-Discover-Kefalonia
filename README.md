@@ -1,3 +1,11 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/GazzaJ/CI-MS2-Discover-Kefalonia)
+![GitHub contributors](https://img.shields.io/github/contributors/GazzaJ/CI-MS2-Discover-Kefalonia)
+![GitHub language count](https://img.shields.io/github/languages/count/GazzaJ/CI-MS2-Discover-Kefalonia)
+![GitHub top language](https://img.shields.io/github/languages/top/GazzaJ/CI-MS2-Discover-Kefalonia)
+![W3C Validation](https://img.shields.io/badge/w3c--validation-HTML-green)
+![W3C Validation](https://img.shields.io/badge/w3c--validation-CSS-green)
+![GitHub forks](https://img.shields.io/github/forks/GazzaJ/CI-MS2-Discover-Kefalonia?style=social)
+
 # [**Discover Kefalonia**](https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/)
 
 Kefalonia is the largest of the Greek Ionian islands, and is a popular holiday destination for many Europeans. Despite this it remains unspoilled and far less crowded than it's neighbours Zakynthos and Corfu, and is thus a great option for a summer vacation.
@@ -35,21 +43,15 @@ I am planning to achieve a simple, yet hopefully intuitive user experience with 
 
 ### **User Stories** <a name="stories"></a>
 
-1. **_As a_** developer, **_I need to_** provide a simple and intuitive UX, **_in order to_** allow users to easily interact with the site.
+1. **_As a_** first time visitor, **_I need to_** understand the purpose of the site, **_in order to_** consider exploring the site any further.
 
-2. **_As a_** developer, **_I need to_** use attractive imagery and reliable information, **_in order to_** entice the user to  discover more about the island and spend more time interacting with the site.
+2. **_As a_** first time visitor, **_I need to_** easily and quickly discover information about the island,  **_in order to_** consider Kefalonia as a potential holiday location.
 
-3. **_As a_** developer, **_I need to_** provide a form , **_in order to_** enable the users to contact the site owner to enable more detailled interactions to occur.
+3. **_As a_** user, **_I need to_** compare the destinations (towns/resorts), **_in order to_** establish where might be suitable for me/my family to stay
 
-4. **_As a_** first time visitor, **_I need to_** understand the purpose of the site, **_in order to_** consider exploring the site any further.
+4. **_As a_** user, **_I need to_** establish some of the other activities possible on the island, **_in order to_** understand whether there is enough diversity to entartain my whole family.
 
-4. **_As a_** first time visitor, **_I need to_** easily and quickly discover information about the island,  **_in order to_** consider Kefalonia as a potential holiday location.
-
-5. **_As a_** user, **_I need to_** compare the destinations (towns/resorts), **_in order to_** establish where might be suitable for me/my family to stay
-
-6. **_As a_** user, **_I need to_** establish some of the other activities possible on the island, **_in order to_** understand whether there is enough diversity to entartain my whole family.
-
-7. **_As a _** user, **_I need to_** have a means to contact the developer/site owner, **_in order to_** discover more detailled information which may not be covered on the site.
+5. **_As a _** user, **_I need to_** have a means to contact the developer/site owner, **_in order to_** discover more detailled information which may not be covered on the site.
 
 ### **The 5 Planes of UX** <a name="planes"></a>
 The five planes provide a framework for discussing user experience.
@@ -79,7 +81,7 @@ The functionality will be provided by
  - Interactive social media links to access relevant content
 
 ##### Content Requirements
-The imagery for the site will be partially drawn from my own image library and partly by using copyright free images from different sources. Much of the text used can be creditted to a collection of greek tourism sites. Typography was once again provided by Google fonts, following an exhaustive seach of their library.
+The imagery for the site will be partially drawn from my own image library and partly by using copyright free images from different sources. Typography was once again provided by Google fonts, following an exhaustive seach of their library.
  
 The aim of this firt deployed version is to provide a MVP, which can be expanded and further improved in the future as my knowledge and experience improves.
 
@@ -129,7 +131,7 @@ The "About" information is displayed by default when the page loads, but can be 
 The map page will have buttons to drop the different categories of markers; which will again use iconography and tooltips to indicate their purpose. These will be position on the map, and will highlight when hovered and change colour when selected, so the user is clear which category of marker is displayed.
 
 ##### Information Design
-I had considered using the standard Google Maps information windows to display the key content (best beaches, towns/resorts and activities). However, I disliked the look of these and also didn't want this to be exclusively an exercise is using Google Maps and thus plan to display marker information in a separate section outside of Google Maps.
+I considered using the standard Google Maps information windows to display the key content (best beaches, towns/resorts and activities). However, I disliked the look of these and also didn't want this to be exclusively an exercise is using Google Maps and thus plan to display marker information in a separate section outside of Google Maps.
 The information layout will be consistent:
   - Title
   - Image/Chart
@@ -167,21 +169,27 @@ As mentioned in the Scope section I created multiple design concepts to reflect 
  - I have adapted aspects of each page design during the build to suit the purpose, without losing sight of the original goal.
 
 #### **Surface**
-As previously stated I am trying use use beautifull imagery wherever possible as a conscious attempt to draw people into enjoying this website. The images are combines with fun interactive elemets which hand control to the user to determine what they see and how much of the data they see.
+As previously stated I have attempted to use use beautifull imagery wherever possible as a conscious attempt to draw people into enjoying this website. The images are combined with fun interactive elemets which hand control to the user to determine what they see and how much of the data they see.
 If there is additional information they require they can utilise the contact form to request more.
 
 ##### **Colour Scheme**
 I searched up colour schemes reminisent of the Greek islands and found this fantastic resource on Pinterest.
 https://digitalsynopsis.com/design/colors-of-countries/
 
+![Colour Palette](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/colour-palette.png "Colour Palette")
+
 ##### **Typography**  
-I had always planned to use a greek style font for the headings, but needed the font to be easily legible. After an exhaustive search of the Google Fonts library I selected fonts which meet these criteria and still envoke images of the medetaranean and Greek islands. I didn't want to choose anything too formal as this is not a business site and can be a bit more playful in it's design. I thus Chose **_"Ceasar Dressing"_** for my main H1 and H2 Headings; and **_"Cinzel Decorative"_** for smaller headings as this has a classical look to it without being to complicated. The main text uses **_"Raleway"_** which is a nice legible and clear font which pairs reasonably well with Cinzel Decorative.
+I always planned to use a greek style font for the headings, but needed the font to be easily legible. After an exhaustive search of the Google Fonts library I selected fonts which meet these criteria and still envoke images of the medetaranean and Greek islands. I didn't want to choose anything too formal as this is not a business site and can be a bit more playful in it's design. I thus chose the following fonts:
+ - ![Caesar Dressing](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/caesar-dressing.png "Caesar Dressing font")
+ - ![Cinzel Decorative](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/cinzel-decorative.png "Cinzel Decorative font")
+I selected **_Caesar Dressing_** for my main H1 and H2 Headings; and **_"Cinzel Decorative"_** for smaller headings as this has a classical look to it without being to complicated. The main text uses **_"Raleway"_** which is a nice legible and clear font which pairs reasonably well with Cinzel Decorative.
 
 ##### **Imagery** 
 My intent was always to try and rely heavily on imagery to convey the beauty of Kefalonia as a means of enticing the user to want to discover more. I wanted to showcase the stunning beaches, quaint towns and diverse activities all with the backdrop of the island and it's gorgeous weather.
 I have used a mixture of my own images, and copyright free images sourced from WikiMedia Commons, Flickr and Pixabay. A full list of images can be found in the <a name="media"></a> section
 
-
+Here is a user comment from Slack Community validating the 
+![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jmuser-comment.png "User Comment")
 ______
 
 ## **Features** <a name="features"></a>
@@ -228,7 +236,7 @@ ______
 
 ## **Technologies Used** <a name="technologies"></a>  
 
-This static website has been built using the following core technologies:
+This website has been built using the following core technologies:
 
 ##### Core Coding languages
 
@@ -265,17 +273,29 @@ ______
 The following testing has been carried out to validate how the website adresses each of the user stories:
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
-|1|As a developer, I need to provide a simple and intuitive UX, in order to allow users to easily interact with the site.|Testing performed on site to validate simple UX.|
-|2|As a developer, I need to use attractive imagery and reliable information, in order to entice the user to  discover more about the island and spend more time interacting with the site.|Testing performed to check imagery is clear, visible and attractive wherever possible.|
-|3|As a developer, I need to provide a form , in order to enable the users to contact the site owner to enable more detailled interactions to occur.|Contact form provided on contact page and tested to ensure it functions correctly and provides feedback to the user (auto-reply)|
-|4|As a first time visitor, I need to understand the purpose of the site, in order to consider exploring the site any further.|Site Title is self descriptive "_Discover Kefalonia_". Main Map page sub heading also explains the site is "_A brief guide to Kefalonia_"|
-|5|As a user, I need to compare the destinations (towns/resorts), in order to establish where might be suitable for me/my family to stay|Testing performed to validate useful information exists for main resort towns|
-|6|As a user, I need to establish some of the other activities possible on the island, in order to understand whether there is enough diversity to entartain my whole family.|Performed testing to ensure there is information displayed regarding activities and they represent a diverse offering.|
-|7|As a user, I need to have a means to contact the developer/site owner, in order to discover more detailled information which may not be covered on the site.|Testing performed on Contact form to ensure it functions correctly and provides feedback to the user (auto-reply)|
+|1|As a first time visitor, I need to understand the purpose of the site, in order to consider exploring the site any further.|Site Title is self descriptive "_Discover Kefalonia_". Main Map page sub heading also explains the site is "_A brief guide to Kefalonia_"|
+
+|User Story|Desctiption|Testing|
+|:--------:|-----------|-------|
+|2|As a first time visitor, I need to easily and quickly discover information about the island,  in order to consider Kefalonia as a potential holiday location.||
+
+|User Story|Desctiption|Testing|
+|:--------:|-----------|-------|
+|3|As a user, I need to compare the destinations (towns/resorts), in order to establish where might be suitable for me/my family to stay|Testing performed to validate useful information exists for main resort towns|
+
+|User Story|Desctiption|Testing|
+|:--------:|-----------|-------|
+|4|As a user, I need to establish some of the other activities possible on the island, in order to understand whether there is enough diversity to entartain my whole family.|Performed testing to ensure there is information displayed regarding activities and they represent a diverse offering.|
+
+|User Story|Desctiption|Testing|
+|:--------:|-----------|-------|
+|5|As a user, I need to have a means to contact the developer/site owner, in order to discover more detailled information which may not be covered on the site.|Testing performed on Contact form to ensure it functions correctly and provides feedback to the user (auto-reply)|
+
 ### **Functionality Testing** <a name="functionality-testing"></a>
-The following table captures the functional testing performed on the website to ensure it works as desired.
-|   Test       |Purpose          | Desired Result | Actual Result | Chrome | Firefox | Safari | Comments |
-|:------------:|-----------------|----------------|---------------|:------:|:-------:|:------:|----------|
+The following table captures the functional testing performed on the website to ensure it works as desired. I have tested on the listed browsers only using Windows version 1909 (OS Build 18363.1256), and have not conducted any backward compatibility testing in older browser versions.
+
+|   Test       |Purpose          | Desired Result | Actual Result | Chrome v 87.0.4280.88 | Firefox v 83.0 (64-bit) | Comments |
+|:------------:|-----------------|----------------|---------------|:------:|:-------:|----------|
 |   001        | Test Navigation |Navigate to MAP Page using "Explore" button| Correctly navigates to the MAP Page| **PASS** | **PASS** |  ||
 |   002        | Test Navigation |Navigate from MAP to Landing Page using "Home" nav item| Navigate to the correct page |**PASS**| **PASS** |||
 |   003        | Test Navigation |Navigate from the MAP to the CONTACT Page using the "Contact" nav item| Navigate to the correct page |**PASS**| **PASS** |||
@@ -296,6 +316,15 @@ The following table captures the functional testing performed on the website to 
 
 The philosophy I have used throughout this build is to code, review and test each part of the website as I progressed, relying heavily on Google Dev tools throughout, for first pass testing.
 
+|Test|Process|Result| Comment |
+|----|-------|:----:|---------|
+|HTML Validation| Copy Index.html code into W3C validator|PASS||
+|HTML Validation| Copy Map.html code into W3C validator|WARNING|Empty h3 tag - text is imported from Javascript array|
+|HTML Validation| Copy Contact.html code into W3C validator|WARNING|The "type" is uneccesary for Javascript results from 3rd party Script tags|
+|Javascript Validation| Copy index.js code into JSHint|||
+|Javascript Validation| Copy map.js code into JSHint|||
+|Javascript Validation| Copy cndex.js code into JSHint|||
+|CSS Validation| Copy CSS code into WC3 validator| ERROR |Errors raised for webkit compatibility. Chosedn to ignore| 
 - Repeatedly tested the 'navbar' links throughout development to ensure correct navigation.
 - I used DevTools extensively during development, changing devices, to ensure the desired responsive behaviour was achieved.
   - This helped to highlight an issue I had with Divs and whitespace on the right hand side.
@@ -396,7 +425,7 @@ ______
 
 ### **Content**
 
-All of the text in this website is entirely original and has largely been adapted from a copy of my CV.
+
 
 ### **Media**
 
