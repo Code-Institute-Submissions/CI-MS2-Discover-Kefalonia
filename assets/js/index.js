@@ -6,6 +6,3 @@ $("#explore").click(function() {
 //------GSAP Commands------//
 
 gsap.to("#explore", {duration: 2, opacity: 1, transform: "translateY(50vh)", ease: "back"});
-
-//========== Contact Form Button ==========//
-
