@@ -46,15 +46,6 @@ $(document).ready(function() {
   });
 });
 
-//========== Tooltips ==========//
-
-/*$(function() {
-    $(".map-button").tooltip({
-        position: { my: "left+15 center", at: "right center", collision: "flipfit flip" }
-    });
-
-})*/
-
 //================ Map Buttons - Hover and Click events ==================//
 
 $(document).ready(function() {
