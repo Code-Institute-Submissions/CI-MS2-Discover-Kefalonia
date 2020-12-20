@@ -7,7 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Cinzel+Decorative:wght@400;700&family=Montserrat&display=swap');
 
-/*-------------------------------*/
+/*=================================*/
 
 body,html {
     margin: 0;
@@ -41,7 +41,7 @@ a {
 /*========== Colour Pallete ==========*/
 
 .dark-blue {
-    background-color: #0756a7;
+    background-color: #023568;
 }
 
 .medium-blue {
@@ -60,12 +60,16 @@ a {
     background-color: #f1e9c1;
 }
 
-.light-pink {
-    background-color: #fee9e4;
+.light-orange {
+    background-color: #ed9875;
 }
 
 .terracota {
     background-color: #e27d53;
+}
+
+.forest-green {
+    background-color: #164d0f;
 }
 
 /*========== Navigation ==========*/
@@ -89,14 +93,14 @@ a {
 #map-top,
 #contact-top {
     top: 8vh;
-    background-color: #0756a7;
+    background-color: #023568;
     letter-spacing: 1px;
 }
 
 #map-bottom,
 #contact-bottom {
     top: 16vh;
-    background-color: #e27d53;
+    background-color: #164d0f;
 }
 
 #map-top i,
@@ -113,14 +117,12 @@ a {
     -webkit-transform: translateX(94px);
         -ms-transform: translateX(94px);
             transform: translateX(94px);
-    color: red;
 }
 
 .bottom-active {
     -webkit-transform: translateX(90px);
         -ms-transform: translateX(90px);
             transform: translateX(90px);
-    color: red;
 }
 
 /*========== Footer | Social Media & Copyright ==========*/
@@ -185,11 +187,11 @@ a {
 }
 
 #social-media li a i:hover {
-    background: #e27d53;
+    background: #164d0f;
 }
 
 #copyright {    
-    background-color: #0756a7;
+    background-color: #023568;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -226,11 +228,17 @@ a {
 #explore {
     position: relative;
     background-color: #023568;
-    color: #fff;
+    color: #fff;    
     font-size: 1.2rem;
     border-radius: 16px;
     top: 0;
     opacity: 0;   
+}
+
+#explore:hover {
+    background-color: #ed9875;
+    color: #000;
+    font-weight: bold;
 }
 
 /*========== Map Info Page - Location Information ==========*/
@@ -265,21 +273,19 @@ a {
     padding: 0 0.5rem;
     font-size: 1.1rem;
     text-decoration: none;
-    color: #0756a7;
+    color: #023568;
     font-family: "Raleway", sans-serif;
 }
 
 .about-hover {
-    background-color: #fee9e4;
-    color: #fff;
+    background-color: #ed9875;    
     padding: 2px;
     border-radius: 4px;
 }
 
 .about-active {
     font-weight: bold;
-    background-color: #ffc756;
-    color: #fff;
+    background-color: #ffc756;    
     padding: 2px;
     border-radius: 4px;
 }
@@ -363,28 +369,30 @@ a {
 .map-button {
     height: 2.6rem;
     width: 2.6rem;
+    background-color: #023568;
+    color: #fff;
     text-align: center;
-    margin: 3%;
+    margin: 0.5rem;
     font-size: 1.3rem;    
     border-radius: 25%;
-    -webkit-box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
-            box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
+    -webkit-box-shadow: inset 0 1px 0 #8f8e8d, 0 8px 0 #75706e;
+            box-shadow: inset 0 1px 0 #8f8e8d, 0 8px 0 #75706e;
     cursor: pointer;
     margin-bottom: 0.5rem;
 }
 
 .map-button-hover {
-    color: #fff;
-    background-color: #3298d9;
-    -webkit-box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
-            box-shadow: inset 0 1px 0 #3298d9, 0 8px 0 #0756a7;
+    color: #000;
+    background-color: #ed9875;
+    -webkit-box-shadow: inset 0 1px 0 #8f8e8d, 0 8px 0 #75706e;
+            box-shadow: inset 0 1px 0 #8f8e8d, 0 8px 0 #75706e;
 }
 
 .map-button-active {
     color: #fff;
-    background-color: #ed9875;
-    -webkit-box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #75706e;
-            box-shadow: inset 0 1px 0 #3298d9, 0 5px 0 #75706e;
+    background-color: #164d0f;
+    -webkit-box-shadow: inset 0 1px 0 #8f8e8d, 0 5px 0 #75706e;
+            box-shadow: inset 0 1px 0 #8f8e8d, 0 5px 0 #75706e;
     -webkit-transform:translateY(5px);
         -ms-transform:translateY(5px);
             transform:translateY(5px);    
@@ -412,7 +420,7 @@ a {
 }
 
 #contact-subhead {
-    color: #fff;
+    color: #0756a7;
     font-family: "Caesar Dressing", sans-serif;
     font-size: 1.5rem;
     letter-spacing: 3px;
@@ -481,11 +489,11 @@ form input{
 
 .submit-hover {
     background-color: #ed9875;
-    color: #fff;
+    color: #000;
 }
 
 .submit-click {
-    background-color: #807832;
+    background-color: #164d0f;
     color: #fff;
 }
 
