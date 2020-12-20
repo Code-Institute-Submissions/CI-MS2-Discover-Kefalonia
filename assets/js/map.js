@@ -16,11 +16,11 @@ $(document).ready(function() {
       "gest and most beautiful of the 200 plus inhabited Greek islands. It's" +
       " likely you have already seen Kefalonia on pictures and postcards, bu" +
       "t the reality is far better than any picture. Positioned in the cente" +
-      "r of the Ionian sea, Kefalonia captivated many with its beauty and wa" +
-      "s the location of the famous movie 'Captain Corelli’s Mandolin'. Inde" +
-      "ed, wherever you look, you’ll see nature at its best! Possessing a br" +
-      "eathtaking landscape with superb beaches, pretty fishing villages and" +
-      " underground caves, Kefalonia is a great destination for nature lovers!");
+      "r of the Ionian sea, Kefalonia has captivated many with its beauty. I" +
+      "ndeed, wherever you look, you’ll see nature at its best! Possessing a" +
+      " breathtaking landscape with superb beaches, pretty fishing villages " +
+      "and underground caves, Kefalonia is a great destination for nature lo" +
+      "vers!");
     $("#img-box").html("<img class='img-responsive' src='assets/img/ith-fisk" +
       ".jpg' alt='The island of Ithaka from Fiskardo'>");
     $("#active-link").html(" ");
@@ -72,20 +72,20 @@ $(document).ready(function() {
 
 var beaches = [
   [38.322903, 20.453183, "Fteri Beach", "This beach is heaven is a little" +
-    " bit of heaven! Azuze waters lapping a dramatic coastline, dramatic " +
+    " bit of heaven! Azure waters lapping a dramatic coastline, dramatic " +
     "scenery, are all combined here to create a captivating environment t" +
     "hat anyone visiting Kefalonia shouldn't miss. Located North of the t" +
-    "own of Lixouri Fteri is regarded as one of the most picturesque yet " +
-    "hidden beaches on Kefalonia. Unlike most of the islands beaches, you" +
-    "'ll need to take your own umbrella, food and bottles of water becaus" +
-    "e the beach is remote and completely devoid of any amenities.", "<im"+
-    "g class='img-responsive' src='assets/img/beaches/beach-fteri.jpg' al"+
+    "own of Lixouri, Fteri is regarded as one of the most picturesque yet" +
+    " hidden beaches on Kefalonia. Unlike most of the islands beaches, yo" +
+    "u'll need to take your own umbrella, food and bottles of water becau" +
+    "se the beach is remote and completely devoid of any amenities.", "<i" +
+    "g class='img-responsive' src='assets/img/beaches/beach-fteri.jpg' al" +
     "t='Fteri beach'>", " "
   ],
   [38.260949, 20.376721, "Petani Beach", "Stretching for about 850 meters" +
     " this Blue Flag beauty is another of Kefalonia's impressive beaches!" +
     " This beach is perched in the middle of the Paliki peninsula, 20km N" +
-    "orth Weat of Argostoli and Lixouri. Accessible by road it benefits f" +
+    "orth West of Argostoli and Lixouri. Accessible by road it benefits f" +
     "rom crystal clear turquoise waters, white sand, pebbles and a heaven" +
     "ly verdant backdrop. There are even two beachside tavernas which sup" +
     "ply sun loungers and umbrellas.", "<img src='assets/img/beaches/beac" +
@@ -115,44 +115,44 @@ var beaches = [
     " beach, much like Navagio is to Zakynthos; it has been described as " +
     "possibly one of the 30 most beautiful beaches in the world. Not only" +
     " is this place an important symbol of Kefalonia but it is also one o" +
-    "the strips of coastline that has made Greece Europes best destinatio" +
-    "n for beach holidays. Located in the Pylaros valley, a short distanc" +
-    "e south of Assos town on the North East coast, Myrtos is a shimmerin" +
-    "g bay of brilliant white sand and pebbles surrounded by the bluest w" +
-    "arter you could imagine. As you can imagine this is a very popular b" +
-    "each, but is very well organised, with all the amenities you need.",
+    "f the strips of coastline that has made Greece, Europe's best destin" +
+    "ation for beach holidays. Located in the Pylaros valley, a short dis" +
+    "tance south of Assos town on the North East coast, Myrtos is a shimm" +
+    "ering bay of brilliant white sand and pebbles surrounded by the blue" +
+    "st water you could imagine. As you can imagine this is a very popula" +
+    "r beach, but is very well organised, with all the amenities you need.",
     "<img src='assets/img/beaches/beach-myrtos.jpg' alt='Myrtos beach'>",
     " "
   ],
-  [38.154322, 20.480938, "Makris Gialos Beach", "Just 3 kilometers south " +
+  [38.154322, 20.480938, "Makris Gialos Beach", "Just 3 kilometres south " +
     "of Argostoli you come across the popular resort village of Lassi and" +
     " it's myriad of beaches the biggest and most popular of which is the" + 
-    "mesmerising beach of Makris Gialos, also known as Costa Costa beach," +
-    " after the popular beachside bar. To be presice, there are actually " +
+    " mesmerising beach of Makris Gialos, also known as Costa Costa beach" +
+    " after the popular beachside bar. To be precise, there are actually " +
     "two adjacent beaches here; Platis Gialos and Makris Gialos. One of t" +
     "he few beaches with golden sands it has clean blue waters that merge" +
     " into the horizon. The beach is backed by thick lush vegetation that" + 
-    "separates the coastline from the rest of the life on the island. Thi" +
-    "s is another popular beach but benefits from decent parking and grea" +
-    "t facilities", "<img src='assets/img/beaches/beach-makris.jpg' alt='" +
-    "Makris Gialos beach'>", " "
+    " separates the coastline from the rest of the life on the island. Th" +
+    "is is another popular beach but benefits from decent parking and gre" +
+    "at facilities.", "<img src='assets/img/beaches/beach-makris.jpg' alt" +
+    "='Makris Gialos beach'>", " "
   ],
-  [38.260612, 20.673927, "Antisamos Beach", "Another of the islands beach" +
-    "es benefitting from being awarded the Blue Flag for its clean waters" +
-    ", Antisamos is located in a secluded bay a few kilometres from the t" +
-    "own of Sami and combines spectacular deep blue sea with lush tree li" +
-    "ned headlands which guard this treasure. This is a very popular and " +
-    "well-organised beach, easy to accessible by road. Be aware that most" +
-    " of the beach is reserved for the large beach bars which charge for " +
-    "using their services, however there is a small section to the south " +
-    "where you do not have to pay. Lined with pure white pebbles, Antisam" +
-    "os was the focal point for John Madden’s film 'Captain Corelli's Man" +
-    "dolin'.", "<img src='assets/img/beaches/beach-anti.jpg' alt='Antisam" +
-    "os beach'>", " "
+  [38.260612, 20.673927, "Antisamos Beach", "Another of the island's beac" +
+    "hes benefitting from being awarded the Blue Flag for its clean water" +
+    "s, Antisamos is located in a secluded bay a few kilometres from the " +
+    "town of Sami and combines spectacular deep blue sea with lush tree l" +
+    "ined headlands which guard this treasure. This is a very popular and" +
+    " well-organised beach, easy to accessible by road. Be aware that mos" +
+    "t of the beach is reserved for the large beach bars which charge for" +
+    " using their services, however there is a small section to the south" +
+    " where you do not have to pay. Lined with pure white pebbles, Antisa" +
+    "mos was the focal point for John Madden’s film 'Captain Corelli's Ma" +
+    "ndolin'.", "<img src='assets/img/beaches/beach-anti.jpg' alt='Antisa" +
+    "mos beach'>", " "
   ],
   [38.075906, 20.800971, "Skala Beach", "Skala beach is located on the So" +
-    "uth Eastern tip of the island about 40 kilometers from Argostoli and" +
-    " 10 kilometers South of Poros. Here you have another genuine Blue Fl" +
+    "uth Eastern tip of the island about 40 kilometres from Argostoli and" +
+    " 10 kilometres South of Poros. Here you have another genuine Blue Fl" +
     "ag beauty, big enough to cater for this popular location and yet sti" +
     "ll provide moments of sandy solitude. There is also plenty to cater " +
     "for the active holiday makers who can go from cave explorations to b" +
@@ -170,7 +170,7 @@ var beaches = [
     "your camera with you.", "<img src='assets/img/beaches/beach-foki.jpg" +
     "' alt='Foki beach'>", " "
   ],
-  [38.16058, 20.41527, "Xi Beach", "This 3 kilometer long Blue Flag beach" +
+  [38.16058, 20.41527, "Xi Beach", "This 3 kilometre long Blue Flag beach" +
     " a short drive south of Lixouri, is unique on the island as it has s" +
     "triking red sands backed by white clay cliffs. Xi's clay cliffs are " +
     "well known as free spa treatment offering an all-over body mask whil" +
@@ -193,14 +193,14 @@ var towns = [
     "he lagoon and can frequently be seen swimming right up the promenade.", 
     "<img src='assets/img/towns/town-argo.jpg' alt='Argostolion'>", " "
   ],
-  [38.1640, 20.4826, "Lassi", "This small village located just 6 kilometer" +
-    "s from the airport and 3 kilometers from Argostolion becomes a bustli" +
+  [38.1640, 20.4826, "Lassi", "This small village located just 6 kilometre" +
+    "s from the airport and 3 kilometres from Argostolion becomes a bustli" +
     "ng resort village in the summer months. Very popular with first time " +
-    "visitors and returning vistors alike. It has a huge selection of hote" +
-    "ls and self-catering apartments to choose from plus a mile long stret" +
-    "ch of tavernas, cafes, bars, souvenir shops mini markets, and car ren" +
-    "tal and excursion offices; it can be the perfect base for your holida" +
-    "y. Despite it's popularity it never feels too busy or overcrowded and" +
+    "visitors and returning visitors alike. It has a huge selection of hot" +
+    "els and self-catering apartments to choose from plus a mile long stre" +
+    "tch of tavernas, cafes, bars, souvenir shops mini markets, and car re" +
+    "ntal and excursion offices; it can be the perfect base for your holid" +
+    "ay. Despite its popularity it never feels too busy or overcrowded and" +
     " loud.", 
     "<img src='assets/img/towns/town-lassi.jpg' alt='Lassi'>", " "
   ],
@@ -215,20 +215,20 @@ var towns = [
   ],
   [38.3782, 20.5401, "Assos", "This tiny secluded village with its colour" +
     "ful houses is easy to miss if you don't do your homework, as it's ne" +
-    "stled on a small isthmus among the the craggy cliffs of the West coa" +
-    "st. This quiet village is surrounded by pine and cypress trees and i" +
-    "s the ideal destination for those seeking more solitude, to rest and" +
-    " relax on a romantic getaway. Other than a few tavernas and bars thi" +
-    "s is a peacful village place without any lively nightlife. Be sure t" +
-    "o visit the old ruined Venetian castle on the promontory", 
+    "stled on a small isthmus among the craggy cliffs of the West coast. " +
+    "This quiet village is surrounded by pine and cypress trees and is th" +
+    "e ideal destination for those seeking more solitude, to rest and rel" +
+    "ax on a romantic getaway. Other than a few tavernas and bars this is" +
+    " a peaceful village without any lively nightlife. Be sure to visit t" +
+    "he old ruined Venetian castle on the promontory.", 
     "<img src='assets/img/towns/town-assos.jpg' alt='Assos'>", " "
   ],
   [38.2514, 20.6472, "Sami", "This is a relatively large and lively coasta" +
     "l town and one you might classify as a ‘real Greek town’. It has ever" +
     "ything tourists need to have a pleasant holiday yet allows locals to " +
     "go about daily life. It has a mixture of modern cafe's and bars mixed" +
-    " in with more traditional tavernasas around the working harbour where" +
-    " the fishermen still unload their catch of the day.",
+    " in with more traditional tavernas around the working harbour where t" +
+    "he fishermen still unload their catch of the day.",
     "<img src='assets/img/towns/town-sami.jpg' alt='Sami'>", " "
   ],
   [38.2022, 20.4370, "Lixouri", "Kefalonia’s second largest city and forme" +
@@ -240,22 +240,22 @@ var towns = [
     "<img src='assets/img/towns/town-lixo.jpg' alt='Lixouri'>", " "
   ],
   [38.3031, 20.5978, "Agia Effimia", "Agia Efimia is a tiny picturesque co" +
-    "astal village 31.5 kilometers North East of Argostoli. The village su" +
+    "astal village 31.5 kilometres North East of Argostoli. The village su" +
     "rrounds a natural bay and is home to a small and lovely port where a " +
-    "misture of fishing and excursion boats moor alonside yachts. If you h" +
-    "ave access to a boat you should definitely explore its pristine isola" + 
-    "ted beaches and stunning coves. Don't forget to to treat yourself in " +
-    "one of the many traditional tavernas.",
+    "mixture of fishing and excursion boats moor alongside yachts. If you " +
+    "have access to a boat you should definitely explore its pristine isol" +
+    "ated beaches and stunning coves. Don't forget to treat yourself in on" +
+    "e of the many traditional tavernas.",
     "<img src='assets/img/towns/town-agia.jpg' alt='Agia Efimia'>", " "
   ],
   [38.1540, 20.7713, "Poros", "Nestled between the mountains on the South " +
     "Eastern corner of the island and surrounded by green forests, Poros c" +
     "an feel a bit isolated yet is only a short drive from both Sami and S" +
-    "kala. This pretty town sorrounds three bays and remains a working por" +
+    "kala. This pretty town surrounds three bays and remains a working por" +
     "t with an old harbour and new harbour. Poros is a great location for " +
     "the independent traveller, whether backpacking on a budget or couples" +
     " who want to enjoy nature and the many walking trails in the surround" +
-    "ing hills..", "<img src='assets/img/towns/town-poros.jpg' alt='Poros'>",
+    "ing hills.", "<img src='assets/img/towns/town-poros.jpg' alt='Poros'>",
     " "
   ],
   [38.0741, 20.7968, "Skala", "Possibly the busiest and most popular holid" +
@@ -275,7 +275,7 @@ var active = [
     "er. They organize short, fun single day trips for the novice and also" +
     " multi-day kayak tours for the more experienced adventurer. They prov" +
     "ide sea kayak training and certification courses in the crystal clear" +   
-    " and warm mediterranean waters of the Ionian.", "<img src='assets/img" +
+    " and warm Mediterranean waters of the Ionian.", "<img src='assets/img" +
     "/active/active-kayak.jpg' alt='Sea kayaking'>",
     "<a href='http://www.seakayakingkefalonia-greece.com/index.html' targe" +
     "t='_blank'>Visit Sea Kayaking Kefalonia</a>"
@@ -284,26 +284,26 @@ var active = [
     "he Robola Viticulture Zone, where dozens of local viticulturists from" +
     " Omala and the surrounding areas like Troiannata, Vlachata, Mousata, " +
     "Faraklata and Dilinata created the Robola Producers of Kefallinia Agr" +
-    "icultural Wine Cooperativein back in 1982 to try to protect the uniqu" +
-    "e Kefalonian viticulture. Visitors can now tour this facility and enj" +
-    "oy some of this fabulous wine", "<img src='assets/img/active/robola.j" +
-    "pg' alt='Robola Wine'>", "<a href='https://www.orealios.gr/en/' targe" +
-    "t='_blank'>Visit Robola Growers Co-operative</a>"
+    "icultural Wine Cooperative back in 1982 to try to protect the unique " +
+    "Kefalonian viticulture. Visitors can now tour this facility and enjoy" +
+    " some of this fabulous wine", "<img src='assets/img/active/robola.jpg" +
+    "' alt='Robola Wine'>", "<a href='https://www.orealios.gr/en/' target=" +
+    "'_blank'>Visit Robola Growers Co-operative</a>"
   ],
   [38.10546, 20.53011, "Wild Nature Expeditions", "Outdoor activities for " +
-    "all tastes skills and ages. Caving | Rock Climbing | Hiking | Canyoni" +
-    "ng | Stargazing | Mountain biking | Paragliding | Jeep Safari's", "<i" +
-    "mg src='assets/img/active/active-para.jpg' alt='Paragliding'>",
+    "all taste's skills and ages. Caving | Rock Climbing | Hiking | Canyon" +
+    "ing | Stargazing | Mountain biking | Paragliding | Jeep Safari's", "<" +
+    "img src='assets/img/active/active-para.jpg' alt='Paragliding'>",
     "<a href='https://wildnature-expeditions.gr/' target='_blank'>Visit Wi" +
     "ld Nature Expeditions</a>"
   ],
   [38.25702, 20.62353, "Melissani Cave", "Situated just outside of Sami, t" +
     "his natural wonder has been open to visitors since 1963, and gives yo" +
-    "u a unique view of a limestone cave holding a breathtaking sunlit lak" +
-    "e. The waters which feed this natural wonder travel through the rocks" + 
-    " underground all of the way from Argostolion", "<img src='assets/img/" +
-    "active/melis-cave.jpg' alt='Melissani Cave'>", "<a href='https://www." +
-    "melissani-cave.com/' target='_blank'>Visit Melissani Cave</a>"
+    "u a unique view of a limestone cave holding a breath-taking sunlit la" +
+    "ke. The waters which feed this natural wonder travel through the rock" +
+    "s underground all of the way from Argostolion.", "<img src='assets/im" +
+    "g/active/melis-cave.jpg' alt='Melissani Cave'>", "<a href='https://ww" +
+    "w.melissani-cave.com/' target='_blank'>Visit Melissani Cave</a>"
   ],
   [38.21405, 20.64759, "Bavarian Horse Riding", "Why not take time away fr" +
     "om the beach to enjoy some of the mountains, canyons, valleys, olive " +
