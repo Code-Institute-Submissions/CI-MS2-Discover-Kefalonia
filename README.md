@@ -273,27 +273,47 @@ The following testing has been carried out to validate how the website adresses 
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
 |1|As a first time visitor, I need to understand the purpose of the site, in order to consider exploring the site any further.|Site Title is self descriptive "_Discover Kefalonia_". Main Map page sub heading also explains the site is "_A brief guide to Kefalonia_"|
+
 ![Landing Page][img]
 [img]: https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.jpg "Landing Page"
 
 ![Map Page][img]
-[img]: https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.jpg "Map Page view"
+[img]: https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-page.jpg "Map Page view"
 
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
 |2|As a first time visitor, I need to easily and quickly discover information about the island,  in order to consider Kefalonia as a potential holiday location.||
 
+![Weather Info][img]
+[img]: https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/weather-info.jpg "Weather Info"
+
+![alt text][img]
+[img]: https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/poi-info.jpg "Logo Title Text 2"
+
+![alt text][logo]
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
 |3|As a user, I need to compare the destinations (towns/resorts), in order to establish where might be suitable for me/my family to stay|Testing performed to validate useful information exists for main resort towns|
+
+![alt text][logo]
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
 
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
 |4|As a user, I need to establish some of the other activities possible on the island, in order to understand whether there is enough diversity to entartain my whole family.|Performed testing to ensure there is information displayed regarding activities and they represent a diverse offering.|
 
+![Town Info][img]
+[img]: https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/town-info.jpg "Town Info"
+
+![alt text][logo]
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
 |5|As a user, I need to have a means to contact the developer/site owner, in order to discover more detailled information which may not be covered on the site.|Testing performed on Contact form to ensure it functions correctly and provides feedback to the user (auto-reply)|
+
 ![Contact Page][img]
 
 [img]: https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/contact-form.jpg "Contact Page view"
@@ -377,6 +397,12 @@ ______
 -  Devtools Scrolling from information section onto the map is disjointed.
 When inspecting the website on Google Devtools it takes a second or two for the page to transition/scroll between the Information pane and the map.
 I belive this to be the result of the overflow: auto style I have applied to the poi-text div for mobile devices and is confined to Devtools functionality. This delay DOES NOT occur on actual mobile devices. There is a stop as the text finishes scrolling and the map scrolls as you continue to scroll.
+
+- Contact Form not connecting with EmailJS
+![EmailJS Error][img]
+[img]: https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-error.jpg "EmailJS Error"
+
+This has been an on and off occurence ever since I have completed the Contact form.
 
 -  clearing existing markers when new ones added
 -  Charting the Weather data
