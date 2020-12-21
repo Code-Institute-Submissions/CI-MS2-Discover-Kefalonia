@@ -1,10 +1,4 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/GazzaJ/CI-MS2-Discover-Kefalonia)
-![GitHub contributors](https://img.shields.io/github/contributors/GazzaJ/CI-MS2-Discover-Kefalonia)
-![GitHub language count](https://img.shields.io/github/languages/count/GazzaJ/CI-MS2-Discover-Kefalonia)
-![GitHub top language](https://img.shields.io/github/languages/top/GazzaJ/CI-MS2-Discover-Kefalonia)
-![W3C Validation](https://img.shields.io/badge/w3c--validation-HTML-green)
-![W3C Validation](https://img.shields.io/badge/w3c--validation-CSS-green)
-![GitHub forks](https://img.shields.io/github/forks/GazzaJ/CI-MS2-Discover-Kefalonia?style=social)
+![Discover Kefalonia](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/readme-title.jpg "Discover Kefalonia")
 
 # [**Discover Kefalonia**](https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/)
 
