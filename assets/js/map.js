@@ -70,8 +70,7 @@ var beaches = [
     " hidden beaches on Kefalonia. Unlike most of the islands beaches, yo" +
     "u'll need to take your own umbrella, food and bottles of water becau" +
     "se the beach is remote and completely devoid of any amenities.", "<i" +
-    "g class='img-responsive' src='assets/img/beaches/beach-fteri.jpg' al" +
-    "t='Fteri beach'>", " "
+    "mg src='assets/img/beaches/beach-fteri.jpg' alt='Fteri beach'>", " "
   ],
   [38.260949, 20.376721, "Petani Beach", "Stretching for about 850 meters" +
     " this Blue Flag beauty is another of Kefalonia's impressive beaches!" +
