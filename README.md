@@ -21,6 +21,8 @@ The objective was to achieved the above in a visually appealing and interactive 
 4. [Testing](#testing)
    - [User Story Testing](#user-story-testing)
    - [Functionality Testing](#functionality-testing)
+   - [Usability Testing](#usability-testing)
+   - [Responsiveness Testing](#responsiveness-testing)
 5. [Bugs & Issues](#bugs)
 6. [Deployment](#deployment)
 7. [Resources](#resources)
@@ -259,6 +261,7 @@ The following testing has been carried out to validate how the website addresses
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
 |1|As a first time visitor, I need to understand the purpose of the site, in order to consider exploring the site any further. |Site Title is self-descriptive "_Discover Kefalonia_". Main Map page sub heading also explains the site is "_A brief guide to Kefalonia_"|
+
 ![Landing Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.jpg "Landing Page View")
 ![Map Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-page.jpg "Map Page View")
 
@@ -327,6 +330,7 @@ The philosophy I have used throughout this build is to code, review and test eac
 |Javascript Validation| Copy map.js code into JSHint|||
 |Javascript Validation| Copy cndex.js code into JSHint|||
 |CSS Validation| Copy CSS code into WC3 validator| ERROR |Errors raised for webkit compatibility. Chosen to ignore| 
+
 - Repeatedly tested the navigation links throughout development to ensure correct navigation.
 - I deployed the website to Git Pages and started viewing the output on several real devices:
   - Samsung Galaxy S9
@@ -351,7 +355,7 @@ This helped me make some changes to maintain responsiveness.
 - README.md file spelling checked by copying and pasting the text into word.
 
 
-### **Usability Testing** <a name="usability-testing></a>"
+### **Usability Testing** <a name="usability-testing"></a>"
 I requested fellow CI students and former colleagues to test the website to gather their feedback on the User Experience and Interactivity. What follows are the comments I received in return:
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jmuser-comment.png "User Comment")
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ftuser-comment.png "User Comment")
@@ -368,6 +372,13 @@ I have conducted continuous responsiveness testing to ensure the website functio
 ![Responsiveness](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/contact-form.jpg "Website Responsiveness")
  - Am I Responsive
 ![Am I responsive images](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/am-i-responsive.png "Am I Responsive")
+
+### **Performance Testing** <a name="performance-testing"></a>
+The website has been performance testing using the following tools:
+ - Google Lighthouse (Desktop)
+![Google Lighthouse](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse.png "Google Lighthouse Testing")
+ - Google Lighthouse (Mobile)
+![Google Lighthouse](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse-mobile.png "Google Lighthouse Testing")
 ______
 
 ## **Bugs and Issues** <a name="bugs"></a>
@@ -439,6 +450,7 @@ I have attempted to work independently as much as possible while building this w
 - [Pexels](https://www.pexels.com/) – Licence free image repository
 - [BeFunky](https://www.befunky.com/create/resize-image/) – Online image resizer
 - [Color Picker](https://htmlcolorcodes.com/color-picker/) – HTML and CSS colour codes
+- [W3C Validator](https://validator.w3.org/) - HTML and CSS Validation tool
 - [JSHint](https://jshint.com/) - Javascript code analysis tool
 - [JSLint](https://jslint.com/) - Javascript code quality analysis tool
 - [SEO Site Checkup](https://seositecheckup.com/tools/custom-404-error-page-test) - Checks to see if you have a custom 404 page
@@ -450,8 +462,7 @@ ______
 ## **Credits** <a name="credits"></a>
 
 ### **Content**
-
-
+The content of this website was created by Gareth John. Snippets of code have been taken from official documentation and sources creditted below and in the respective code files. All text was written  by the developer having researched the island. Image credits are provided in the following section.
 
 ### **Media**
 
@@ -488,7 +499,15 @@ The photos used in this site were obtained from the folloing sources:
   - Johann Alberts
   I was banging my head against the wall trying to achieve my desired Google Map marker functionality and all three contributed in some way to helping me clear my head and eventually achieve my goal. Thanks again!
 
-- Thanks to everyone at the Code Institute for the excellent video tutorials and fantastic introduction to Javascript and RESTful API's.
+- I'd like to thank the following individuals for testing this website and providing feedback:
+  - Jim Morel
+  - Fabio Torti
+  - Evka K
+  - Michael McCann
+  - Eamonn Carroll
+  - Kane Moore
+
+- Thanks as always to everyone at the Code Institute for the excellent video tutorials and fantastic introduction to Javascript, Jasmine and RESTful API's.
 
 ______
 ### **Technical Support** <a name="technical"></a>
