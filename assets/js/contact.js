@@ -16,7 +16,6 @@ window.onload = function() {
 			console.log('FAILED...', error);
 		});
 	});
-	return false;
 };
 //========== Contact Form Button ==========//
 $(document).ready(function() {
