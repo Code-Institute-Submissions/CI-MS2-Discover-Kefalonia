@@ -1,4 +1,4 @@
-![Discover Kefalonia](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/readme-title.jpg "Discover Kefalonia")
+![Discover Kefalonia](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/document-title.jpg "Discover Kefalonia")
 
 # [**Discover Kefalonia**](https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/)
 
@@ -261,6 +261,8 @@ The following testing has been carried out to validate how the website addresses
 |1|As a first time visitor, I need to understand the purpose of the site, in order to consider exploring the site any further. |Site Title is self-descriptive "_Discover Kefalonia_". Main Map page sub heading also explains the site is "_A brief guide to Kefalonia_"|
 ![Landing Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.jpg "Landing Page View")
 ![Map Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-page.jpg "Map Page View")
+
+
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
 |2|As a first time visitor, I need to easily and quickly discover information about the island, in order to consider Kefalonia as a potential holiday location.|Testing performed, indicates that with one one click the user can start to learn about the island. The more they chose to select the more they can learn|
@@ -354,6 +356,7 @@ I requested fellow CI students and former colleagues to test the website to gath
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jmuser-comment.png "User Comment")
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ftuser-comment.png "User Comment")
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/muser-comment.png "User Comment")
+
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ekuser-comment.png "User Comment")
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ecuser-comment.jpg "User Comment")
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/kmuser-comment.jpg "User Comment")
