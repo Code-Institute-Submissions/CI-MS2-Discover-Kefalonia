@@ -250,7 +250,6 @@ This website has been built using the following core technologies:
 - ![Font Awesome](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/fontawesome-logo.png "Font Awesome") - Font Awesome was the source of all icons.
 - ![Google Fonts](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/googlefonts-logo.png "Google Fonts") - Fonts used on the website courtesy of Google Fonts
 - ![JQuery](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jquery.png "JQuery") - The project uses JQuery to simplify DOM manipulation.
-- Hover.css for button hover effects
 - 
 - ![RapidAPI](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/rapid-api.jpg "RapidAPI") - RapidAPI
 - ![Chart.js](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/chartjs.png "Chart.js") - Chart.js
@@ -263,7 +262,7 @@ This website has been built using the following core technologies:
 - ![GitHub](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/github-logo.png "Github logo") - used as the primary repository for storying the files and documentation.
 
 ##### Other
-
+- Hover.css for button hover effects
 - Dillinger was once again used to edit the markdown required for the README file.
 ______
 
@@ -274,6 +273,11 @@ The following testing has been carried out to validate how the website adresses 
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
 |1|As a first time visitor, I need to understand the purpose of the site, in order to consider exploring the site any further.|Site Title is self descriptive "_Discover Kefalonia_". Main Map page sub heading also explains the site is "_A brief guide to Kefalonia_"|
+![Landing Page][img]
+[img]: https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.jpg "Landing Page"
+
+![Map Page][img]
+[img]: https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.jpg "Map Page view"
 
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
@@ -290,6 +294,9 @@ The following testing has been carried out to validate how the website adresses 
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
 |5|As a user, I need to have a means to contact the developer/site owner, in order to discover more detailled information which may not be covered on the site.|Testing performed on Contact form to ensure it functions correctly and provides feedback to the user (auto-reply)|
+![Contact Page][img]
+
+[img]: https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/contact-form.jpg "Contact Page view"
 
 ### **Functionality Testing** <a name="functionality-testing"></a>
 The following table captures the functional testing performed on the website to ensure it works as desired. I have tested on the listed browsers only using Windows version 1909 (OS Build 18363.1256), and have not conducted any backward compatibility testing in older browser versions.
@@ -367,6 +374,10 @@ ______
 ## **Bugs and Issues** <a name="bugs"></a>
 -As a bit of a Google Map geek, I jumped at the opportunity to incorporate this into a project, while knowing little about how deep I would eventually get into the API, yet still scratching the surface. This is a very powerful tool, with some excellent documentation.
 -  The biggest challenge I had while building the website was in achieving the desired functionality with google markers. There was quite a bit of documentation covering the basics of using markers, including an excellent _How To_ guide produced by Eamonn Smyth.
+-  Devtools Scrolling from information section onto the map is disjointed.
+When inspecting the website on Google Devtools it takes a second or two for the page to transition/scroll between the Information pane and the map.
+I belive this to be the result of the overflow: auto style I have applied to the poi-text div for mobile devices and is confined to Devtools functionality. This delay DOES NOT occur on actual mobile devices. There is a stop as the text finishes scrolling and the map scrolls as you continue to scroll.
+
 -  clearing existing markers when new ones added
 -  Charting the Weather data
 -  EMail JS Autoreply template not displaying any text
@@ -407,6 +418,7 @@ I have attempted to work independently as much as possible while building this w
 - [Balsamiq](https://balsamiq.com/wireframes/) – Wireframing Tool
 - Code Institute course material and Walkthrough projects
 - Google DevTools - for trouble shooting and first pass testing
+- Google Lighthouse - Website performance testing
 - [StackOverFlow](https://stackoverflow.com/) – Web based coding tips
 - [CSS Tricks](https://css-tricks.com/) – Styling tips like https://css-tricks.com/styling-underlines-web/
 - [W3Schools](https://www.w3schools.com/) – General coding resource
@@ -415,8 +427,9 @@ I have attempted to work independently as much as possible while building this w
 - [BeFunky](https://www.befunky.com/create/resize-image/) – Online image resizer
 - [Color Picker](https://htmlcolorcodes.com/color-picker/) – HTML and CSS colour codes
 - [JSHint](https://jshint.com/) - Javascript code analysis tool
-- [Shutterstock: 10 Gorgeous Color Schemes for Websites](https://www.shutterstock.com/blog/10-gorgeous-color-schemes-for-websites?kw=&gclsrc=aw.ds&gclid=Cj0KCQjw2or8BRCNARIsAC_ppyaGHtDUv5oNSHP0th9gb8N6VBiGFAq-pYu1cFQFW5szceQETvoAnKgaAhwPEALw_wcB)
-- [10 Trending 2020 Website Color Schemes](https://www.quicksprout.com/trending-website-color-schemes/)
+- [JSLint](https://jslint.com/) - Javascript code quality analysis tool
+- [SEO Site Checkup](https://seositecheckup.com/tools/custom-404-error-page-test) - Checks to see if you have a custom 404 page
+- [Online Javascript Beautifier](https://codebeautify.org/jsviewer) - Useful tool for indenting JS code
 - [Am I responsive?](http://ami.responsivedesign.is/) - provides a simple view of a websites responsiveness.
 
 ______
@@ -454,18 +467,6 @@ The photos used in this site were obtained from the folloing sources:
 
 ### **Code Snippets**
 
-- Bootstrap responsive navbar - [Bootstrap 4 - navbar](https://getbootstrap.com/docs/4.0/components/navbar/)
-- While building the navbar toggler, the menu items would only appear on the left.
-  - The solution was provided on [Stack Overflow](https://stackoverflow.com/questions/47518911/boostrap-4-navbar-collapse-menu-right-align/50881393) 
-- My navbar had a small amount of whitespace on the right-hand side.
-  - The solution to remove this was again found on [Stack Overflow](https://stackoverflow.com/questions/48510609/remove-white-space-from-the-sides-and-top-of-my-navbar/48510687) 
-- **Progress bars**
-The progress bars used in resume.html were taken from [Bootstrap 4 - Progress](https://getbootstrap.com/docs/4.0/components/progress/)
-- **Accordion Feature**
-I copied and subsequently adapted the accordion feature from the tutorial provided on this webpage [**font-awesome-accordion-arrow-css**](https://supfort.com/font-awesome-accordion-arrow-css)
-  - The reason for not using the standard Bootstrap accordion was that I wanted to visually indicate there was additional content hidden within each role.
-- The code to achieve better looking bullets was taken from [Fontawsome](https://fontawesome.com/how-to-use/on-the-web/styling/icons-in-a-list)
-- The project cards were also adapted from [Bootstrap 4](https://getbootstrap.com/docs/4.0/components/card/) code.
 
 ### **Acknowledgements** <a name="acknowledgements"></a>
 - Thanks again to my mentor Sinead O'Brien for her direct and honest feedback, support and helpful advice in the run up to, and during this project. With your help I aim to become a useful developer.
