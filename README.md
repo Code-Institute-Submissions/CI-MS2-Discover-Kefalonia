@@ -160,16 +160,8 @@ The contact page, does what it says on the tin. It will contain a contact form w
 
 ![Contact Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/contact-page.png "Contact Page Wireframe")
 
-A more detialed explanation of the planning and design can be found here:
-
-
-
-
-As mentioned in the Scope section I created multiple design concepts to reflect my different design ideas. 
- - I have adapted aspects of each page design during the build to suit the purpose, without losing sight of the original goal.
-
 #### **Surface**
-As previously stated I have attempted to use use beautifull imagery wherever possible as a conscious attempt to draw people into enjoying this website. The images are combined with fun interactive elemets which hand control to the user to determine what they see and how much of the data they see.
+As previously stated I have attempted to use use attractive imagery wherever possible as a conscious attempt to draw people into enjoying this website. The images are combined with fun interactive elemets which hand control to the user to determine what they see and how much of the data they see.
 If there is additional information they require they can utilise the contact form to request more.
 
 ##### **Colour Scheme**
@@ -274,7 +266,6 @@ The following testing has been carried out to validate how the website adresses 
 |1|As a first time visitor, I need to understand the purpose of the site, in order to consider exploring the site any further.|Site Title is self descriptive "_Discover Kefalonia_". Main Map page sub heading also explains the site is "_A brief guide to Kefalonia_"|
 
 ![Landing Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.jpg "Landing Page View")
-
 ![Map Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-page.jpg "Map Page View")
 
 |User Story|Desctiption|Testing|
@@ -282,9 +273,7 @@ The following testing has been carried out to validate how the website adresses 
 |2|As a first time visitor, I need to easily and quickly discover information about the island,  in order to consider Kefalonia as a potential holiday location.||
 
 ![Weather Info](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/weather-info.jpg "Weather Info View")
-
 ![Beach Info](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/poi-info.jpg "Beach Info View")
-
 ![User Feedback](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ecuser-comment.jpg "Weather User Feedback")
 
 
@@ -293,7 +282,6 @@ The following testing has been carried out to validate how the website adresses 
 |3|As a user, I need to compare the destinations (towns/resorts), in order to establish where might be suitable for me/my family to stay|Testing performed to validate useful information exists for main resort towns|
 
 ![Town Info](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/town-info.jpg "Town Info View")
-
 ![User Feedback](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ftuser-comment.png "POI User Feedbacl")
 
 |User Story|Desctiption|Testing|
@@ -301,7 +289,6 @@ The following testing has been carried out to validate how the website adresses 
 |4|As a user, I need to establish some of the other activities possible on the island, in order to understand whether there is enough diversity to entartain my whole family.|Performed testing to ensure there is information displayed regarding activities and they represent a diverse offering.|
 
 ![Activity Info](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/activity-info.jpg "Activity Info View")
-
 ![User Feedback](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/kmuser-comment.jpg "Activity user feedback")
 
 |User Story|Desctiption|Testing|
@@ -381,23 +368,49 @@ The philosophy I have used throughout this build is to code, review and test eac
 - I forwarded the link to the website to friends to view and provide feedback. This was initially done at about 75% complete and again once 100% complete. I documented the procedure and the subsequent feedback in a [User Testing Document](https://github.com/GazzaJ/GarethJohn-Resume-and-Portfolio/blob/master/readme-images/user-testing-feedback-ms1.pdf).
 - I also submitted my site for a "Peer Code Review" in the Code Institute Slack community on 19-Oct-20, unfortunately I did not receive any feedback.
 
+### **Uasbility Testing** <a name="uasbility-testing></a>"
+I requested fellow CI students and former colleagues to test the website to gather their feedback on the User Experience and Interactivity.What follows are the comments I received in return:
+![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jmuser-comment.png "User Comment")
+![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ftuser-comment.png "User Comment")
+![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/muser-comment.png "User Comment")
+![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ekuser-comment.png "User Comment")
+![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ecuser-comment.png "User Comment")
+![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/kmuser-comment.png "User Comment")
+
+### **Responsiveness Testing** <a name="responsiveness-testing"></a>
+I have conducted continuous responsiveness testing to ensure the website functions on different devicesusing:
+ - Google Devtools
+
+![Responsiveness](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/poi-info.jpg "Website Responsiveness") 
+![Responsiveness](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/contact-form.jpg "Website Responsiveness")
+ - Am I Responsive
+
+![Am I responsive images](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/am-i-responsive.png "Am I Responsive")
 ______
 
 ## **Bugs and Issues** <a name="bugs"></a>
--As a bit of a Google Map geek, I jumped at the opportunity to incorporate this into a project, while knowing little about how deep I would eventually get into the API, yet still scratching the surface. This is a very powerful tool, with some excellent documentation.
--  The biggest challenge I had while building the website was in achieving the desired functionality with google markers. There was quite a bit of documentation covering the basics of using markers, including an excellent _How To_ guide produced by Eamonn Smyth.
--  Devtools Scrolling from information section onto the map is disjointed.
-When inspecting the website on Google Devtools it takes a second or two for the page to transition/scroll between the Information pane and the map.
-I belive this to be the result of the overflow: auto style I have applied to the poi-text div for mobile devices and is confined to Devtools functionality. This delay DOES NOT occur on actual mobile devices. There is a stop as the text finishes scrolling and the map scrolls as you continue to scroll.
-
 - Contact Form not connecting with EmailJS
+This has been an on / off occurence ever since I have completed the Contact form. The Devtools Console didn't appear to be displaying any errors; however on closer inspection an error did flash up but was immediately cleared. I had to video the Console while clicking submit to catch the error.
+Research on Stackoverflow confirmed this was likely linked to:
+   - The form clearing itself on "Submit"
+I subsequently traced this to: 
+   - My Javascript code for EmailJS
 ![EmailJS Error](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-error.jpg "EmailJS Error")
 
-This has been an on and off occurence ever since I have completed the Contact form.
+I was originally using the code provided in the EmailJS documentation, but this resulted in simlar errors. I subsequently adapted the CI Code from the EMail JS walk through with the Email JS code to try and solve the error.
+The solution was to use the Email JS code, but to add **onsubmit = "return false;"** to the Form Tag.
+![Console Success](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-success.jpg "Console Success")
+![Email JS Status 200](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-status200.png "Email JS Status 200")
+![Gmail Confirmation](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-confirm.png "Gmail Confirmation")
 
--  clearing existing markers when new ones added
--  Charting the Weather data
--  EMail JS Autoreply template not displaying any text
+-  The biggest challenge I had while building the website was in achieving the desired functionality of clearing existing markers when a new set was dropped.. There was quite a bit of documentation covering the basics of using markers, including an excellent _How To_ guide produced by Eamonn Smyth.
+
+
+-  Devtools Scrolling from information section onto the map is disjointed.
+When inspecting the website on Google Devtools it takes a second or two for the page to transition/scroll between the Information pane and the map.
+I belive this to be the result of the overflow: auto style I have applied to the poi-text div for mobile devices and is confined to Devtools functionality. This delay DOES NOT occur on actual mobile devices. There is a stop as the text finishes scrolling and the map scrolls as you continue to scroll. The double scroll bars are visible on actual devices, but can be seen on this Responsiveness test.
+![EmailJS Error](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/devtools-scroll.png "EmailJS Error")
+
 ______
 
 ## **Deployment** <a name="deployment"></a>
@@ -477,8 +490,6 @@ The photos used in this site were obtained from the folloing sources:
 |Robola Winery|Flikr|cegefoto https://www.flickr.com/photos/67865224@N06/27032175804/in/album-72157654235244675/|
 |Wild Expeditions|Pixabay|Free to download  - no attribution required|
 |Bavarian Horse Riding|Flickr|Kalypso Studios & Apts -  https://www.flickr.com/photos/kalypso-apts/12100332456/in/album-72157640073047804/|
-
-
 
 - All other images came from my own personal image library
 
