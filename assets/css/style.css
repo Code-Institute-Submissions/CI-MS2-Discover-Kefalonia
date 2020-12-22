@@ -622,6 +622,10 @@ form input{
     #heading-row {
         height: 2rem;
     }
+
+    .page-header {
+        font-size: 1.4rem;
+    }
     
     .poi-info {
         height: 95vh;
