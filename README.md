@@ -189,18 +189,19 @@ What follows is a list of the main features incorporated into the website, and a
 ### **Existing Features**
 - This is an interactive website comprising three pages linked by simple interactive navigation elements; Landing | Map | Contact.
    - The landing page exists to simply show an enticing image and to direct the user to "Start Exploring".
+![Landing Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.jpg "Landing Page View")
    - The MAP page contains the bulk of the content which is revealed through the interactive button elements.
      - Information pane which displays images and information about each location on the map
      - Interactive "About" and "Weather" links which display the respective information.
      - **Weather data is provided by WeatherOnline.co.uk and is accessed via a REST API provided by Rapid API**.
-     - 
+
      ![Weather Data](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/chart-js.png "Rest API Weather Data")
 
      - **The weather data is charted using a combined bar and line chart using Chart.js**
      - The second half of this page houses the custom Google map, which 
        - retains some of the native interactive features to select the map style.
        - incorporates interactive buttons to place three categories of marker
-       - 
+     
        ![Map Markers](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-markers.png "MAp Markers")
 
        - enables the user to interact with each marker to discover more information about each location
@@ -209,11 +210,14 @@ What follows is a list of the main features incorporated into the website, and a
 ![EmailJS](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-integration.png "EmailJS Integration")
 
 - I chose to create custom navigation links, which comprise two pop-out elements, linking the user to their respective pages.
-- 
 ![Navigation](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/nav-links.png "Navigation Links")
 
  > **I had experimented with a fixed position for my navigation on smaller devices, making the two menu items float over the body content and stay in position when the page is scrolled but chose to fix the navigation elements towards the top of the viewport where they are less likely to get in the way of the main body content.**
-- The footer elements are built into a pop-up element at the base of the Map and Contact pages. The Footer contains links to social media sites relevant to Kefalonia and also displays the copyright and a link to contact the developer.
+ 
+- The footer elements are built into a pop-up element at the base of the Map and Contact pages. 
+![Footer](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/nav-links.png "Footer Tab")
+ The Footer contains links to social media sites relevant to Kefalonia and also displays the copyright and a link to contact the developer.
+![Social Links](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/nav-links.png "Footer Contents")
 
 ### **Features Left to Implement**
 I am satisfied with the initial deployed functionality; however, the following items would add to the current site.
@@ -340,7 +344,6 @@ The philosophy I have used throughout this build is to code, review and test eac
 |Javascript Validation| Copy cndex.js code into JSHint|CHECKED||
 |CSS Validation| Copy CSS code into WC3 validator| ERROR |Errors raised for webkit compatibility. Chosen to ignore| 
 
-
 - I deployed the website to Git Pages and started viewing the output on several real devices:
   - Samsung Galaxy S9
   - Samsung Tab A
@@ -356,12 +359,16 @@ This helped me make some changes to maintain responsiveness.
 ### **Usability Testing** <a name="usability-testing"></a>"
 I requested fellow CI students and former colleagues to test the website to gather their feedback on the User Experience and Interactivity. What follows are the comments I received in return:
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jmuser-comment.png "User Comment")
+
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ftuser-comment.png "User Comment")
+
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/muser-comment.png "User Comment")
 
 
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ekuser-comment.png "User Comment")
+
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ecuser-comment.jpg "User Comment")
+
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/kmuser-comment.jpg "User Comment")
 
 ### **Responsiveness Testing** <a name="responsiveness-testing"></a>
@@ -378,8 +385,12 @@ The website has been performance testing using the following tools:
 ![Google Lighthouse](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse.png "Google Lighthouse Testing")
 
 
+
+
  - Google Lighthouse (Mobile)
 ![Google Lighthouse](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse-mobile.png "Google Lighthouse Testing")
+
+
 ______
 
 ## **Bugs and Issues** <a name="bugs"></a>
