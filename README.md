@@ -1,5 +1,7 @@
 ![Discover Kefalonia](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/document-title.jpg "Discover Kefalonia")
 
+![Discover Kefalonia](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/document-title.jpg "Discover Kefalonia")
+
 # [**Discover Kefalonia**](https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/)
 
 Kefalonia is the largest of the Greek Ionian islands, and is a popular holiday destination for many Europeans. Despite this it remains unspoiled and far less crowded than its neighbours Zakynthos and Corfu, and is thus a great option for a summer vacation.
@@ -211,11 +213,11 @@ This is an interactive website comprising three pages linked by simple interacti
 - When the user interacts with the map buttons, they will display markers for the respective "Points of Interest" category
 ![Map Markers](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-markers.png "Map Markers")
 
-- When the user clicks a marker -  the relevant information is rendered into the Information section; with a heading, image and detailled text. Thus enabling the user to interact with each marker to discover more information about each location
+- When the user clicks a marker, the relevant information is rendered into the Information section; with a heading, image and detailed text. Thus, enabling the user to interact with each marker to discover more information about each location.
 
 - The contact page does what is says on the tin; comprising a simple contact form linked to the EmailJS service.
 
-![EmailJS](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-integration.png "EmailJS Integration")
+![EmailJS](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/contact-emailjs.png "EmailJS Integration")
 
 - The footer elements are built into a pop-up element at the base of the Map and Contact pages. 
 ![Footer](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/social-tab.png "Footer Tab")
@@ -224,7 +226,7 @@ This is an interactive website comprising three pages linked by simple interacti
 
 ### **Features Left to Implement**
 I am satisfied with the initial deployed functionality; however, the following items would add to the current site.
-- Address trhe poor Google Lighthouse mobile device performance score.
+- Address the poor Google Lighthouse mobile device performance score.
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse-mobile.png "User Comment")
 - Non-native tooltips to the map buttons to highlight their intended purpose.
 - A connection to a holiday/flight booking API to this site.
