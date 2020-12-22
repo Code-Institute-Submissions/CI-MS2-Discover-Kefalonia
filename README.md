@@ -1,7 +1,5 @@
 ![Discover Kefalonia](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/document-title.jpg "Discover Kefalonia")
 
-![Discover Kefalonia](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/document-title.jpg "Discover Kefalonia")
-
 # [**Discover Kefalonia**](https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/)
 
 Kefalonia is the largest of the Greek Ionian islands, and is a popular holiday destination for many Europeans. Despite this it remains unspoiled and far less crowded than its neighbours Zakynthos and Corfu, and is thus a great option for a summer vacation.
@@ -194,6 +192,7 @@ This is an interactive website comprising three pages linked by simple interacti
 ![Landing Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.jpg "Landing Page View")
 
 - I chose to create custom navigation links, which comprise two pop-out elements, linking the user to their respective pages.
+
 ![Navigation](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/nav-links.png "Navigation Links")
 
  > **I had experimented with a fixed position for my navigation on smaller devices, making the two menu items float over the body content and stay in position when the page is scrolled but chose to fix the navigation elements towards the top of the viewport where they are less likely to get in the way of the main body content.**
@@ -208,6 +207,7 @@ This is an interactive website comprising three pages linked by simple interacti
 ![Weather Data](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/chart-js.png "Rest API Weather Data")
 
 - I have provided buttons on the map to display different categories of points of interest: Beaches, Towns/Resorts and Activities
+
 ![Map Buttons](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-buttons.png "Map Buttons")
 
 - When the user interacts with the map buttons, they will display markers for the respective "Points of Interest" category
@@ -387,12 +387,15 @@ I have conducted continuous responsiveness testing to ensure the website functio
 ### **Performance Testing** <a name="performance-testing"></a>
 The website has been performance testing using the following tools:
  - Google Lighthouse (Desktop)
+ - 
+ 
 ![Google Lighthouse](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse.png "Google Lighthouse Testing")
 
 
 
-
  - Google Lighthouse (Mobile)
+ - 
+ 
 ![Google Lighthouse](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse-mobile.png "Google Lighthouse Testing")
 
 
@@ -411,7 +414,9 @@ I subsequently traced this to:
 I was originally using the code provided in the EmailJS documentation, but this resulted in similar errors. I subsequently adapted the CI Code, from the EMail JS walk through, combined with the Email JS code to try and solve the error.
 The solution was to use the Email JS code, but to add **onsubmit = "return false;"** to the Form Tag.
 ![Console Success](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-success.jpg "Console Success")
+
 ![Email JS Status 200](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-status200.png "Email JS Status 200")
+
 ![Gmail Confirmation](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-confirm.png "Gmail Confirmation")
 
 -  The biggest challenge I had while building the website was in achieving the desired functionality of clearing existing markers when a new set was dropped. There was quite a bit of documentation covering the basics of using markers, including an excellent _How To_ guide produced by Eamonn Smyth.
