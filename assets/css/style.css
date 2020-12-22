@@ -624,7 +624,7 @@ form input{
     }
 
     .page-header {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     
     .poi-info {
@@ -655,6 +655,32 @@ form input{
         margin-top: 5rem;
     }
 
+}
+
+@media (max-width: 740px){
+
+    #heading-row {
+        height: 2rem;
+    }
+
+    .page-header {
+        font-size: 1.6rem;
+    }
+
+    #contact-section {
+    position: absolute;
+    }
+    
+    #social-container {    
+        bottom: -9.4rem;    
+    }
+
+    .social-active {
+        -webkit-transform: translateY(-9.4rem);
+            -ms-transform: translateY(-9.4rem);
+                transform: translateY(-9.4rem);
+    }    
+}
 }
 
 @media (max-width: 688px) {
