@@ -139,7 +139,7 @@ The information layout will be consistent:
 Each piece of information consistently appears in the same position irrespective of what's being displayed.
 
 ##### Wireframes <a name="wireframes"></a>
-Wireframes for the original design concepts were created using Balsamiq, and can be viewed using the links below:
+Wireframes for the original design concepts were created using Balsamiq.
 ##### Landing Page
 The landing page has no function other than to look enticing and to direct users to explore further.
 The bulk of the website will be incorporated on the main Explore/Discover page which will house the Google Map
@@ -300,56 +300,56 @@ The following testing has been carried out to validate how the website addresses
 ### **Functionality Testing** <a name="functionality-testing"></a>
 The following table captures the functional testing performed on the website to ensure it works as desired. I have tested on the listed browsers only using Windows version 1909 (OS Build 18363.1256), and have not conducted any backward compatibility testing in older browser versions.
 
-|   Test       |Purpose          | Desired Result | Actual Result | Chrome v 87.0.4280.88 | Firefox v 83.0 (64-bit) | Comments |
-|:------------:|-----------------|----------------|---------------|:------:|:-------:|----------|
-|   001        | Test Navigation |Navigate to MAP Page using "Explore" button| Correctly navigates to the MAP Page| **PASS** | **PASS** |  ||
-|   002        | Test Navigation |Navigate from MAP to Landing Page using "Home" nav item| Navigate to the correct page |**PASS**| **PASS** |||
-|   003        | Test Navigation |Navigate from the MAP to the CONTACT Page using the "Contact" nav item| Navigate to the correct page |**PASS**| **PASS** |||
-|   004        | Test Navigation |Navigate from Contact to the Landing page using the "Home" nav item| Navigate to the correct page |**PASS**| **PASS** ||
-|   005        | Test Navigation |Navigate from the Contact to the Map using the "Explore"| Navigate to the correct page |**PASS**| **PASS** ||
-|   006        | Map Button functionality |The "Beaches" button displays beach markers| Markers for the beaches drop correctly |**PASS**| **PASS** ||
-|   007        | Map Button Functionality |The "Towns/Resorts" button displays town markers| Markers for the towns/resorts drop correctly |**PASS**| **PASS** ||
-|   008        | Map Button Functionality |The "Activities" button displays activity markers| Markers for the activities drop correctly |**PASS**| **PASS** ||
-|   009        | Map Button Functionality |Any previous markers clear when a new set of markers is selected and dropped.| Markers clear correctly |**PASS**| **PASS** ||
-|   010        | Map Button Functionality |The "Zoom Out" button recentres the map and resets the zoom to display the whole island.| Zoom works as desired |**PASS**| **PASS** ||
-|   011        | Weather API Data |"Weather" anchor link displays the whether data and associated text| Chart renders and text displays below |**PASS**| **PASS** ||
-|   012        | Console Error handling  |Are there any Errors - Is there an appropriate message?| No Errors displayed |**PASS**|||
-|   013        | Map Button Functionality |"About" anchor link re-displays the general information and image| Information renders correctly |**PASS**| **PASS** |||
+|   Test       |Purpose          | Desired Result | Actual Result | Chrome v 87.0.4280.88 | Firefox v 83.0 (64-bit) |
+|:------------:|-----------------|----------------|---------------|:------:|:-------:|
+|   001        | Test Navigation |Navigate to MAP Page using "Explore" button| Correctly navigates to the MAP Page| **PASS** | **PASS** |
+|   002        | Test Navigation |Navigate from MAP to Landing Page using "Home" nav item| Navigate to the correct page |**PASS**| **PASS** |
+|   003        | Test Navigation |Navigate from the MAP to the CONTACT Page using the "Contact" nav item| Navigate to the correct page |**PASS**| **PASS** |
+|   004        | Test Navigation |Navigate from Contact to the Landing page using the "Home" nav item| Navigate to the correct page |**PASS**| **PASS** |
+|   005        | Test Navigation |Navigate from the Contact to the Map using the "Explore"| Navigate to the correct page |**PASS**| **PASS** |
+|   006        | Map Button functionality |The "Beaches" button displays beach markers| Markers for the beaches drop correctly |**PASS**| **PASS** |
+|   007        | Map Button Functionality |The "Towns/Resorts" button displays town markers| Markers for the towns/resorts drop correctly |**PASS**| **PASS** |
+|   008        | Map Button Functionality |The "Activities" button displays activity markers| Markers for the activities drop correctly |**PASS**| **PASS** |
+|   009        | Map Button Functionality |Any previous markers clear when a new set of markers is selected and dropped.| Markers clear correctly |**PASS**| **PASS** |
+|   010        | Map Button Functionality |The "Zoom Out" button recentres the map and resets the zoom to display the whole island.| Zoom works as desired |**PASS**| **PASS** |
+|   011        | Weather API Data |"Weather" anchor link displays the whether data and associated text| Chart renders and text displays below |**PASS**| **PASS** |
+|   012        | Console Error handling  |Are there any Errors - Is there an appropriate message?| No Errors displayed |**PASS**|
+|   013        | Map Button Functionality |"About" anchor link re-displays the general information and image| Information renders correctly |**PASS**| **PASS** |
 |   014        | Map Button styles |Button Hover styles render correctly| Markers clear correctly |**PASS**| **PASS** ||
-|   015        | Map Button styles |Button styles toggle correctly when selected/clicked | Button styles display correctly |**PASS**| **PASS** ||
-|   016        | Map Button styles |Button styles toggle when another button is selected | Button styles toggle as desired |**PASS**| **PASS** ||
-|   017        | Test Navigation |Social media links on Contact page should all open in a new tab and navigate to the correct page| Navigate to the correct page |**PASS**| **PASS** ||
+|   015        | Map Button styles |Button styles toggle correctly when selected/clicked | Button styles display correctly |**PASS**| **PASS** |
+|   016        | Map Button styles |Button styles toggle when another button is selected | Button styles toggle as desired |**PASS**| **PASS** |
+|   017        | Test Navigation |Social media links on Contact page should all open in a new tab and navigate to the correct page| Navigate to the correct page |**PASS**| **PASS** |
+| 018          | Test Hyperlinks |Hyperlinks for the Map activities should be active and open in a new tab| All links function (at time of test) and open in a new tab | **PASS**| **PASS**|
+| 019          |Contact Form|Ensure all Text input fields are required|A tooltip appears for any empty field when the "Submit" button is clicked|**PASS**|**PASS**|
+|020           |Contact Form|Check valid email address format is required|Users are required to input a valid email address and a tooltip appears if this is not the case|**PASS**|**PASS**|
+| 021          |Contact Form|Ensure the Contact Form CANNOT be submitted with out filling in the required fields|Message appears if the submit button is clicked without text in the required fields|**PASS**|**PASS**|
+| 022          |Contact Form|Evaluate user feedback on contact form|Submit button changes colour on click. User receives a personal auto reply from EmailJS|**PASS**|**PASS**|
+|023           |Contact Form|Confirmation in console that Email JS API working correctly|Console displays status 200 and SUCCESS if OK and the error response if not|**PASS**|**PASS**|
 
 The philosophy I have used throughout this build is to code, review and test each part of the website as I progressed, relying heavily on Google Dev tools throughout, for first pass testing.
 
+### **Code Quality and Validation** <a name="code-validation"></A 
 |Test|Process|Result| Comment |
 |----|-------|:----:|---------|
 |HTML Validation| Copy Index.html code into W3C validator|PASS||
 |HTML Validation| Copy Map.html code into W3C validator|PASS||
 |HTML Validation| Copy Contact.html code into W3C validator|WARNING|The "type" is unnecessary for Javascript results from 3rd party Script tags|
 |HTML Validation| Copy 404.html code into W3C validator|PASS||
-|Javascript Validation| Copy index.js code into JSHint|||
-|Javascript Validation| Copy map.js code into JSHint|||
-|Javascript Validation| Copy cndex.js code into JSHint|||
+|Javascript Validation| Copy index.js code into JSHint|CHECKED||
+|Javascript Validation| Copy map.js code into JSHint|CHECKED||
+|Javascript Validation| Copy cndex.js code into JSHint|CHECKED||
 |CSS Validation| Copy CSS code into WC3 validator| ERROR |Errors raised for webkit compatibility. Chosen to ignore| 
 
-- Repeatedly tested the navigation links throughout development to ensure correct navigation.
+
 - I deployed the website to Git Pages and started viewing the output on several real devices:
   - Samsung Galaxy S9
   - Samsung Tab A
   - HP Laptop with attached monitor
 This helped me make some changes to maintain responsiveness. 
-- Repeatedly tested all hyperlinks to ensure they function and correctly open up the required sites in new browser tabs.
-- Tested Social Media icons to ensure they also link to the correct sites and open in new browser tabs.
-- Tested the contact form on the Contact page to ensure correct functionality.
-  - The Console returns a status of 200 and the email is recoreded in gmail. The user should also receive an auto reply from EMailJS.   
-- Testing of the 'required' attribute which ensures all contact form fields get filled in before the data can be sent.
-- I have tested the email address entry on the Contact form to ensure correctly formatted email addresses can be entered e.g [_name@something.com_](mailto:name@something.com)
 
 - Spelling Checked using [Typosaurus](https://typosaur.us/)
 - [CSS Auto Prefixer](https://autoprefixer.github.io/) - CSS file checked 
 - Mobile Friendly Test - [PASS](https://search.google.com/test/mobile-friendly?id=8jZoJWUliCuw3Bdmly-IwA)
-
 - README.md file spelling checked by copying and pasting the text into word.
 
 
