@@ -172,6 +172,7 @@ https://digitalsynopsis.com/design/colors-of-countries/
 I always planned to use a Greek style font for the headings, but needed the font to be easily legible. Thus, after an exhaustive search of the Google Fonts library I selected fonts which meet these criteria and still evoke images of the Mediterranean and Greek islands. I didn't want to choose anything too formal as this is not a business site and can be a bit more playful in it's design. I thus chose the following fonts:
  - ![Caesar Dressing](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/caesar-dressing.png "Caesar Dressing font")
  - ![Cinzel Decorative](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/cinzel-decorative.png "Cinzel Decorative font")
+
 I selected **_Caesar Dressing_** for my main H1 and H2 Headings; and **_"Cinzel Decorative"_** for smaller headings as this has a classical look to it without being to complicated. The main text uses **_"Raleway"_** which is a nice legible and clear font which pairs reasonably well with Cinzel Decorative.
 
 ##### **Imagery** 
@@ -250,6 +251,7 @@ This website has been built using the following core technologies:
 - ![GitHub](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/github-logo.png "Github logo") - used as the primary repository for storying the files and documentation.
 
 ##### Other
+- Green Sock Animation Platform - experimented with animated button on landing page
 - Hover.css for button hover effects
 - Dillinger was once again used to edit the markdown required for the README file.
 ______
@@ -343,15 +345,11 @@ This helped me make some changes to maintain responsiveness.
   - The Console returns a status of 200 and the email is recoreded in gmail. The user should also receive an auto reply from EMailJS.   
 - Testing of the 'required' attribute which ensures all contact form fields get filled in before the data can be sent.
 - I have tested the email address entry on the Contact form to ensure correctly formatted email addresses can be entered e.g [_name@something.com_](mailto:name@something.com)
-- Accessibility Test
-  - Highlighted potential issue with the choice text colour on the navbar, hyperlinks and Copyright section
-    - Navbar text changed to a darker colour
-    - Hyperlink colour changed to a darker blue for increased contrast
-    - Copyright text changed to a darker colour to provide contrast.
+
 - Spelling Checked using [Typosaurus](https://typosaur.us/)
 - [CSS Auto Prefixer](https://autoprefixer.github.io/) - CSS file checked 
 - Mobile Friendly Test - [PASS](https://search.google.com/test/mobile-friendly?id=8jZoJWUliCuw3Bdmly-IwA)
-- [Website speed test](https://www.webpagetest.org/result/201020_DiS2_d82b833e59172a62a58b4c1a1ccb5856/) where it passed in all but Security and Cache static content.
+
 - README.md file spelling checked by copying and pasting the text into word.
 
 
@@ -360,6 +358,7 @@ I requested fellow CI students and former colleagues to test the website to gath
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jmuser-comment.png "User Comment")
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ftuser-comment.png "User Comment")
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/muser-comment.png "User Comment")
+
 
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ekuser-comment.png "User Comment")
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ecuser-comment.jpg "User Comment")
@@ -377,12 +376,15 @@ I have conducted continuous responsiveness testing to ensure the website functio
 The website has been performance testing using the following tools:
  - Google Lighthouse (Desktop)
 ![Google Lighthouse](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse.png "Google Lighthouse Testing")
+
+
  - Google Lighthouse (Mobile)
 ![Google Lighthouse](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse-mobile.png "Google Lighthouse Testing")
 ______
 
 ## **Bugs and Issues** <a name="bugs"></a>
-- Contact Form not connecting with EmailJS
+- The contact form not connecting with EmailJS.
+
 This has been an on / off occurrence ever since I have completed the Contact form. The Devtools Console didn't appear to be displaying any errors; however, on closer inspection an error did flash up but was immediately cleared. I had to video the Console while clicking submit to catch the error.
 Research on Stackoverflow confirmed this was likely linked to:
    - The form clearing itself on "Submit"
@@ -390,7 +392,7 @@ I subsequently traced this to:
    - My Javascript code for EmailJS
 ![EmailJS Error](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-error.jpg "EmailJS Error")
 
-I was originally using the code provided in the EmailJS documentation, but this resulted in similar errors. I subsequently adapted the CI Code from the EMail JS walk through with the Email JS code to try and solve the error.
+I was originally using the code provided in the EmailJS documentation, but this resulted in similar errors. I subsequently adapted the CI Code, from the EMail JS walk through, combined with the Email JS code to try and solve the error.
 The solution was to use the Email JS code, but to add **onsubmit = "return false;"** to the Form Tag.
 ![Console Success](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-success.jpg "Console Success")
 ![Email JS Status 200](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-status200.png "Email JS Status 200")
@@ -488,7 +490,17 @@ The photos used in this site were obtained from the folloing sources:
 - All other images came from my own personal image library
 
 ### **Code Snippets**
+The code I use to deploy and clear the Google maps markers has been adapted from the Google Maps API Developer documentation , Eamonn Smyth's "How To Google Maps" document (circulkated on Slack) and augmented with questions submitted to StackOverflow.
+- Google Maps Developer Documents - https://developers.google.com/maps/documentation/javascript/markers
+- Clearing Google Markers - https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
+The following resources were also used to provide functionality to the website:
+- Slide out side menu adapted from - https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp
+- API code for weather data - https://rapidapi.com/weatheronline/api/climate-data
+- 404 Redirect javascript code taken from (https://html-online.com/articles/smart-404-error-page-redirect/)
+- Chart JS Documentation - https://www.chartjs.org/docs/latest/
+- EmailJS Documentation - https://www.emailjs.com/docs/
+- GSAP Tutorial - https://greensock.com/docs/
 
 ### **Acknowledgements** <a name="acknowledgements"></a>
 - Thanks again to my mentor Sinead O'Brien for her direct and honest feedback, support and helpful advice in the run up to, and during this project. With your help I aim to become a useful developer.
