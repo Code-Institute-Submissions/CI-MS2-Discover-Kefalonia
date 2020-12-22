@@ -4,7 +4,7 @@
 
 Kefalonia is the largest of the Greek Ionian islands, and is a popular holiday destination for many Europeans. Despite this it remains unspoiled and far less crowded than its neighbours Zakynthos and Corfu, and is thus a great option for a summer vacation.
 The aim of this website is to showcase the island of Kefalonia to people looking for inspiration for their next summer holiday destination; providing useful information about the island, such as climate, towns/resorts, beaches and some of the non-beach related activities possible. 
-The objective was to achieved the above in a visually appealing and interactive UX, which provides simple intuitive navigation irrespective of the device, with interactive elements which enable the user to control the discovery of information.  Ultimately, I would like this site to appeal to individuals who have previously visited Kefalonia as well as those who have never had the opportunity to visit.
+The objective is to achieved the above in a visually appealing and interactive UX, which provides simple intuitive navigation irrespective of the device, with interactive elements which enable the user to control the discovery of information.  Ultimately, I would like this site to appeal to individuals who have previously visited Kefalonia as well as those who have never had the opportunity to visit.
 
 
 [The live website can be viewed here!](https://gazzaj.github.io/CI-MS2-Discover-Kefalonia/)
@@ -21,6 +21,7 @@ The objective was to achieved the above in a visually appealing and interactive 
 4. [Testing](#testing)
    - [User Story Testing](#user-story-testing)
    - [Functionality Testing](#functionality-testing)
+   - [Code Validation](#code-validation)
    - [Usability Testing](#usability-testing)
    - [Responsiveness Testing](#responsiveness-testing)
 5. [Bugs & Issues](#bugs)
@@ -33,7 +34,7 @@ ______
 
 ## **User Experience (UX)** <a name="user-experience"></a>
 
-I have produced a simple, yet hopefully intuitive user experience with the bulk of the website worked into a couple of key sections/pages. A single page combines information and imagery into a single interactive section focussed around a Google Map of the island. Each of the pages fills the viewport to avoid unnecessary scrolling. This layout has obviously required splitting the main map screen on mobile devices. I have used non-template: 
+I have produced a simple, yet hopefully intuitive user experience with the bulk of the website worked into a couple of key pages. A single page combines information and imagery into a single interactive section focussed around a Google Map of the island. Each of the pages fills the viewport to avoid unnecessary scrolling. This layout has obviously required splitting the main map screen on mobile devices. I have used non-template: 
 - Interactive navigation links
 - Interactive social links section
 - Map controls which provide feedback to the user
@@ -48,7 +49,7 @@ I have produced a simple, yet hopefully intuitive user experience with the bulk 
 
 4. **_As a_** user, **_I need to_** establish some of the other activities possible on the island, **_in order to_** understand whether there is enough diversity to entertain my whole family.
 
-5. **_As a _** user, **_I need to_** have a means to contact the developer/site owner, **_in order to_** discover more detailed information which may not be covered on the site.
+5. **_As a _** user, **_I need to_** have a means to contact the site owner, **_in order to_** discover more detailed information which may not be covered on the site.
 
 ### **The 5 Planes of UX** <a name="planes"></a>
 The five planes provide a framework for discussing user experience.
@@ -71,9 +72,9 @@ The primary requirements for the scope are to provide interactive elements which
 ##### Functional Requirements
 The functionality is provided by
  - Simple pop-out navigation (only 2 main pages) rather than a more standard bootstrap template.
- - One key page/section combining all of the information accessible with interactive elements
+ - One key page combining all of the information accessible with interactive elements
    - Google Maps with interactive category markers linking to text and images
-   - I also plan to use a weather API to obtain and chart average weather data for the island.
+   - I have also incorporated a weather API to obtain average weather data for the island. This data will be charted using Chart JS.
  - A contact page with contact form (connected to EmailJS)
  - Interactive social media links to access relevant content
 
@@ -95,8 +96,8 @@ I opted to use minimal text to keep the display uncluttered.
 ##### Interaction Design
 The website has been designed to be as interactive as possible, enabling the user to control what they see and when.
 User interaction is controlled through:
-  - Buttons with clear iconography will change their appears when the cursor hovers over them and also when clicked to indicate which is active. 
-  - Anchor links will change their appears when the cursor hovers over them and also when clicked to indicate which is active.
+  - Buttons with clear iconography will change their appearance when the cursor hovers over them and also when clicked to indicate which is active. 
+  - Anchor links will change their appearance when the cursor hovers over them and also when clicked to indicate which is active.
   - Navigation elements with clear and intuitive iconography will pop out when hovered over.
   - Social Media links will be housed in a pop-up element.
 >![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/muser-comment.png "User Comment")
@@ -114,7 +115,7 @@ For mobile devices the information section displays above the map.
 #### **Skeleton** 
 The website will comprise three main pages: 
 - Landing | Explore | Contact
->**_This has been intentionally reduced from a more conventional multi-section/page site._**
+>**_This has been intentionally reduced from a more conventional multi-page site._**
 
 ##### Interface Design
 Presenting everything in the viewport ensures all key information is available and visible to the user without any requirement to scroll. Buttons are large enough to be obvious yet not intrusive.
@@ -142,19 +143,19 @@ Each piece of information consistently appears in the same position irrespective
 Wireframes for the original design concepts were created using Balsamiq.
 ##### Landing Page
 The landing page has no function other than to look enticing and to direct users to explore further.
-The bulk of the website will be incorporated on the main Explore/Discover page which will house the Google Map
-
->**_The main change here was to incorporate what could have comprised separate pages (About, Map and Gallery) into a single page._**
+The bulk of the website is incorporated on the main Explore/Discover page which houses the Google Map
 
 ![Landing Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.png "Landing Page Wireframe")
 
 ##### Map Page
-The Map page will become focal point for the website, combining interactive elements with Google map functionality. Clicking category buttons will drop Google Map markers on the Map; when each marker is clicked, information displays on the left-hand pane. This will include specific location image and information.
+The Map page is the focal point for the website, combining interactive elements with Google map functionality. Clicking category buttons will drop Google Map markers on the Map; when each marker is clicked, information displays on the left-hand pane. This will include specific location image and information.
 
 ![Map Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-page.png "Map Page Wireframe")
 
+>**_The main change here was to incorporate what could have comprised separate pages (About, Map and Gallery) into a single page._**
+
 ##### Contact Page
-The contact page, does what it says on the tin. It will contain a contact form which will be connected to EmailJS so users can complete the form and send an email requesting additional information. A pop-up, interactive footer section will hold links to relevant social media sites and email. I have also included a copyright statement.
+The contact page, does what it says on the tin. It contains a contact form which is connected to EmailJS so users can complete the form and send an email requesting additional information. A pop-up, interactive footer section has links to relevant social media sites and email. I have also included a copyright statement.
 
 ![Contact Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/contact-page.png "Contact Page Wireframe")
 
@@ -177,9 +178,9 @@ I selected **_Caesar Dressing_** for my main H1 and H2 Headings; and **_"Cinzel 
 
 ##### **Imagery** 
 My intent was always to try and rely heavily on imagery to convey the beauty of Kefalonia as a means of enticing the user to want to discover more. I wanted to showcase the stunning beaches, quaint towns and diverse activities all with the backdrop of the island and it's gorgeous weather.
-I have used a mixture of my own images, and copyright free images sourced from WikiMedia Commons, Flickr and Pixabay. A full list of images can be found in the <a name="media"></a> section
+I have used a mixture of my own images, and copyright free images sourced from WikiMedia Commons, Flickr and Pixabay. A full list of images can be found in the [Credits](#credits) section.
 
-Here is a user comment from Slack Community validating the 
+Here is a user comment from Slack Community validating the use of imagery to entice people into the site.
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jmuser-comment.png "User Comment")
 ______
 
@@ -221,14 +222,18 @@ This is an interactive website comprising three pages linked by simple interacti
 
 - The footer elements are built into a pop-up element at the base of the Map and Contact pages. 
 ![Footer](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/social-tab.png "Footer Tab")
+
  The Footer contains links to social media sites relevant to Kefalonia and also displays the copyright and a link to contact the developer.
+ 
 ![Social Links](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/popup-footer.png "Footer Contents")
+
+- 404 File not Found Page to handle any issues with the pages referenced by this site. The Page will automatically redirect the user to the Landing Page. The 404.html page will briefly display before redirection. The page also contains a link to take the user back the "Discover Kefalonia" landing page.
 
 ### **Features Left to Implement**
 I am satisfied with the initial deployed functionality; however, the following items would add to the current site.
 - Address the poor Google Lighthouse mobile device performance score.
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse-mobile.png "User Comment")
-- Non-native tooltips to the map buttons to highlight their intended purpose.
+- Add non-native tooltips to the map buttons to highlight their intended purpose.
 - A connection to a holiday/flight booking API to this site.
 
 ______
@@ -279,7 +284,7 @@ The following testing has been carried out to validate how the website addresses
 
 |User Story|Desctiption|Testing|
 |:--------:|-----------|-------|
-|2|As a first time visitor, I need to easily and quickly discover information about the island, in order to consider Kefalonia as a potential holiday location.|Testing performed, indicates that with one one click the user can start to learn about the island. The more they chose to select the more they can learn|
+|2|As a first time visitor, I need to easily and quickly discover information about the island, in order to consider Kefalonia as a potential holiday location.|Testing performed, indicates that with one click the user can start to learn about the island. The more they chose to select the more they can learn|
 
 ![Weather Info](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/weather-info.jpg "Weather Info View")
 ![Beach Info](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/poi-info.jpg "Beach Info View")
@@ -337,7 +342,7 @@ The following table captures the functional testing performed on the website to 
 
 The philosophy I have used throughout this build is to code, review and test each part of the website as I progressed, relying heavily on Google Dev tools throughout, for first pass testing.
 
-### **Code Quality and Validation** <a name="code-validation"></A 
+### **Code Quality and Validation** <a name="code-validation"></a> 
 |Test|Process|Result| Comment |
 |----|-------|:----:|---------|
 |HTML Validation| Copy Index.html code into W3C validator|PASS||
@@ -419,14 +424,11 @@ The solution was to use the Email JS code, but to add **onsubmit = "return false
 
 ![Gmail Confirmation](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-confirm.png "Gmail Confirmation")
 
--  The biggest challenge I had while building the website was in achieving the desired functionality of clearing existing markers when a new set was dropped. There was quite a bit of documentation covering the basics of using markers, including an excellent _How To_ guide produced by Eamonn Smyth.
-
-
 -  Devtools Scrolling from information section onto the map is disjointed.
 When inspecting the website on Google Devtools it takes a second or two for the page to transition/scroll between the Information pane and the map.
 I believe this to be the result of the overflow: auto style I have applied to the poi-text div for mobile devices and is confined to Devtools functionality. This delay DOES NOT occur on actual mobile devices. There is a stop as the text finishes scrolling and the map scrolls as you continue to scroll. The double scroll bars are visible on actual devices, but can be seen on this Responsiveness test.
 
-![EmailJS Error](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/devtools-scroll.png "EmailJS Error")
+![Scroll](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/devtools-scroll.png "Scroll")
 
 ______
 
@@ -511,7 +513,7 @@ The photos used in this site were obtained from the folloing sources:
 - All other images came from my own personal image library
 
 ### **Code Snippets**
-The code I use to deploy and clear the Google maps markers has been adapted from the Google Maps API Developer documentation , Eamonn Smyth's "How To Google Maps" document (circulkated on Slack) and augmented with questions submitted to StackOverflow.
+The code I use to deploy and clear the Google maps markers has been adapted from the Google Maps API Developer documentation , Eamonn Smyth's "How To Google Maps" document (circulated on Slack - https://code-institute-room.slack.com/files/UU5GBNS6M/F01FEG2NM53/how_to_google_maps.pdf) and augmented with questions submitted to StackOverflow.
 - Google Maps Developer Documents - https://developers.google.com/maps/documentation/javascript/markers
 - Clearing Google Markers - https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
