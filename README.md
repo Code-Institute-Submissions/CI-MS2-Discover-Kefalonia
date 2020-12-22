@@ -187,25 +187,28 @@ ______
 What follows is a list of the main features incorporated into the website, and a short list of upgrades which could be applied once my knowledge of other technologies like JavaScript has increased.
 
 ### **Existing Features**
-- This is an interactive website comprising three pages linked by simple interactive navigation elements; Landing | Map | Contact.
-   - The landing page exists to simply show an enticing image and to direct the user to "Start Exploring".
+This is an interactive website comprising three pages linked by simple interactive navigation elements; Landing | Map | Contact.
+- The landing page exists to simply show an enticing image and to direct the user to "Start Exploring".
 ![Landing Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/landing-page.jpg "Landing Page View")
-   - The MAP page contains the bulk of the content which is revealed through the interactive button elements.
-     - Information pane which displays images and information about each location on the map
-     - Interactive "About" and "Weather" links which display the respective information.
-     - **Weather data is provided by WeatherOnline.co.uk and is accessed via a REST API provided by Rapid API**.
+- The MAP page contains the bulk of the information provided by this website; and is split into an information section on the left and map section on the right.
 
-     ![Weather Data](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/chart-js.png "Rest API Weather Data")
+  - Interactive "About" and "Weather" links which display the respective information.
+  - **Weather data is provided by WeatherOnline.co.uk and is accessed via a REST API provided by Rapid API**.
+  - **The weather data is charted using a combined bar and line chart using Chart.js**
 
-     - **The weather data is charted using a combined bar and line chart using Chart.js**
-     - The second half of this page houses the custom Google map, which 
-       - retains some of the native interactive features to select the map style.
-       - incorporates interactive buttons to place three categories of marker
-     
-       ![Map Markers](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-markers.png "MAp Markers")
+![Weather Data](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/chart-js.png "Rest API Weather Data")
 
-       - enables the user to interact with each marker to discover more information about each location
-   - The contact page does what is says on the tin; comprising a simple contact form linked to the EmailJS service.
+- Information pane which displays images and information about each location on the map
+![Map POI](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-poi.png "POI View")
+- The second half of this page houses the custom Google map, which renders markers for each "point of interest" category when the respectibe map button is selected.
+![Map Buttons](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-buttons.png "Map-Buttons")
+- The retains some of the native interactive features to select the map style.
+ 
+ 
+   ![Map Markers](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/map-markers.png "MAp Markers")
+
+- enables the user to interact with each marker to discover more information about each location
+- The contact page does what is says on the tin; comprising a simple contact form linked to the EmailJS service.
 
 ![EmailJS](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/emailjs-integration.png "EmailJS Integration")
 
@@ -215,9 +218,9 @@ What follows is a list of the main features incorporated into the website, and a
  > **I had experimented with a fixed position for my navigation on smaller devices, making the two menu items float over the body content and stay in position when the page is scrolled but chose to fix the navigation elements towards the top of the viewport where they are less likely to get in the way of the main body content.**
  
 - The footer elements are built into a pop-up element at the base of the Map and Contact pages. 
-![Footer](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/nav-links.png "Footer Tab")
+![Footer](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/social-tab.png "Footer Tab")
  The Footer contains links to social media sites relevant to Kefalonia and also displays the copyright and a link to contact the developer.
-![Social Links](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/nav-links.png "Footer Contents")
+![Social Links](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/popup-footer.png "Footer Contents")
 
 ### **Features Left to Implement**
 I am satisfied with the initial deployed functionality; however, the following items would add to the current site.
