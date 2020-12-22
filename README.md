@@ -13,10 +13,10 @@ The objective is to achieved the above in a visually appealing and interactive U
 
 ## Table of contents
 1. [User Experience](#user-experience)
+   - [User Stories](#stories)
+   - [The 5 Planes](#planes)
+   - [Wireframes](#wireframes)
 2. [Features](#features)
-    - [User Stories](#stories)
-    - [The 5 Planes](#planes)
-    - [Wireframes](#wireframes)
 3. [Technologies Used](#technologies)
 4. [Testing](#testing)
    - [User Story Testing](#user-story-testing)
@@ -139,7 +139,7 @@ The information layout will be consistent:
 
 Each piece of information consistently appears in the same position irrespective of what's being displayed.
 
-##### Wireframes <a name="wireframes"></a>
+#### Wireframes <a name="wireframes"></a>
 Wireframes for the original design concepts were created using Balsamiq.
 ##### Landing Page
 The landing page has no function other than to look enticing and to direct users to explore further.
@@ -228,6 +228,8 @@ This is an interactive website comprising three pages linked by simple interacti
 ![Social Links](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/popup-footer.png "Footer Contents")
 
 - 404 File not Found Page to handle any issues with the pages referenced by this site. The Page will automatically redirect the user to the Landing Page. The 404.html page will briefly display before redirection. The page also contains a link to take the user back the "Discover Kefalonia" landing page.
+
+![404 Page](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/404-page.jpg "404 Page")
 
 ### **Features Left to Implement**
 I am satisfied with the initial deployed functionality; however, the following items would add to the current site.
@@ -327,7 +329,7 @@ The following table captures the functional testing performed on the website to 
 |   009        | Map Button Functionality |Any previous markers clear when a new set of markers is selected and dropped.| Markers clear correctly |**PASS**| **PASS** |
 |   010        | Map Button Functionality |The "Zoom Out" button recentres the map and resets the zoom to display the whole island.| Zoom works as desired |**PASS**| **PASS** |
 |   011        | Weather API Data |"Weather" anchor link displays the whether data and associated text| Chart renders and text displays below |**PASS**| **PASS** |
-|   012        | Console Error handling  |Are there any Errors - Is there an appropriate message?| No Errors displayed |**PASS**|
+|   012        | Console Error handling  |Are there any Errors - Is there an appropriate message?| No Errors displayed |**PASS**|**PASS**|
 |   013        | Map Button Functionality |"About" anchor link re-displays the general information and image| Information renders correctly |**PASS**| **PASS** |
 |   014        | Map Button styles |Button Hover styles render correctly| Markers clear correctly |**PASS**| **PASS** ||
 |   015        | Map Button styles |Button styles toggle correctly when selected/clicked | Button styles display correctly |**PASS**| **PASS** |
@@ -471,7 +473,7 @@ I have attempted to work independently as much as possible while building this w
 - [StackOverFlow](https://stackoverflow.com/) – Web based coding tips
 - [CSS Tricks](https://css-tricks.com/) – Styling tips like https://css-tricks.com/styling-underlines-web/
 - [W3Schools](https://www.w3schools.com/) – General coding resource
-- [MDN]("https://developer.mozilla.org/en-US/docs/Web/JavaScript")
+- [MDN]("https://developer.mozilla.org/en-US/docs/Web/JavaScript") - Useful Javascript resource
 - [Pexels](https://www.pexels.com/) – Licence free image repository
 - [BeFunky](https://www.befunky.com/create/resize-image/) – Online image resizer
 - [Color Picker](https://htmlcolorcodes.com/color-picker/) – HTML and CSS colour codes
