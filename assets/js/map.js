@@ -309,7 +309,7 @@ var active = [
 var map;
 
 //============= Map Initialisation ==============//
-
+//===== https://developers.google.com/maps/documentation/javascript/adding-a-google-map =====//
 function initMap() {
 
   map = new google.maps.Map(document.getElementById("map"), {
@@ -338,7 +338,8 @@ function initMap() {
   var marker, i;
   var markers = [];
 
-  //========== Place Markers for the locations of the beaches and clear out previous markers =======//
+//========== Place Markers for the locations of the beaches and clear out previous markers =======//
+//===== (https://developers.google.com/maps/documentation/javascript/markers)=====//
 
   $("#beaches").click(function() {
     clearMarkers();
@@ -535,7 +536,8 @@ fetch(url, fetchParams)
         "ate-data' target='_blank'>Climate data provided by Weather Online via Rapid" +
         " API</a>");
 
-      //============ Charts the Temperature Data from WeatherOnline.co.uk using Chart.JS  code copied directly from documentation ============//             
+      //============ Charts the Temperature Data from WeatherOnline.co.uk ==========//
+      //======= using Chart.JS  code copied directly from documentation ============//             
 
       var ctx = document.getElementById("chart-one");
       const myChart = new Chart(ctx, {

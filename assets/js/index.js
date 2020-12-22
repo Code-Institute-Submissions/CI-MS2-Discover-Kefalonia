@@ -1,4 +1,4 @@
-//------GSAP Commands------//
+//------GSAP Commands adapted from (https://greensock.com/docs/)------//
 gsap.to("#explore", {
 	duration: 2,
 	opacity: 1,
