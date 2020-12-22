@@ -387,14 +387,14 @@ I have conducted continuous responsiveness testing to ensure the website functio
 ### **Performance Testing** <a name="performance-testing"></a>
 The website has been performance testing using the following tools:
  - Google Lighthouse (Desktop)
- - 
+  
  
 ![Google Lighthouse](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse.png "Google Lighthouse Testing")
 
 
 
  - Google Lighthouse (Mobile)
- - 
+  
  
 ![Google Lighthouse](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/google-lighthouse-mobile.png "Google Lighthouse Testing")
 
