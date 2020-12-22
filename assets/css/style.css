@@ -656,11 +656,11 @@ form input{
 @media (max-width: 688px) {
     
     #heading-row {
-        height: 6vh;
+        height: 1.6rem;
     }
 
     .page-header {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .info-heading {
@@ -680,12 +680,12 @@ form input{
 
     #map-top,
     #contact-top {
-        top: 7vh;        
+        top: 3.25rem;        
     }
 
     #map-bottom,
     #contact-bottom {
-        top: 13vh;        
+        top: 5.75rem;        
     }
     
     .poi-info {
