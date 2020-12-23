@@ -371,16 +371,26 @@ This helped me make some changes to maintain responsiveness.
 ### **Usability Testing** <a name="usability-testing"></a>"
 I requested fellow CI students and former colleagues to test the website to gather their feedback on the User Experience and Interactivity. What follows are the comments I received in return:
 - Feedback from Jim Morel
+
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/jmuser-comment.png "User Comment")
+
 - Feedback from Fabio Torti
+
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ftuser-comment.png "User Comment")
+
 - Feedback from Michael McCann
+
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/muser-comment.png "User Comment")
 
-- Feedback fromm Eamonn Carroll
+- Feedback fromm Evka K
+
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ekuser-comment.png "User Comment")
-- Feedback from Kane Moore
+
+- Feedback from Eamonn Carroll
+
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/ecuser-comment.jpg "User Comment")
+
+- Feedback from Kane Moore
 
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/kmuser-comment.jpg "User Comment")
 
