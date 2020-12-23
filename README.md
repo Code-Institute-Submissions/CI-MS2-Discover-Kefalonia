@@ -384,12 +384,14 @@ I requested fellow CI students and former colleagues to test the website to gath
 ![User Comment](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/kmuser-comment.jpg "User Comment")
 
 ### **Responsiveness Testing** <a name="responsiveness-testing"></a>
-I have conducted continuous responsiveness testing to ensure the website functions on different devices using:
+I have conducted continuous responsiveness testing, right up to the final submission, to ensure the website functions on different devices and in both portrait and landscape orientation, using:
  - Google Devtools
 ![Responsiveness](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/poi-info.jpg "Website Responsiveness") 
 ![Responsiveness](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/contact-form.jpg "Website Responsiveness")
  - Am I Responsive
 ![Am I responsive images](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/am-i-responsive.png "Am I Responsive")
+ - Responsinator.com
+ ![Responsinator image](https://github.com/GazzaJ/CI-MS2-Discover-Kefalonia/blob/master/readme-img/responsinator.png "Responsinator image")
 
 ### **Performance Testing** <a name="performance-testing"></a>
 The website has been performance testing using the following tools:
